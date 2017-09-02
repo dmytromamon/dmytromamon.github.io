@@ -412,7 +412,7 @@ $(document).ready(function () {
     transformOrigin: "50% 0%"
   }, .1);
   tl.from(shelfLine8, .5, {
-    ease: Power4.easeOut,
+    ease: Bounce.easeOut,
     scale: 0,
     transformOrigin: "0% 50%"
   }, 3);
