@@ -171,7 +171,7 @@ $(document).ready(function () {
     ease: Power4.easeOut,
     scale: 0,
     transformOrigin: "50% 50%"
-  }, .9);
+  }, 1.05);
   tl.staggerFrom(icon1R, .45, {
     ease: Power4.easeOut,
     scale: 0,
@@ -200,7 +200,7 @@ $(document).ready(function () {
   tl.staggerFrom(rect3icon, .5, {
     ease: Power4.easeOut,
     scale: 0,
-    transformOrigin: "50% 50%",    
+    transformOrigin: "50% 50%",
     repeat: -1,
     yoyo: true,
     repeatDelay: 3
@@ -332,7 +332,7 @@ $(document).ready(function () {
     repeat: -1,
     yoyo: true,
     transformOrigin: "50% 50%"
-  }, 2.95);  
+  }, 2.95);
   tl.from(shelfLine3, .45, {
     ease: Power4.easeOut,
     scale: 0,
@@ -428,14 +428,14 @@ $(document).ready(function () {
     scale: 0,
     transformOrigin: "50% 0%"
   }, .1);
-  
+
   //  yellows bg's
-  
+
   tl.from(fillAfter, .45, {
     ease: Power4.easeOut,
     opacity: 0
-  }, 2.25);  
-  
+  }, 2.25);
+
   //  hovers
 
   $('.fill-yellow').hover(
@@ -506,7 +506,7 @@ $(document).ready(function () {
 
 });
 
-  //  scroll effects
+//  scroll effects
 
 setInterval(function () {
   $('body').bind('mousewheel', function (e) {
