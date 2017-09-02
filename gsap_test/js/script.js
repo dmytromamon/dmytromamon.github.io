@@ -157,8 +157,9 @@ $(document).ready(function () {
   tl.staggerFrom(rect1, .45, {
     ease: Power4.easeOut,
     scale: 0,
-    y: 10,
-    x: 10,
+    y: -30,
+    x: -30,
+    rotation: -105,
     transformOrigin: "50% 50%"
   }, .1);
   tl.from(pc1circle, .3, {
@@ -181,10 +182,9 @@ $(document).ready(function () {
   tl.from(rect2, .45, {
     ease: Power4.easeOut,
     scale: 0,
-    y: 25,
-    x: 25,
+    rotation: 180,
     transformOrigin: "50% 50%"
-  }, 1.05);
+  }, 1.45);
   tl.from(circle1, .9, {
     ease: Power4.easeOut,
     opacity: 0,
@@ -332,12 +332,7 @@ $(document).ready(function () {
     repeat: -1,
     yoyo: true,
     transformOrigin: "50% 50%"
-  }, 2.95);
-  
-  
-  
-  
-  
+  }, 2.95);  
   tl.from(shelfLine3, .45, {
     ease: Power4.easeOut,
     scale: 0,
@@ -346,7 +341,7 @@ $(document).ready(function () {
   tl.from(rect5, .45, {
     ease: Power4.easeOut,
     scale: 0,
-    rotation: -360,
+    rotation: -180,
     transformOrigin: "50% 50%"
   }, 2.25);
   tl.from(shelfLine4, .45, {
