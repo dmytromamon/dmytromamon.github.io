@@ -45,6 +45,10 @@ body {
   position: relative;
   z-index: 2; }
 
+.grid-col img {
+  width: 100%;
+  height: 100%; }
+
 .grid-col__img-1x1, .grid-col__img-1x2, .grid-col__img-2x2 {
   width: 100%;
   height: 100%;
@@ -69,14 +73,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1; }
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
   .container-bg img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    margin: auto;
+    position: absolute; }
 
 * {
   margin: 0;
