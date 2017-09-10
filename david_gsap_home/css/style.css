@@ -45,6 +45,18 @@ body {
   position: relative;
   z-index: 2; }
 
+.grid-col::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow:inset 0px 0px 0px .5px #eee;
+  -moz-box-shadow:inset 0px 0px 0px .5px #eee;
+  box-shadow:inset 0px 0px 0px .5px #eee;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .grid-col img {
   width: 100%;
   height: 100%; }
@@ -52,13 +64,13 @@ body {
 .grid-col__img-1x1, .grid-col__img-1x2, .grid-col__img-2x2 {
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  position: absolute; }
   .grid-col__img-1x1 img, .grid-col__img-1x2 img, .grid-col__img-2x2 img {
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 1px; }
 
 .grid-col__img-1x2 {
   height: 200%; }
