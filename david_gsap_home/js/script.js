@@ -64,8 +64,8 @@ $(function(){
   tl.to(frames2_8frames17_23, .001, {ease: Power1.easeIn, rotationY: -90}, 8.61);
   tl.to(frames2_8frames17_23, .5, {ease: Power1.easeIn, rotationY: 0}, 17.5);
   tl.to(frames2_8frames17_23, .5, {ease: Power1.easeOut, rotationY: 90}, 22);
-  tl.to(frames1_4frames28_30, .5, {ease: Power1.easeOut, rotationY: 90}, 5);
-  tl.to(frames1_4frames28_30, .001, {ease: Power1.easeIn, rotationY: -90}, 5.61);
+  tl.to(frames1_4frames28_30, .5, {ease: Power1.easeOut, rotationY: 90}, 3);
+  tl.to(frames1_4frames28_30, .001, {ease: Power1.easeIn, rotationY: -90}, 3.61);
   tl.to(frames1_4frames28_30, .5, {ease: Power1.easeOut, rotationY: 0}, 28);
   
 //  2x2 sized
