@@ -55,13 +55,13 @@ $(function(){
   
   tl.from(frames4_10, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 1.5);
   tl.to(frames4_10, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 9);
-  tl.from(frames9_16, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 9.5);
+  tl.from(frames9_16, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 8.5);
   tl.to(frames9_16, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 15);
   tl.from(frames12_20, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 12.5);
   tl.to(frames12_20, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 19);
   tl.from(frames2_8frames17_23, .5, {ease: Power1.easeIn, rotationY: -90}, 2.5);
   tl.to(frames2_8frames17_23, .5, {ease: Power1.easeOut, rotationY: 90}, 8);
-  tl.to(frames2_8frames17_23, .001, {ease: Power1.easeIn, rotationY: -90}, 7.61);
+  tl.to(frames2_8frames17_23, .001, {ease: Power1.easeIn, rotationY: -90}, 8.61);
   tl.to(frames2_8frames17_23, .5, {ease: Power1.easeIn, rotationY: 0}, 17.5);
   tl.to(frames2_8frames17_23, .5, {ease: Power1.easeOut, rotationY: 90}, 22);
   tl.to(frames1_4frames28_30, .5, {ease: Power1.easeOut, rotationY: 90}, 5);
@@ -72,8 +72,8 @@ $(function(){
   
   tl.from(frames7_14, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 7.5);
   tl.to(frames7_14, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 13); 
-  tl.from(frames5_12, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 2.5);
-  tl.to(frames5_12, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 11);  
+  tl.from(frames5_12, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 5.5);
+  tl.to(frames5_12, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 12);  
   tl.from(frames6_12, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 6.5);
   tl.to(frames6_12, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 11); 
   tl.from(frames13_20, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 13.5);
@@ -87,7 +87,7 @@ $(function(){
   tl.to(frames1_6, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 5);
   tl.to(frames1_6, .001, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 28); 
   tl.to(frames1_6, .5, {ease: Power1.easeIn, rotationY: 0, scaleY: 1}, 29.5); 
-  tl.to(frames1_5frames28_30, .5, {ease: Power1.easeIn, rotationY: 90}, 4);
-  tl.to(frames1_5frames28_30, .001, {ease: Power1.easeIn, rotationY: -90}, 4.61);
+  tl.to(frames1_5frames28_30, .5, {ease: Power1.easeIn, rotationY: 90}, 6);
+  tl.to(frames1_5frames28_30, .001, {ease: Power1.easeIn, rotationY: -90}, 6.61);
   tl.to(frames1_5frames28_30, .5, {ease: Power1.easeIn, rotationY: 0}, 27.5);
 })
