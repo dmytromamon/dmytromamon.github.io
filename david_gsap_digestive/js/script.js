@@ -19,16 +19,16 @@
         $('svg').css('width', '100%');
       } else {
         if (win.height() < win.width()) {
-          $('.st6').css('font-size', 9);
-          $('.st21').css('font-size', 32);
-          $('.st23').css('font-size', 17);
-          $('.st26').css('font-size', 12);
-          $('.st29').css('font-size', 16);
-          $('.st31').css('font-size', 5);
-          $('.st32').css('font-size', 19);
-          $('.st33').css('font-size', 22);
-          $('.st37').css('font-size', 15);
-          $('.st38').css('font-size', 20);
+//          $('.st6').css('font-size', 9);
+//          $('.st21').css('font-size', 32);
+//          $('.st23').css('font-size', 17);
+//          $('.st26').css('font-size', 12);
+//          $('.st29').css('font-size', 16);
+//          $('.st31').css('font-size', 5);
+//          $('.st32').css('font-size', 19);
+//          $('.st33').css('font-size', 22);
+//          $('.st37').css('font-size', 15);
+//          $('.st38').css('font-size', 20);
         }
       }
     }, 0.01)
