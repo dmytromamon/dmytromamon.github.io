@@ -74,7 +74,7 @@
       <div class="grid-col">
         <div class="grid-col__img-1x2">
           <img class="rect r28_30" src="img/1x2/1x2-cubes--4.1,-5.1-_-frames-28-30,-1-4.png" alt="">
-          <img class="rect r5_11" src="img/1x2/1x2-cubes--4.1,-5.1-_-frames-5-11.png" alt="">
+          <img class="rect r6_12" src="img/1x2/1x2-cubes--4.1,-5.1-_-frames-5-11.png" alt="">
         </div>    
       </div>
       <div class="grid-col">   
@@ -149,7 +149,7 @@
       <div class="grid-col"></div>
       <div class="grid-col">
         <div class="grid-col__img-2x2">
-          <img class="rect r1_4-28_30" src="img/2x2/cubes--6.10,-6.11,-7.10,-7.11-_-frames-28-30,-1-4.png" alt="">
+          <img class="rect r1_4-26_30" src="img/2x2/cubes--6.10,-6.11,-7.10,-7.11-_-frames-28-30,-1-4.png" alt="">
         </div>
       </div>
       <div class="grid-col"></div>
@@ -175,5 +175,35 @@
       <div class="grid-col"></div>
     </div>
   </div>
+  <script>
+    setInterval(function(){
+          var win = $(window),
+              aspect = 1366/768; //this = window
+          if (win.width() <= 1365) {
+            $('.grid-container').css('width', win.width());
+            $('.grid-container').css('height', 'auto');
+            $('.full').css('width', win.width());
+            $('.full').css('height', win.width()/aspect);
+            $('.grid-row').css('height', win.width()/11);
+            $('.grid-col').css('width', win.width()/11);
+          }
+          if (win.height() <= win.width()/aspect) {
+            $('.grid-container').css('height', win.height());
+            $('.grid-container').css('width', 'auto');
+            $('.full').css('height', win.height());
+            $('.full').css('width', win.height()*aspect);
+            $('.grid-row').css('height', win.height()/7);
+            $('.grid-col').css('width', win.height()/7);
+          }
+          if ((win.height() >= 768) && (win.width() >= 1366)) {
+            $('.grid-container').css('height', 768);
+            $('.grid-container').css('width', 1366);
+            $('.full').css('height', '100%');
+            $('.full').css('width', '100%');
+            $('.grid-row').css('height', 768/7);
+            $('.grid-col').css('width', 1366/11);
+          }
+    }, 0.01)
+  </script>
 </body>
 </html>

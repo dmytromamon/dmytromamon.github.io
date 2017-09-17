@@ -25,25 +25,27 @@ $(function(){
       frames17_24 = $('.r17_24'),
       frames1_6 = $('.r1_6'),
       frames2_8frames17_23 = $('.r2_8-17_23'),
+      frames1_4frames26_30 = $('.r1_4-26_30'),
       frames1_4frames28_30 = $('.r1_4-28_30'),
       frames1_5frames28_30 = $('.r1_5-28_30');
   
 //  full sized
   
-  TweenLite.set(full, {transformPerspective:1000});
+//  TweenLite.set(full, {transformPerspective:1000});
   TweenLite.set(rect, {transformPerspective:500});
   
 //  1x1 sized
   
-  tl.to(frames1_16frames28_30, .5, {ease: Power1.easeOut, rotationY: 90, scale: .75}, 15.5);
-  tl.to(frames1_16frames28_30, .001, {ease: Power1.easeIn, rotationY: -90, scale: .75}, 16.11);
-  tl.to(frames1_16frames28_30, .5, {ease: Power1.easeOut, rotationY: 0, scale: 1}, 28.5);
-  tl.from(frames17_28, .5, {ease: Power1.easeIn, rotationY: -90, scale: .75}, 16.01);
-  tl.to(frames17_28, .5, {ease: Power1.easeOut, rotationY: 90, scale: .75}, 28);
+  tl.to(frames1_16frames28_30, .5, {ease: Power4.easeOut, scale: .9, opacity: 0, transformOrigin: '50% 100%'}, 15.5);
+  tl.set(frames1_16frames28_30, {ease: Power4.easeOut, scale: .9, opacity: 0, transformOrigin: '50% 100%'}, 27);
+  tl.to(frames1_16frames28_30, .5, {ease: Power4.easeOut, scale: 1, opacity: 1, transformOrigin: '50% 100%'}, 28.51);
+  tl.from(frames17_28, .5, {ease: Power4.easeOut, scale: .9, opacity: 0, transformOrigin: '50% 100%'}, 16.01);
+  tl.set(frames17_28, {css:{zIndex:1}}, 28);
+  tl.to(frames17_28, .5, {ease: Power4.easeOut, scale: .9, opacity: 0, transformOrigin: '50% 100%'}, 28);
   tl.from(frames22_28, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 22.5);
   tl.to(frames22_28, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 27);
   tl.from(frames21_27, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 21.5);
-  tl.to(frames21_27, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 26);
+  tl.to(frames21_27, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 24.5);
   tl.from(frames28_30, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 27.5);
   tl.to(frames28_30, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 29.5);
   tl.from(frames5_11, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 5.5);
@@ -66,13 +68,16 @@ $(function(){
   tl.to(frames2_8frames17_23, .5, {ease: Power1.easeOut, rotationY: 90}, 22);
   tl.to(frames1_4frames28_30, .5, {ease: Power1.easeOut, rotationY: 90}, 3);
   tl.to(frames1_4frames28_30, .001, {ease: Power1.easeIn, rotationY: -90}, 3.61);
-  tl.to(frames1_4frames28_30, .5, {ease: Power1.easeOut, rotationY: 0}, 28);
+  tl.to(frames1_4frames28_30, .5, {ease: Power1.easeOut, rotationY: 0}, 27.5);
+  tl.to(frames1_4frames26_30, .5, {ease: Power1.easeOut, rotationY: 90}, 3);
+  tl.to(frames1_4frames26_30, .001, {ease: Power1.easeIn, rotationY: -90}, 3.61);
+  tl.to(frames1_4frames26_30, .5, {ease: Power1.easeOut, rotationY: 0}, 25.5);
   
 //  2x2 sized
   
   tl.from(frames7_14, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 7.5);
-  tl.to(frames7_14, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 13); 
-  tl.from(frames5_12, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 5.5);
+  tl.to(frames7_14, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 11.5); 
+  tl.from(frames5_12, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 4);
   tl.to(frames5_12, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 12);  
   tl.from(frames6_12, .5, {ease: Power1.easeIn, rotationY: -90, scaleY: 1}, 6.5);
   tl.to(frames6_12, .5, {ease: Power1.easeOut, rotationY: 90, scaleY: 1}, 11); 
@@ -89,5 +94,5 @@ $(function(){
   tl.to(frames1_6, .5, {ease: Power1.easeIn, rotationY: 0, scaleY: 1}, 29.5); 
   tl.to(frames1_5frames28_30, .5, {ease: Power1.easeIn, rotationY: 90}, 6);
   tl.to(frames1_5frames28_30, .001, {ease: Power1.easeIn, rotationY: -90}, 6.61);
-  tl.to(frames1_5frames28_30, .5, {ease: Power1.easeIn, rotationY: 0}, 27.5);
+  tl.to(frames1_5frames28_30, .5, {ease: Power1.easeIn, rotationY: 0}, 24.5);
 })
