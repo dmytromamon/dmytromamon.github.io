@@ -10,7 +10,7 @@ $(document).ready(function() {
       i = 0,
       ad = $('.ad');
 
-    for (i = 0; i < 173; i++) { 
+    for (i = 1; i < 173; i++) { 
       if (i < 10) {
         tl.set(ad, {css:{backgroundImage:'url(img/antenna_and_aircraft_RGB_plusAlpha_0000' + i +'.png)'}}, i/20);
       }
