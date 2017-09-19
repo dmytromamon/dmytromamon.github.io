@@ -5,20 +5,11 @@ $(document).ready(function() {
     var tl = new TimelineMax(
       {onComplete:function() {
       this.restart();
-  }}
-    ),
-      i = 0,
-      ad = $('.ad');
-
-    for (i = 1; i < 173; i++) { 
-      if (i < 10) {
-        tl.set(ad, {css:{backgroundImage:'url(img/antenna_and_aircraft_RGB_plusAlpha_0000' + i +'.png)'}}, i/20);
-      }
-      else if (i < 100) {
-        tl.set(ad, {css:{backgroundImage:'url(img/antenna_and_aircraft_RGB_plusAlpha_000' + i +'.png)'}}, i/20);
-      } else {
-        tl.set(ad, {css:{backgroundImage:'url(img/antenna_and_aircraft_RGB_plusAlpha_00' + i +'.png)'}}, i/20);
-      }
+  }});
+    var i;   
+    for (i = 0; i < 171; i++) {
+      tl.set($('.ad').eq(i), {ease: Power0.easeNone, opacity: 1}, i/24);
+      tl.set($('.ad').eq(i - 1), {ease: Power0.easeNone, opacity: 0}, i/24);
     }
   })
 })
