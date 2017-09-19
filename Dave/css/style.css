@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.ad {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+  background: url('../img/antenna_and_aircraft_RGB_plusAlpha_00001.png') no-repeat  
+}
+
+.ad__bg {
+  width: 300px;
+  height: 250px;
+  background: url('../img/Desert_Image.png') no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
