@@ -1,0 +1,40 @@
+$font-color: rgb(0, 49, 60)
+
+* 
+  margin: 0
+  padding: 0
+
+body
+  overflow-x: hidden
+  height: 300vh
+  
+.section
+  height: 100vh
+  width: 100vw
+  position: fixed
+  z-index: -1
+  
+.red
+  background: red
+  position: fixed
+  width: 100%
+  height: 100vh
+  
+.blue
+  background: blue
+  position: absolute
+  width: calc(100% - 100px)
+  top: 100vh
+  margin: 50px
+  height: calc(100vh - 100px)
+  color: #fff
+  z-index: 2
+  
+.green  
+  position: absolute
+  background: green
+  width: calc(100% - 200px)
+  margin: 100px
+  top: 200vh
+  height: calc(100vh - 200px)
+  z-index: 3
