@@ -1,0 +1,1 @@
+var canvas=document.getElementById("canvas"),ctx=canvas.getContext("2d");canvas.width=document.body.clientWidth,canvas.height=document.body.clientHeight,ctx.fillStyle="#999876",ctx.fillRect(100,0,100,100),ctx.strokeRect(105,5,100,100),ctx.fillStyle="#f00",ctx.fillRect(300,200,100,100);
