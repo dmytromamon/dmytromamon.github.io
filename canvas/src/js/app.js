@@ -12,91 +12,249 @@ ctx.fillRect(0,0,document.body.clientWidth,document.body.clientHeight);
 
 ctx.strokeStyle = "#fff";
 
-//ctx.beginPath();
-//ctx.translate(50,50);
-//ctx.moveTo(35,0);
-//ctx.lineTo(70,60);
-//ctx.lineTo(0,60);
-//ctx.lineTo(35,0);
-//ctx.lineTo(70,60);
-//ctx.lineWidth = 10;
-//ctx.stroke();
-//
-//ctx.translate(120,0);
-//
-//
-//ctx.beginPath();
-//ctx.moveTo(2,25);
-//ctx.lineTo(27,25);
-//ctx.lineTo(35,0);
-//ctx.lineTo(43,25);
-//ctx.lineTo(68,25);
-//ctx.lineTo(48,40);
-//ctx.lineTo(55,64);
-//ctx.lineTo(35,49);
-//ctx.lineTo(15,64);
-//ctx.lineTo(22,40);
-//ctx.lineTo(2,25);
-//ctx.lineTo(27,25);
-//ctx.lineWidth = 10;
-//ctx.stroke();
-//
-//ctx.translate(180, 0);
-//
-//ctx.beginPath();
-//ctx.arc(0,35,35,Math.PI*1/2,Math.PI*1.5,false);
-//ctx.stroke();
-//
-//ctx.translate(120, 0);
-//
-//ctx.beginPath();
-//ctx.arc(0,35,35,0,Math.PI*2,true);
-//ctx.stroke();
-
-var a = 300;
+var a = document.body.clientWidth * document.body.clientHeight / 5000;
 var i;
 var t;
 var x;
 var y;
-var s; 
+var m; 
 var sx = [];
+//x array
 var sy = [];
+//y array
+var st = [];
+//top parametr
+var sr = [];
+//right parametr
+var sm = [];
+//move direction
 var tx;
 var ty;
 var twx;
 var twy;
-//size
-for (i = 0; i < a; i++) {
-	x = Math.floor((Math.random() * document.body.clientWidth) + 1);
-	y = Math.floor((Math.random() * document.body.clientHeight) + 1);
-	s = Math.floor((Math.random() * 5) + 1);
-//	random from 1 to 9
-	
-	ctx.beginPath();
-	ctx.setTransform(1, 0, 0, 1, 0, 0);
-	ctx.lineWidth = .2;
-	ctx.arc(x,y,s/10,0,Math.PI*2,true);	
-	ctx.stroke();
-	sx.push(x);
-	sy.push(y);
-	
-}	
 
-for (var t = 0; t < sx.length; t++) {
-  for (var tx = 0; tx < sx.length; tx++) {
-		twx = sx[t] - sx[tx];
-		twy = sy[t] - sy[tx];
+function count() {
+	
+	sx = [];
+	//x array
+	sy = [];
+	//y array
+	st = [];
+	//top parametr
+	sr = [];
+	//right parametr
+	sm = [];
+	
+	for (i = 0; i < a; i++) {
+		x = Math.floor((Math.random() * document.body.clientWidth) + 1);
+		y = Math.floor((Math.random() * document.body.clientHeight) + 1);
+		ctx.beginPath();
+		ctx.setTransform(1, 0, 0, 1, 0, 0);
+		ctx.lineWidth = .2;
+		ctx.arc(x,y,.2,0,Math.PI*2,true);	
+		ctx.fill();
+		sx.push(x);
+		sy.push(y);	
+		st.push("1");
+		sr.push("1");
+
+		m = Math.floor((Math.random() * 4) + 1);
+		sm.push(m);
+	};	
+};
+
+count();
+
+setInterval(function(){
+	for (i = 0; i < sy.length; i++) {
+		if (sm[i] == 1) {			
+			if (sy[i] > document.body.clientHeight) {
+				st[i] = -st[i];
+			};
+			if (sy[i] < 0) {
+				st[i] = -st[i];
+			};
+			if (st[i] > 0) {
+				sy[i] = sy[i] + .1;	
+			};
+			if (st[i] < 0) {
+				sy[i] = sy[i] - .1;			
+			};
+		}
+		if (sm[i] == 4) {			
+			if (sy[i] > document.body.clientHeight) {
+				st[i] = -st[i];
+			};
+			if (sy[i] < 0) {
+				st[i] = -st[i];
+			};
+			if (st[i] > 0) {
+				sy[i] = sy[i] - .1;	
+			};
+			if (st[i] < 0) {
+				sy[i] = sy[i] + .1;			
+			};
+		}
+  };
+}, 2);
+
+setInterval(function(){
+	for (i = 0; i < sy.length; i++) {
+		if (sm[i] == 3) {			
+			if (sy[i] > document.body.clientHeight) {
+				st[i] = -st[i];
+			};
+			if (sy[i] < 0) {
+				st[i] = -st[i];
+			};
+			if (st[i] > 0) {
+				sy[i] = sy[i] - .1;	
+			};
+			if (st[i] < 0) {
+				sy[i] = sy[i] + .1;			
+			};
+		}
+  };
+}, 2);
+
+setInterval(function(){
+	for (i = 0; i < sx.length; i++) {
+		if (sm[i] == 2) {			
+			if (sx[i] > document.body.clientWidth) {
+				sr[i] = -sr[i];
+			};
+			if (sx[i] < 0) {
+				sr[i] = -sr[i];
+			};
+			if (sr[i] > 0) {
+				sx[i] = sx[i] + .1;	
+			};
+			if (sr[i] < 0) {
+				sx[i] = sx[i] - .1;			
+			};
+		}		
+		if (sm[i] == 4) {			
+			if (sx[i] > document.body.clientWidth) {
+				sr[i] = -sr[i];
+			};
+			if (sx[i] < 0) {
+				sr[i] = -sr[i];
+			};
+			if (sr[i] > 0) {
+				sx[i] = sx[i] - .1;	
+			};
+			if (sr[i] < 0) {
+				sx[i] = sx[i] + .1;			
+			};
+		}
+		if (sm[i] == 3) {			
+			if (sx[i] > document.body.clientWidth) {
+				sr[i] = -sr[i];
+			};
+			if (sx[i] < 0) {
+				sr[i] = -sr[i];
+			};
+			if (sr[i] > 0) {
+				sx[i] = sx[i] + .1;	
+			};
+			if (sr[i] < 0) {
+				sx[i] = sx[i] - .1;			
+			};
+		}
+  };
+}, 2);
+	
+
+function move() {
+	
+	ctx.fillStyle = grd1;
+	ctx.fillRect(0,0,document.body.clientWidth,document.body.clientHeight);	
+	
+	for (i = 0; i < sx.length; i++) {
+
+		ctx.beginPath();
+		ctx.setTransform(1, 0, 0, 1, 0, 0);
+		ctx.lineWidth = .2;
+		ctx.arc(sx[i],sy[i],.2,0,Math.PI*2,true);	
+		ctx.stroke();
 		
-		twx = twx*twx + twy*twy;
-		twx = Math.sqrt(twx);	
-		
-		if (twx < 100) {	
-			ctx.beginPath();
-			ctx.lineWidth = 0.2;
-			ctx.moveTo(sx[t],sy[t]);
-			ctx.lineTo(sx[tx],sy[tx]);
-			ctx.closePath();
-			ctx.stroke();					
-		}			
-	}
+	};	
+	
+	for (var t = 0; t < sx.length; t++) {
+		for (var tx = 0; tx < sx.length; tx++) {
+			twx = sx[t] - sx[tx];
+			twy = sy[t] - sy[tx];
+
+			twx = twx*twx + twy*twy;
+			twx = Math.sqrt(twx);	
+
+			if (twx < 75) {	
+							
+				twx = 100 - twx;
+				ctx.strokeStyle = "rgba(255,255,255," + twx + ")";
+				
+				ctx.beginPath();
+				ctx.lineWidth = .25;
+				ctx.moveTo(sx[t],sy[t]);
+				ctx.lineTo(sx[tx],sy[tx]);
+				ctx.closePath();
+				ctx.stroke();					
+			}			
+		}
+	};
+	
+};
+
+setInterval(function(){
+	requestAnimationFrame(move);
+}, 10);
+
+document.body.onresize = function() {	
+	canvas.width = document.body.clientWidth;
+	canvas.height = document.body.clientHeight;
+	a = document.body.clientWidth * document.body.clientHeight / 5000;
+	count();
+	requestAnimationFrame(move);	
 }
+
+//function step() {	
+//	ctx.fillStyle = grd1;
+//	ctx.fillRect(0,0,document.body.clientWidth,document.body.clientHeight);	
+//	
+//	for (var t = 0; t < sx.length; t++) {
+//		s = Math.floor((Math.random() * 5) + 1);
+//		
+//		sx[t] = sx[t] + Math.round(Math.random()) * 2 - 1;
+//		sy[t] = sy[t] + Math.round(Math.random()) * 2 - 1;
+//		
+//		ctx.beginPath();
+//		ctx.setTransform(1, 0, 0, 1, 0, 0);
+//		ctx.lineWidth = .2;
+//		ctx.arc(sx[t],sy[t],s/10,0,Math.PI*2,true);	
+//		ctx.stroke();
+//	};	
+//
+//	for (var t = 0; t < sx.length; t++) {
+//		for (var tx = 0; tx < sx.length; tx++) {
+//			twx = sx[t] - sx[tx];
+//			twy = sy[t] - sy[tx];
+//
+//			twx = twx*twx + twy*twy;
+//			twx = Math.sqrt(twx);	
+//
+//			if (twx < 75) {	
+//							
+//				s = Math.floor((Math.random() * 10) + 1);
+//				s = s/10;
+//				ctx.strokeStyle = "rgba(255,255,255," + s + ")";
+//				
+//				ctx.beginPath();
+//				ctx.lineWidth = 0.2;
+//				ctx.moveTo(sx[t],sy[t]);
+//				ctx.lineTo(sx[tx],sy[tx]);
+//				ctx.closePath();
+//				ctx.stroke();					
+//			}			
+//		}
+//	};
+//};
