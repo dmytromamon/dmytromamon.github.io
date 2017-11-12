@@ -1,30 +1,16 @@
 "use strict";
 
-var a = 0;
-document.getElementById('menu-button').onclick = function() {
-	if (a == 0) {
-		document.getElementById('circle-shape').style.transform = "scale(500)";
-		document.getElementById('menu-button').className += "close-button";
-		
-		setTimeout(function(){
-			document.getElementById('menu-box').style.transform = "translate(0,0)";			
-			document.getElementById('menu-box').style.opacity = 1;			
-		}, 400);
-		
-		a = 1;
-	} else {
-		document.getElementById('menu-box').style.transform = "translate(0,10%)";
-		document.getElementById('menu-box').style.opacity = 0;		
-		document.getElementById('menu-button').classList.remove("close-button");
-		
-		setTimeout(function(){
-			document.getElementById('circle-shape').style.transform = "scale(0)";	
-		}, 100);
-		
-		a = 0;
-	}
+document.getElementById('button').onclick = function() {
+	document.getElementsByClassName("popup")[0].style.transform = "translate(-50%, -50%) scale(1)";
+	document.getElementsByClassName("mask")[0].style.display = "block";
 };
 
-window.onmousemove = function(e) {	
-	document.body.innerHTML = "Позиція мишки - x: " + e.clientX + "px; y: " + e.clientY + "px";
-}
+document.getElementsByClassName("close-button")[0].onclick = function() {
+	document.getElementsByClassName("popup")[0].style.transform = "translate(-50%, -50%) scale(0)";
+	document.getElementsByClassName("mask")[0].style.display = "none";
+};
+
+document.getElementsByClassName("close-button")[1].onclick = function() {
+	document.getElementsByClassName("popup")[0].style.transform = "translate(-50%, -50%) scale(0)";
+	document.getElementsByClassName("mask")[0].style.display = "none";
+};
