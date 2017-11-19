@@ -32,15 +32,29 @@ button
 	margin: 5px auto
 	background: #fff
 	text-align: center
-	.slot-name
-		position: relative
-		height: 25px
-		line-height: 25px
+	.slot-container__column
 		width: 100%
-		transition: all ease .05s
-	.active
-		height: 48px
-		line-height: 48px
-		border-top: 1px solid #ccc
-		border-bottom: 1px solid #ccc
+		height: auto
+		position: absolute
+		top: -7px
+		left: 0
+		.slot-name
+			position: relative
+			height: 38px
+			line-height: 38px
+			width: 100%
+		.active
+			height: 50px
+			line-height: 50px
+.container::after
+	display: block
+	content: ""
+	width: 100%
+	height: 48px
+	border-top: 1px solid #ccc
+	border-bottom: 1px solid #ccc
+	left: 0
+	top: 25px
+	position: absolute
+
 		
