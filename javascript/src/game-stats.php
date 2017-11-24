@@ -7,18 +7,22 @@
   <title>Marten Visser Scanner</title>
   <link href="css/libs.css" rel="stylesheet">
   <script src="js/libs__head.js"></script>
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/TimelineLite.min.js"></script>
 </head>
 <body>
   <div id="loader">
     <img src="loader.png" alt="ball">
   </div>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <?php include 'game-stats__header.php';?>   
+    <script src="js/libs.js"></script>    
     <script src="js/libs__table.js"></script>
-    <script>  
+    <script>   
       $.ajax({
-        url: "main.php",
+        type: "get",
+        url: "game-stats__main.php?id=<?php
+               $label = $_GET[ "id" ];
+               echo $label;
+             ?>",
         cache: true,
         success: function(data){
           $(".mdl-layout--fixed-header").prepend($(data));
