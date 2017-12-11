@@ -1,5 +1,7 @@
 "use string";
 
+$(document).ready(function() {   
+
 var animateElem = $('#frame3');
 var scene = new ScrollMagic.Scene({
     duration: 2000,
@@ -32,3 +34,5 @@ var scene = new ScrollMagic.Scene({
   })
   .setTween(tween)
   .addTo(controller);
+  
+});

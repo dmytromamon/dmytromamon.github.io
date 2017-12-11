@@ -1,5 +1,7 @@
 "use string";
 
+$(document).ready(function() {
+
 var animateElem = $('#frame4');
 var scene = new ScrollMagic.Scene({
     duration: 6500,
@@ -387,3 +389,5 @@ var scene = new ScrollMagic.Scene({
     opacity: 1
   })
   .addTo(controller);
+  
+});

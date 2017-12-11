@@ -1,4 +1,7 @@
 "use string";
+
+$(document).ready(function() {
+  
 var frame = 0;
 var shuffle1 = 0;
 var shuffle2 = 0;
@@ -338,6 +341,7 @@ setInterval(function () {
   }
   if ((height >= 18050 + $(window).height() * 3) && (height < 19050 + $(window).height() * 3)) {
     frame = 22;
+    $('body').css('background', '#00313c')
   }
   if (height >= 19050 + $(window).height() * 3) {
     frame = 23;
@@ -741,7 +745,7 @@ $(document).keydown(function (e) {
   if (frame == 21) {
     if ((e.keyCode == 40) || (e.keyCode == 39)) {
       $("html, body").animate({
-        scrollTop: 18500 + $(window).height() * 3
+        scrollTop: 19000 + $(window).height() * 3
       }, 1000);
       return false;
     }
@@ -755,8 +759,8 @@ $(document).keydown(function (e) {
   if (frame == 22) {
     if ((e.keyCode == 40) || (e.keyCode == 39)) {
       $("html, body").animate({
-        scrollTop: 19050 + $('body').height() - $(window).height()
-      }, 10000);
+        scrollTop: $('body').height() - $('.footer').height() - $(window).height() - 116
+      }, 5000);
       return false;
     }
     if ((e.keyCode == 38) || (e.keyCode == 37)) {
@@ -772,8 +776,8 @@ $(document).keydown(function (e) {
     }
     if ((e.keyCode == 38) || (e.keyCode == 37)) {
       $("html, body").animate({
-        scrollTop: 18500 + $(window).height() * 3
-      }, 500);
+        scrollTop: 19000 + $(window).height() * 3
+      }, 5000);
       return false;
     }
   }
@@ -1014,4 +1018,6 @@ $("#Svg_3").swipe({
       }
     }
   }
+});
+  
 });
