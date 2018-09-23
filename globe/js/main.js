@@ -83,10 +83,6 @@ x1 = -((0.41) * Math.sin(phi)*Math.cos(theta)),
 z1 = ((0.41) * Math.sin(phi)*Math.sin(theta)),
 y1 = ((0.41) * Math.cos(phi));
 
-//alert(x1);
-//alert(y1);
-//alert(z1);
-
 var dotGeometry = new THREE.Geometry();
 dotGeometry.vertices.push(new THREE.Vector3( x1, y1, z1));
 var dotMaterial = new THREE.PointsMaterial( { size: 15, sizeAttenuation: false } );
@@ -148,8 +144,8 @@ function onDocumentTouchStart(event) {
     event.preventDefault();
     mouseXOnMouseDown = event.touches[0].pageX - windowHalfX;
     mouseYOnMouseDown = event.touches[0].pageY - windowHalfY;
-    targetRotationXOnMouseDownX = targetRotationX;
-    targetRotationYOnMouseDownY = targetRotationY;
+    targetRotationXOnMouseDown = targetRotationX;
+    targetRotationYOnMouseDown = targetRotationY;
   }
 }
 
