@@ -154,8 +154,8 @@ function onDocumentTouchMove(event) {
     event.preventDefault();
     mouseX = event.touches[0].pageX - windowHalfX;
     mouseY = event.touches[0].pageY - windowHalfY;
-    targetRotationX = targetRotationOnMouseDown + (mouseX - mouseXOnMouseDown) * 0.05;
-    targetRotationY = targetRotationOnMouseDown + (mouseY - mouseYOnMouseDown) * 0.05;
+    targetRotationX = targetRotationXOnMouseDown + (mouseX - mouseXOnMouseDown) * 0.05;
+    targetRotationY = targetRotationYOnMouseDown + (mouseY - mouseYOnMouseDown) * 0.05;
   }
 }
 
