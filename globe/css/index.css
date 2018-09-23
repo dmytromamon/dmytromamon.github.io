@@ -1,0 +1,24 @@
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.open-box {
+  width: 80vw;
+  position: absolute;
+  top: 100vh;
+  height: 66.6666vh;
+  left: 10vw;
+  padding: 50px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: all ease-out .5s;
+}
+
+.open-box.active {
+  top: 33.3333vh;
+}
