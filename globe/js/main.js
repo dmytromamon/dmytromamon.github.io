@@ -221,14 +221,14 @@ function render() {
       INTERSECTED.material.color.setHex(0xcccccc);
       id = INTERSECTED.id;
       document.addEventListener('click', onHoverMouseDown, false);
-      document.addEventListener('touch', onHoverMouseDown, false);
+      document.addEventListener('touchstart', onHoverMouseDown, false);
     }
   } else {
         $('html,body').css('cursor', 'default');
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
     document.removeEventListener('click', onHoverMouseDown, false);
-    document.removeEventListener('touch', onHoverMouseDown, false);
+    document.removeEventListener('touchstart', onHoverMouseDown, false);
   }
   
   renderer.render(scene, camera);
