@@ -183,8 +183,8 @@ function onDocumentTouchMove(event) {
     event.preventDefault();
     mouseX = event.touches[0].pageX - windowHalfX;
     mouseY = event.touches[0].pageY - windowHalfY;
-    targetRotationX = targetRotationXOnMouseDown + (mouseX - mouseXOnMouseDown) * 0.05;
-    targetRotationY = targetRotationYOnMouseDown + (mouseY - mouseYOnMouseDown) * 0.05;
+    targetRotationX = targetRotationXOnMouseDown + (mouseX - mouseXOnMouseDown) * 0.02;
+    targetRotationY = targetRotationYOnMouseDown + (mouseY - mouseYOnMouseDown) * 0.02;
   }
 }
 
@@ -221,12 +221,14 @@ function render() {
       INTERSECTED.material.color.setHex(0xcccccc);
       id = INTERSECTED.id;
       document.addEventListener('click', onHoverMouseDown, false);
+      document.addEventListener('touch', onHoverMouseDown, false);
     }
   } else {
         $('html,body').css('cursor', 'default');
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
     document.removeEventListener('click', onHoverMouseDown, false);
+    document.removeEventListener('touch', onHoverMouseDown, false);
   }
   
   renderer.render(scene, camera);
