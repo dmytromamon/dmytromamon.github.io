@@ -21,6 +21,10 @@ body {
   transition: all ease-out .5s;
 }
 
+.open-box__inner {
+  height: auto;
+}
+
 .open-box.active {
   top: 50vh;
   left: 10vw;

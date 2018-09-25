@@ -122,6 +122,7 @@ scene.add(sceneall);
 document.addEventListener('mousedown', onDocumentMouseDown, false);
 document.addEventListener('touchstart', onDocumentTouchStart, false);
 document.addEventListener('touchmove', onDocumentTouchMove, false);
+document.addEventListener('touchend', onDocumentTouchEnd, false);
 window.addEventListener('resize', onWindowResize, false);
 
 function onWindowResize() {
@@ -180,8 +181,6 @@ function onDocumentTouchStart(event) {
     targetRotationXOnMouseDown = targetRotationX;
     targetRotationYOnMouseDown = targetRotationY;
   }
-  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 }
 
 function onDocumentTouchMove(event) {
@@ -217,10 +216,10 @@ function animate() {
 function render() {
   raycaster.setFromCamera(mouse, camera);
   var intersects = raycaster.intersectObjects(dots.children);
-  
+
   if (intersects.length > 0) {
     if (INTERSECTED != intersects[0].object) {
-        $('html,body').css('cursor', 'pointer');
+      $('html,body').css('cursor', 'pointer');
       if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
       INTERSECTED = intersects[0].object;
       INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
@@ -232,14 +231,16 @@ function render() {
       $('.title-container').html(name);
     }
   } else {
-        $('html,body').css('cursor', 'default');
+    $('html,body').css('cursor', 'default');
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
     document.removeEventListener('click', onHoverMouseDown, false);
     document.removeEventListener('touchstart', onHoverMouseDown, false);
-      $('.title-container').html('');
+    $('.title-container').html('');
   }
-  
+
+
+
   renderer.render(scene, camera);
 
 
@@ -247,6 +248,39 @@ function render() {
   sceneall.rotation.y = sceneall.rotation.y += (targetRotationX - sceneall.rotation.y) * 0.0125;
   sceneall.rotation.x = sceneall.rotation.x += (targetRotationY - sceneall.rotation.x) * 0.0125;
   renderer.render(scene, camera);
+}
+
+function onDocumentTouchEnd(event) {
+  event.preventDefault();
+
+  mouse.x = (event.changedTouches[0].clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.changedTouches[0].clientY / window.innerHeight) * 2 + 1;
+
+
+  raycaster.setFromCamera(mouse, camera);
+  var intersects = raycaster.intersectObjects(dots.children);
+
+  if (intersects.length > 0) {
+    if (INTERSECTED != intersects[0].object) {
+      $('html,body').css('cursor', 'pointer');
+      if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
+      INTERSECTED = intersects[0].object;
+      INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
+      INTERSECTED.material.color.setHex(0xcccccc);
+      id = INTERSECTED.id;
+      document.addEventListener('click', onHoverMouseDown, false);
+      document.addEventListener('touchstart', onHoverMouseDown, false);
+      var name = cityTitle[id - 9];
+      $('.title-container').html(name);
+    }
+  } else {
+    $('html,body').css('cursor', 'default');
+    if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
+    INTERSECTED = null;
+    document.removeEventListener('click', onHoverMouseDown, false);
+    document.removeEventListener('touchstart', onHoverMouseDown, false);
+    $('.title-container').html('');
+  }
 }
 
 $(document).on('click touchstart', '#globe-container', function () {
