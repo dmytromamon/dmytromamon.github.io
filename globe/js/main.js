@@ -227,6 +227,7 @@ function render() {
       INTERSECTED.material.color.setHex(0xcccccc);
       id = INTERSECTED.id;
       document.addEventListener('click', onHoverMouseDown, false);
+      document.addEventListener('touchstart', onHoverMouseDown, false);
       var name = cityTitle[id - 9];
       $('.title-container').html(name);
     }
@@ -235,6 +236,7 @@ function render() {
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
     document.removeEventListener('click', onHoverMouseDown, false);
+    document.removeEventListener('touchstart', onHoverMouseDown, false);
       $('.title-container').html('');
   }
   
