@@ -48,6 +48,10 @@ body {
   .open-box {
     top: 100vh;
     left: 10vw;
+    height: 80vh;
+  }
+  .open-box.active {
+    top: 10vh;
   }
   .title-container {
     font-size: 72px;
