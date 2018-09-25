@@ -249,7 +249,7 @@ function render() {
   renderer.render(scene, camera);
 }
 
-$(document).on('click', '#globe-container', function () {
+$(document).on('click touchstart', '#globe-container', function () {
   if ($('.active').length > 0)
     $('.open-box').removeClass('active')
   document.addEventListener('mousedown', onDocumentMouseDown, false);
