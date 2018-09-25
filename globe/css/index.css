@@ -10,15 +10,42 @@ body {
 .open-box {
   width: 80vw;
   position: absolute;
-  top: 100vh;
-  height: 66.6666vh;
-  left: 10vw;
+  top: 50vh;
+  height: 50vh;
+  left: 100vw;
   padding: 50px;
-  background: #fff;
+  overflow: auto;
+  background: rgba(227, 242, 253, 0.9);
+  box-shadow: 0px 0px 50px rgba(255,255,255,0.5);
   box-sizing: border-box;
   transition: all ease-out .5s;
 }
 
 .open-box.active {
-  top: 33.3333vh;
+  top: 50vh;
+  left: 10vw;
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  font-size: 128px;
+  color: #fff;
+  opacity: 0.25;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .open-box {
+    top: 100vh;
+    left: 10vw;
+  }
+  .title-container {
+    font-size: 72px;
+    width: 100vw;
+  }
 }

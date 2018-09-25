@@ -12,7 +12,8 @@ var WIDTH = window.innerWidth,
 var raycaster;
 var mouse = new THREE.Vector2(),
   INTERSECTED,
-  ids;
+  ids,
+  cityTitle;
 
 var targetRotationX = 0;
 var targetRotationY = 0;
@@ -48,7 +49,9 @@ function init() {
   var lat = [48.859175, 40.716599]
   var lon = [2.349131, -73.995440]
   var city = ["paris", "ny"]
-  ids = [];
+  var cityName = ["Paris", "New York"]
+  ids = []
+  cityTitle = []
 
   for (var i = 0; i < lat.length; i++) {
     var phi = (90 - lat[i]) * (Math.PI / 180),
@@ -67,6 +70,7 @@ function init() {
     mesh.position.z = z1;
     dots.add(mesh);
     ids.push(city[i]);
+    cityTitle.push(cityName[i]);
   }
 
   // add manual point ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -176,6 +180,8 @@ function onDocumentTouchStart(event) {
     targetRotationXOnMouseDown = targetRotationX;
     targetRotationYOnMouseDown = targetRotationY;
   }
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 }
 
 function onDocumentTouchMove(event) {
@@ -221,14 +227,15 @@ function render() {
       INTERSECTED.material.color.setHex(0xcccccc);
       id = INTERSECTED.id;
       document.addEventListener('click', onHoverMouseDown, false);
-      document.addEventListener('touchstart', onHoverMouseDown, false);
+      var name = cityTitle[id - 9];
+      $('.title-container').html(name);
     }
   } else {
         $('html,body').css('cursor', 'default');
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
     document.removeEventListener('click', onHoverMouseDown, false);
-    document.removeEventListener('touchstart', onHoverMouseDown, false);
+      $('.title-container').html('');
   }
   
   renderer.render(scene, camera);
