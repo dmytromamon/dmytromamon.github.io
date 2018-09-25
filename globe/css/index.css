@@ -6,6 +6,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0; 
+  background: -webkit-radial-gradient(#bbdefb, #1976d2); 
   background: radial-gradient(#bbdefb, #1976d2);
 }
 
@@ -20,6 +21,7 @@ body {
   background: rgba(227, 242, 253, 0.9);
   box-shadow: 0px 0px 50px rgba(255,255,255,0.5);
   box-sizing: border-box;
+  -webkit-transition: all ease-out .5s;
   transition: all ease-out .5s;
   z-index: 99;
 }
@@ -41,7 +43,8 @@ body {
   font-size: 128px;
   color: #fff;
   opacity: 0.25;
-  transform: translate(-50%, -120%);
+  -webkit-transform: translate(-50%, -120%);
+          transform: translate(-50%, -120%);
   text-transform: uppercase;
   text-align: center;
 }
