@@ -268,8 +268,14 @@ function onDocumentTouchEnd(event) {
       INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
       INTERSECTED.material.color.setHex(0xcccccc);
       id = INTERSECTED.id;
-      document.addEventListener('click', onHoverMouseDown, false);
-      document.addEventListener('touchend', onHoverMouseDown, false);
+      var city = ids[id - 9]
+      setTimeout(function () {
+        $('#' + city).addClass('active');
+        document.removeEventListener('mousedown', onDocumentMouseDown, false);
+        document.removeEventListener('touchstart', onDocumentTouchStart, false);
+        document.removeEventListener('touchmove', onDocumentTouchMove, false);
+        window.removeEventListener('resize', onWindowResize, false);
+      }, 100)
       var name = cityTitle[id - 9];
       $('.title-container').html(name);
     }
@@ -277,8 +283,6 @@ function onDocumentTouchEnd(event) {
     $('html,body').css('cursor', 'default');
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
-    document.removeEventListener('click', onHoverMouseDown, false);
-    document.removeEventListener('touchend', onHoverMouseDown, false);
     $('.title-container').html('');
   }
 }
