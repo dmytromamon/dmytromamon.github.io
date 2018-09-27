@@ -13,7 +13,10 @@ var raycaster;
 var mouse = new THREE.Vector2(),
   INTERSECTED,
   ids,
-  cityTitle;
+  cityTitle,
+  cityh6,
+  citytitles,
+  cityp;
 
 var targetRotationX = 0;
 var targetRotationY = 0;
@@ -50,15 +53,21 @@ function init() {
   var lon = [2.349131, -73.995440]
   var city = ["paris", "ny"]
   var cityName = ["Paris", "New York"]
+  var cityH6 = ["Paris", "ny"]
+  var cityTITLE = ["City", "New York"]
+  var cityParagraph = ["Hey there, it is Paris, France", "ny"]
   ids = []
   cityTitle = []
+  cityh6 = []
+  citytitles = []
+  cityp = []
 
   for (var i = 0; i < lat.length; i++) {
     var phi = (90 - lat[i]) * (Math.PI / 180),
       theta = (lon[i] + 180) * (Math.PI / 180),
-      x1 = -((0.41) * Math.sin(phi) * Math.cos(theta)),
-      z1 = ((0.41) * Math.sin(phi) * Math.sin(theta)),
-      y1 = ((0.41) * Math.cos(phi));
+      x1 = -((0.56) * Math.sin(phi) * Math.cos(theta)),
+      z1 = ((0.56) * Math.sin(phi) * Math.sin(theta)),
+      y1 = ((0.56) * Math.cos(phi));
 
     var geometry = new THREE.SphereBufferGeometry(0.01, 32, 32);
     var material = new THREE.MeshBasicMaterial({
@@ -71,6 +80,9 @@ function init() {
     dots.add(mesh);
     ids.push(city[i]);
     cityTitle.push(cityName[i]);
+    cityh6.push(cityH6[i]);
+    citytitles.push(cityTITLE[i]);
+    cityp.push(cityParagraph[i]);
   }
 
   // add manual point ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -195,22 +207,50 @@ function onDocumentTouchMove(event) {
 
 render();
 
-function onHoverMouseDown() {
-  var city = ids[id - 9]
-  setTimeout(function () {
-    $('#' + city).addClass('active');
-    document.removeEventListener('mousedown', onDocumentMouseDown, false);
-    document.removeEventListener('touchstart', onDocumentTouchStart, false);
-    document.removeEventListener('touchmove', onDocumentTouchMove, false);
-    window.removeEventListener('resize', onWindowResize, false);
-  }, 100)
-}
+
 
 function animate() {
-  scene1.rotation.y += 0.0005;
-  scene2.rotation.y += 0.0008;
   requestAnimationFrame(animate);
   render();
+
+  raycaster.setFromCamera(mouse, camera);
+  var intersects = raycaster.intersectObjects(dots.children);
+
+  if (intersects.length > 0) {
+    if (INTERSECTED != intersects[0].object) {
+      $('html,body').css('cursor', 'pointer');
+      if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
+      INTERSECTED = intersects[0].object;
+      INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
+      INTERSECTED.material.color.setHex(0xcccccc);
+      id = INTERSECTED.id;
+      document.addEventListener('click', onHoverMouseDown, false);
+      document.addEventListener('touchstart', onHoverMouseDown, false);
+    }
+  } else {
+    $('html,body').css('cursor', 'default');
+    if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
+    INTERSECTED = null;
+    document.removeEventListener('click', onHoverMouseDown, false);
+    document.removeEventListener('touchstart', onHoverMouseDown, false);
+      
+      scene1.rotation.y += 0.0005;
+      scene2.rotation.y += 0.0008;
+  }
+  
+  function onHoverMouseDown() {
+    var city = ids[id - 9]
+    setTimeout(function () {
+      $('#' + city).addClass('active');
+      document.removeEventListener('mousedown', onDocumentMouseDown, false);
+      document.removeEventListener('touchstart', onDocumentTouchStart, false);
+      document.removeEventListener('touchmove', onDocumentTouchMove, false);
+      window.removeEventListener('resize', onWindowResize, false);
+    }, 100)
+
+    scene1.rotation.y += 0.0005;
+    scene2.rotation.y += 0.0008;
+  }
 }
 
 function render() {
@@ -225,28 +265,33 @@ function render() {
       INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
       INTERSECTED.material.color.setHex(0xcccccc);
       id = INTERSECTED.id;
-      document.addEventListener('click', onHoverMouseDown, false);
-      document.addEventListener('touchstart', onHoverMouseDown, false);
       var name = cityTitle[id - 9];
+      var h6 = cityh6[id - 9];
+      var title = citytitles[id - 9];
+      var p = cityp[id - 9];
       $('.title-container').html(name);
+      $('.city-text h4').html(h6);
+      $('.city-text .title').html(title);
+      $('.city-text p').html(p);
+      $('.help-text').css('display', 'none');
+      
+      scene1.rotation.y += 0;
+      scene2.rotation.y += 0.0003;
     }
   } else {
     $('html,body').css('cursor', 'default');
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
-    document.removeEventListener('click', onHoverMouseDown, false);
-    document.removeEventListener('touchstart', onHoverMouseDown, false);
     $('.title-container').html('');
+    $('.city-text h4').html('');
+    $('.city-text .title').html('');
+    $('.city-text p').html('');
+    $('.help-text').css('display', 'block');
+    
+    sceneall.rotation.y = sceneall.rotation.y += (targetRotationX - sceneall.rotation.y) * 0.0125;
+    sceneall.rotation.x = sceneall.rotation.x += (targetRotationY - sceneall.rotation.x) * 0.0125;
   }
 
-
-
-  renderer.render(scene, camera);
-
-
-
-  sceneall.rotation.y = sceneall.rotation.y += (targetRotationX - sceneall.rotation.y) * 0.0125;
-  sceneall.rotation.x = sceneall.rotation.x += (targetRotationY - sceneall.rotation.x) * 0.0125;
   renderer.render(scene, camera);
 }
 
@@ -287,7 +332,7 @@ function onDocumentTouchEnd(event) {
   }
 }
 
-$(document).on('click touchstart', '#globe-container', function () {
+$(document).on('click touchstart', '#globe-container, .modal__close', function () {
   if ($('.active').length > 0)
     $('.open-box').removeClass('active')
   document.addEventListener('mousedown', onDocumentMouseDown, false);
