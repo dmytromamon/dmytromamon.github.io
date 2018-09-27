@@ -208,6 +208,20 @@ function onDocumentTouchMove(event) {
 render();
 
 
+function onHoverMouseDown() {
+  var city = ids[id - 9]
+  setTimeout(function () {
+    $('#' + city).addClass('active');
+    document.removeEventListener('mousedown', onDocumentMouseDown, false);
+    document.removeEventListener('touchstart', onDocumentTouchStart, false);
+    document.removeEventListener('touchmove', onDocumentTouchMove, false);
+    window.removeEventListener('resize', onWindowResize, false);
+  }, 100)
+
+  scene1.rotation.y += 0.0005;
+  scene2.rotation.y += 0.0008;
+}
+
 
 function animate() {
   requestAnimationFrame(animate);
@@ -224,29 +238,11 @@ function animate() {
       INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
       INTERSECTED.material.color.setHex(0xcccccc);
       id = INTERSECTED.id;
-      document.addEventListener('click', onHoverMouseDown, false);
-      document.addEventListener('touchstart', onHoverMouseDown, false);
     }
   } else {
     $('html,body').css('cursor', 'default');
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
-    document.removeEventListener('click', onHoverMouseDown, false);
-    document.removeEventListener('touchstart', onHoverMouseDown, false);
-      
-      scene1.rotation.y += 0.0005;
-      scene2.rotation.y += 0.0008;
-  }
-  
-  function onHoverMouseDown() {
-    var city = ids[id - 9]
-    setTimeout(function () {
-      $('#' + city).addClass('active');
-      document.removeEventListener('mousedown', onDocumentMouseDown, false);
-      document.removeEventListener('touchstart', onDocumentTouchStart, false);
-      document.removeEventListener('touchmove', onDocumentTouchMove, false);
-      window.removeEventListener('resize', onWindowResize, false);
-    }, 100)
 
     scene1.rotation.y += 0.0005;
     scene2.rotation.y += 0.0008;
@@ -265,6 +261,8 @@ function render() {
       INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
       INTERSECTED.material.color.setHex(0xcccccc);
       id = INTERSECTED.id;
+      document.addEventListener('click', onHoverMouseDown, false);
+      document.addEventListener('touchstart', onHoverMouseDown, false);
       var name = cityTitle[id - 9];
       var h6 = cityh6[id - 9];
       var title = citytitles[id - 9];
@@ -274,7 +272,7 @@ function render() {
       $('.city-text .title').html(title);
       $('.city-text p').html(p);
       $('.help-text').css('display', 'none');
-      
+
       scene1.rotation.y += 0;
       scene2.rotation.y += 0.0003;
     }
@@ -282,12 +280,14 @@ function render() {
     $('html,body').css('cursor', 'default');
     if (INTERSECTED) INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
+    document.removeEventListener('click', onHoverMouseDown, false);
+    document.removeEventListener('touchstart', onHoverMouseDown, false);
     $('.title-container').html('');
     $('.city-text h4').html('');
     $('.city-text .title').html('');
     $('.city-text p').html('');
     $('.help-text').css('display', 'block');
-    
+
     sceneall.rotation.y = sceneall.rotation.y += (targetRotationX - sceneall.rotation.y) * 0.0125;
     sceneall.rotation.x = sceneall.rotation.x += (targetRotationY - sceneall.rotation.x) * 0.0125;
   }
