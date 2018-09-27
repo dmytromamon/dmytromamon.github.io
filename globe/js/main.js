@@ -39,7 +39,7 @@ function init() {
   sceneall = new THREE.Scene();
   dots = new THREE.Scene();
 
-  camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 10000);
+  camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.001, 10000);
   camera.position.z = 2.5;
 
   scene.add(camera);
@@ -97,7 +97,7 @@ var mearth = new THREE.TextureLoader().load('img/1.1.jpg');
 var bearth = new THREE.TextureLoader().load('img/2.1.jpg');
 var cearth = new THREE.TextureLoader().load('img/3.1.jpg');
 
-var geo1 = new THREE.SphereGeometry(0.5, 32, 32);
+var geo1 = new THREE.SphereGeometry(0.55, 32, 32);
 var mat1 = new THREE.MeshPhongMaterial({
   map: mearth,
   bumpMap: bearth,
@@ -106,7 +106,7 @@ var mat1 = new THREE.MeshPhongMaterial({
 var earth = new THREE.Mesh(geo1, mat1);
 scene1.add(earth);
 
-var geo2 = new THREE.SphereGeometry(0.51, 32, 32);
+var geo2 = new THREE.SphereGeometry(0.56, 32, 32);
 var mat2 = new THREE.MeshPhongMaterial({
   alphaMap: cearth,
   transparent: true
