@@ -40,7 +40,7 @@ function init() {
   dots = new THREE.Scene();
 
   camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.001, 10000);
-  camera.position.z = 2.5;
+  camera.position.z = 1.5;
 
   scene.add(camera);
 
