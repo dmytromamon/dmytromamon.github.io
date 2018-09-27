@@ -41,7 +41,7 @@ function init() {
 
   camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 1, 1000);
   
-  camera.position.z = 1;
+  camera.position.z = 1.25;
 
   scene.add(camera);
 
