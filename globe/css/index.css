@@ -47,15 +47,6 @@ body {
 }
 
 @media (max-width: 992px) {
-  .open-box {
-    top: 100vh;
-    left: 10vw;
-    height: 80vh;
-    padding: 35px 15px;
-  }
-  .open-box.active {
-    top: 20vh;
-  }
   .title-container {
     font-size: 72px;
     width: 100vw;
