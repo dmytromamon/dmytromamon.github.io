@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  min-height: 300vh;
+}
+
 .nav {
   width: 100vw;
   height: 83px;
