@@ -17,8 +17,8 @@ $header-font: "MontserratAlternates", sans-serif
   padding: 0
   box-sizing: border-box
 
-body
-  background: #fff
+input[type=text], input[type=submit], textarea
+  -webkit-appearance: none
   
 // *************************************************
 
@@ -30,6 +30,7 @@ body
   font-weight: 400
   font-style: normal
   font-size: 14px
+  -webkit-text-size-adjust: none
   
 h1, h2, h3, h4, h5, h6
   font-family: $header-font
@@ -39,6 +40,11 @@ h1, h2, h3, h4, h5, h6
   
 p
   margin-bottom: 10px
+  
+// додай цей стиль всюди, де може бути прокрутка всередині блока (меню, таблиця)
+.ov-scroll 
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
   
 // *************************************************
 

@@ -234,14 +234,15 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  background: #fff; }
+input[type=text], input[type=submit], textarea {
+  -webkit-appearance: none; }
 
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px; }
+  font-size: 14px;
+  -webkit-text-size-adjust: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "MontserratAlternates", sans-serif;
@@ -251,6 +252,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-bottom: 10px; }
+
+.ov-scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
 
 @media (max-width: 1199.98px) {
   body {
