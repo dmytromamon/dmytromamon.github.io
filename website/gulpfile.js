@@ -13,7 +13,8 @@ const gulp = require('gulp'),
       concat = require('gulp-concat'),
       runSequence = require('run-sequence'),
       cleanCSS = require('gulp-clean-css'),
-      rename = require("gulp-rename");
+      rename = require("gulp-rename"),
+      reload = browserSync.reload;
 
 gulp.task('browser-sync', function() {
     browserSync({
@@ -22,6 +23,14 @@ gulp.task('browser-sync', function() {
         },
         notify: false
     });
+  
+    gulp.watch("*.html").on("change", reload);
+    gulp.watch("app/css/**/*.css").on("change", reload);
+    gulp.watch("app/*.html").on("change", reload);
+    gulp.watch("app/js/**/*.js").on("change", reload);
+    gulp.watch("app/libs/**/*.js").on("change", reload);
+    gulp.watch("app/img/**/*.+(png|jpg|jpeg|gif|svg)").on("change", reload);
+    gulp.watch("app/fonts/**/*.+(otf|ttf|svg|eot|woff|woff2)").on("change", reload);
 });
 
 gulp.task('sass', function() {
@@ -124,11 +133,4 @@ gulp.task('watch', ['sass', 'autoprefixer', 'fonts', 'useref', 'images', 'script
   gulp.watch('src/libs/**/*.js', ['libs']);
   gulp.watch('src/img/**/*.+(png|jpg|jpeg|gif|svg)', ['images']);
   gulp.watch('src/fonts/**/*.+(otf|ttf|svg|eot|woff|woff2)', ['fonts']);
-  gulp.watch('src/sass/**/*.sass', browserSync.reload);
-  gulp.watch('src/css/**/*.css', browserSync.reload);
-  gulp.watch('src/*.html', browserSync.reload);
-  gulp.watch('src/js/**/*.js', browserSync.reload);
-  gulp.watch('src/libs/**/*.js', browserSync.reload);
-  gulp.watch('src/img/**/*.+(png|jpg|jpeg|gif|svg)', browserSync.reload);
-  gulp.watch('src/fonts/**/*.+(otf|ttf|svg|eot|woff|woff2)', browserSync.reload);
 })
