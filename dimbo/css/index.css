@@ -5,12 +5,11 @@
 }
 
 body {
-  padding: 12px;
   background: #007AFF;
 }
 
 .head {
-  height: 634.33px;
+  height: 100vh;
   background: #89BEF8;
   padding: 12px;
   padding-left: max(12px, env(safe-area-inset-left));
