@@ -4,6 +4,7 @@ $(document).ready(function () {
   var pageId = $('.wrapper').attr('data-page');
 
   if (pageId == 'three') {
+    $('#pageId').html('You are at ' + pageId + ' page!');
 
     var WIDTH = window.innerWidth - 24,
       HEIGHT = window.innerHeight - 24,
