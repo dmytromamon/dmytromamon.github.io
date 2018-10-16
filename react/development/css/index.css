@@ -334,11 +334,10 @@ p {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
 
-.greeting {
-  color: green; }
-
-.stranger {
-  color: red; }
+.skillName {
+  position: relative;
+  display: inline-block;
+  color: #2266ff; }
 
 @media (max-width: 1199.98px) {
   body {
