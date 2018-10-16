@@ -38,9 +38,15 @@ class NameForm extends React.Component {
     }
     
     const element = (
-      <h1>
-        Hello, {getName(name)}!
-      </h1>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 offset-md-2">
+            <h1>
+              Hello, {getName(name)}!
+            </h1>
+          </div>
+        </div>
+      </div>
     )
     
     ReactDOM.render(
@@ -52,13 +58,19 @@ class NameForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 offset-md-2">
+            <form onSubmit={this.handleSubmit}>
+              <label>
+                Name:
+                <input type="text" value={this.state.value} onChange={this.handleChange} />
+              </label>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
     );
   }
 }
