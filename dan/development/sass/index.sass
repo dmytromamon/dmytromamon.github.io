@@ -5,8 +5,7 @@
 // *************************************************
 // змінні
 
-$main-font: "Montserrat", sans-serif
-$header-font: "MontserratAlternates", sans-serif
+$main-font: "GothamLight", sans-serif
   
 // *************************************************
 
@@ -36,7 +35,6 @@ body
   -webkit-text-size-adjust: none
   
 h1, h2, h3, h4, h5, h6
-  font-family: $header-font
   font-style: normal
   margin-bottom: 10px
   
@@ -48,9 +46,59 @@ p
   overflow-y: auto
   -webkit-overflow-scrolling: touch
   
-.menu
-  position: relative
+.head
+  background-image: url(../img/home-image-blue-overlay.jpg)
+  background-size: cover!important
+  background-position: center!important
+  background-repeat: no-repeat!important
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 100vh
+  cursor: pointer
+  overflow: hidden
+  .head__logo
+    margin: 165px 0
+.head__action
+  margin: 52px auto
+  background: #08091e
+  opacity: .9
+  text-align: center
+  box-shadow: 0px 0px 18px rgba(0,0,0,.35)
+  max-width: 684px
+  color: #fff
+  padding: 50px 65px
+  font-family: $main-font
+  font-weight: 300
+  font-size: 37.79px
+  text-transform: uppercase
+.head__footer-logo
+  margin: 55px 0
   
+.header
+  background: #08091e
+  height: 89px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  background-size: cover!important
+  background-position: center!important
+  background-repeat: no-repeat!important
+  .head__logo
+    height: 49px
+    margin: 20px
+  button
+    border: 0
+    background: #002353
+    width: 96px
+    height: 89px
+    vertical-align: top
+    text-align: center
+    cursor: pointer
+    
+.head__logo, .header button, .head__action, .head__footer-logo
+  position: relative
+    
 // *************************************************
 
 // *************************************************
@@ -91,7 +139,3 @@ p
     
 .wrapper
   position: relative
-  overflow-x: hidden
-  padding: 12px
-  padding-left: m#{a}x(12px, env(safe-area-inset-left))
-  padding-right: m#{a}x(12px, env(safe-area-inset-left))

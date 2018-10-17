@@ -20,7 +20,8 @@ const gulp = require('gulp'),
   babelify = require('babelify'),
   gutil = require('gutil'),
   source = require('vinyl-source-stream'),
-  reload = browserSync.reload;
+  reload = browserSync.reload,
+  glob = require('glob');
 
 gulp.task('browser-sync', function () {
   browserSync({
@@ -124,14 +125,10 @@ gulp.task('build', function (callback) {
 })
 
 gulp.task('script', () => {
-//  gulp.src('development/js/**/*.js')
-//  .pipe(sourcemaps.init())
-//  .pipe(babel())
-//  .pipe(concat('app.min.js'))
-//  .pipe(gulp.dest('production/js'))
+  var entry = glob.sync('development/js/*.js');
           
-        browserify({
-            entries: 'development/js/index.js',
+        return browserify({
+            entries: entry,
             extensions: ['.jsx'],
             debug: true
         })
