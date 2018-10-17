@@ -19,7 +19,7 @@ function handleBackButton() {
   tl.to($('.header'), .3, {
     ease: Power3.easeOut,
     height: '100vh',
-    background: 'url(../img/home-image-blue-overlay.jpg)'
+    background: 'url(img/home-image-blue-overlay.jpg)'
   }, 0)
   .to($('.head__logo'), .3, {
     ease: Power3.easeOut,
