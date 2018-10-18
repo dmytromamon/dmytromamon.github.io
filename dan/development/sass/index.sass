@@ -1,11 +1,11 @@
 @import 'fonts';
-@import 'grid';
-@import 'scales';
 
 // *************************************************
 // змінні
 
 $main-font: "GothamLight", sans-serif
+$nav-font: "BebasNeueRegular", sans-serif
+$text-font: "AzoSans", sans-serif
   
 // *************************************************
 
@@ -29,17 +29,22 @@ html
   font-size: 14px
 
 body
-  font-family: $main-font
+  font-family: $text-font
   font-weight: 400
   font-style: normal
   -webkit-text-size-adjust: none
+  color: #08091e
   
 h1, h2, h3, h4, h5, h6
+  font-family: $text-font
   font-style: normal
   margin-bottom: 10px
   
 p
   margin-bottom: 10px
+  
+a
+  cursor: pointer
   
 // додай цей стиль всюди, де може бути прокрутка всередині блока (меню, таблиця)
 .ov-scroll 
@@ -47,20 +52,30 @@ p
   -webkit-overflow-scrolling: touch
   
 .head
-  background-image: url(../img/home-image-blue-overlay.jpg)
-  background-size: cover!important
-  background-position: center!important
-  background-repeat: no-repeat!important
   display: flex
   flex-direction: column
-  justify-content: space-between
+  justify-content: space-around
+  width: 100vw
   height: 100vh
   cursor: pointer
   overflow: hidden
+  position: relative
+  background: #08091e
   .head__logo
-    margin: 165px 0
+    z-index: 2
+  .head__bg
+    background-image: url(../img/home-image-blue-overlay.jpg)
+    background-size: cover!important
+    background-position: center!important
+    background-repeat: no-repeat!important
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    
 .head__action
-  margin: 52px auto
+  margin: 0 auto
   background: #08091e
   opacity: .9
   text-align: center
@@ -72,8 +87,9 @@ p
   font-weight: 300
   font-size: 37.79px
   text-transform: uppercase
+  z-index: 2
 .head__footer-logo
-  margin: 55px 0
+  z-index: 2
   
 .header
   background: #08091e
@@ -98,6 +114,110 @@ p
     
 .head__logo, .header button, .head__action, .head__footer-logo
   position: relative
+  
+
+  
+.navigation
+  width: 100vw
+  height: calc(100vh - 89px)
+  transition: all ease .3s
+  position: fixed
+  bottom: 0
+  z-index: -1
+  ul
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    height: 100%
+    margin: 0 10px
+  li
+    width: 20%
+    margin: 20px 10px
+    height: calc(100% - 40px)
+    position: relative
+    list-style: none
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+    span
+      color: #fff
+      font-family: $nav-font
+      font-size: 36.17px
+      text-transform: uppercase
+      display: block
+      text-align: center
+      width: 100%
+      position: absolute
+      z-index: 2
+      bottom: 20px
+  
+.navigation__bg
+  background: linear-gradient(to top, rgba(8,9,30,1), rgba(8,9,30,0))
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  transition: all ease .5s
+  
+.navigation__bg:hover
+  background: linear-gradient(to top, rgba(8,9,30,1), rgba(8,9,30,.25))
+      
+.navigation.collapsed
+  height: 111px
+  li
+    span
+      bottom: 14px
+  .navigation__bg
+    background: rgba(8,9,30,1)
+  li.active
+    .navigation__bg
+      background: #002353
+      
+      
+      
+#interiors
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  height: calc(100vh - 200px)
+  background: #fff
+  display: none
+  position: relative
+  img
+    height: 590px
+    margin: auto 0
+  a
+    width: 370px
+    background: #002353
+    font-size: 24px
+    font-weight: 700
+    line-height: 70px
+    text-transform: uppercase
+    text-decoration: none
+    text-align: center
+    color: #fff
+  
+.interiors__inner
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: 0 110px
+  height: 590px
+  margin: auto 0
+  
+h1
+  font-size: 36px
+  font-weight: 700
+  text-transform: uppercase
+  
+p
+  font-size: 28px
+  font-weight: 400
+  b
+    font-weight: 700
     
 // *************************************************
 

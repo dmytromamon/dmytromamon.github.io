@@ -16,37 +16,55 @@ function handleBackButton() {
   
   var tl = new TimelineMax();
   
-  tl.to($('.header'), .3, {
+  tl.to($('.header'), .5, {
     ease: Power3.easeOut,
-    height: '100vh',
-    background: 'url(img/home-image-blue-overlay.jpg)'
+    height: '100vh'
   }, 0)
-  .to($('.head__logo'), .3, {
+  .to($('.head__logo'), .5, {
     ease: Power3.easeOut,
     opacity: 0,
     top: -100
   }, 0)
-  .to($('.header button'), .3, {
+  .to($('.header button'), .5, {
     ease: Power3.easeOut,
     opacity: 0
   }, 0)
-  .to($('.head__logo'), .3, {
-    ease: Power3.easeOut,
-    opacity: 1,
-    top: 0
-  }, .3)
-  .from($('.head__action'), .3, {
-    ease: Power3.easeOut,
-    opacity: 0,
-    top: -100
-  }, .3)
 
   setTimeout(function(){
     ReactDOM.render(
       headContent(headStatus),
       document.getElementById('head')
     )
-  }, 300)
+    
+    var tl = new TimelineMax();
+    
+    tl.to($('.head__bg'), .5, {
+      ease: Power3.easeOut,
+      opacity: 1
+    }, 0)
+    .fromTo($('.head__bg'), .5, {
+      ease: Power3.easeOut,
+      opacity: 0
+    }, {
+      ease: Power3.easeOut,
+      opacity: 1
+    }, 0)
+    .from($('.head__logo'), .5, {
+      ease: Power3.easeOut,
+      opacity: 0,
+      top: -100
+    }, 0)
+    .from($('.head__action'), .5, {
+      ease: Power3.easeOut,
+      opacity: 0,
+      top: -100
+    }, 0)
+    .from($('.head__footer-logo'), .5, {
+      ease: Power3.easeOut,
+      opacity: 0,
+      top: -100
+    }, 0)
+  }, 500)
 }
 
 $(document).on('click', '.head', function(){
@@ -54,47 +72,70 @@ $(document).on('click', '.head', function(){
   
   var tl = new TimelineMax();
   
-  tl.to($('.head'), .3, {
+  tl.to($('.head'), .5, {
     ease: Power3.easeOut,
-    height: 89,
-    background: '#08091e'
+    height: 89
   }, 0)
-  .set($('.head'), {
-    ease: Power3.easeOut,
-    background: ''
-  }, .301)
-  .to($('.head__logo'), .3, {
-    ease: Power3.easeOut,
-    opacity: 0,
-    top: -100
-  }, 0)
-  .to($('.head__logo'), .3, {
-    ease: Power3.easeOut,
-    opacity: 1,
-    top: 0
-  }, .301)
-  .from($('.header button'), .5, {
+  .to($('.head__bg'), .5, {
     ease: Power3.easeOut,
     opacity: 0
-  }, .301)
-  .from($('.head__action'), .3, {
+  }, 0)
+  .to($('.head__logo'), .5, {
     ease: Power3.easeOut,
     opacity: 0,
     top: -100
-  }, .3)
-
+  }, 0)
+  .to($('.head__logo'), .5, {
+    ease: Power3.easeOut,
+    opacity: 0,
+    top: -100
+  }, 0)
+  .staggerFrom($('.navigation li'), .5, {
+    ease: Power3.easeOut,
+    opacity: 0,
+    top: -20
+  }, 0.025)
+  .to($('.head__footer-logo'), .25, {
+    ease: Power3.easeOut,
+    opacity: 0,
+    top: -100
+  }, 0)
+  .to($('.head__action'), .25, {
+    ease: Power3.easeOut,
+    opacity: 0,
+    top: -100
+  }, 0)
+  
   setTimeout(function(){
     ReactDOM.render(
       headContent(headStatus),
       document.getElementById('head')
     )
-  }, 300)
+    
+    var tl = new TimelineMax();
+    
+    tl.from($('.head__logo'), .5, {
+      ease: Power3.easeOut,
+      opacity: 0,
+      top: -100
+    }, 0)
+    .from($('.header button'), .5, {
+      ease: Power3.easeOut,
+      opacity: 0
+    }, 0)
+    .from($('.head__action'), .5, {
+      ease: Power3.easeOut,
+      opacity: 0,
+      top: -100
+    }, 0)
+  }, 500)
 })
 
 function headContent(headStatus) {
   if (headStatus == 'head') {
     return (
       <div className="head">
+        <div className="head__bg"></div>
         <img className="head__logo" src="img/shaughnessy-logo.svg"></img>
         <div className="head__action">Touch anywhere on the screen to begin</div>
         <img className="head__footer-logo" src="img/alabaster-homes.svg"></img>
