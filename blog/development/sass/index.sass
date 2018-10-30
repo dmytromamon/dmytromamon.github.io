@@ -1,0 +1,90 @@
+@import 'fonts';
+@import 'grid';
+@import 'scales';
+
+// *************************************************
+// змінні
+
+$main-font: "Montserrat", sans-serif
+$header-font: "MontserratAlternates", sans-serif
+  
+// *************************************************
+
+// *************************************************
+// очищення
+
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+input[type=text], input[type=submit], textarea
+  -webkit-appearance: none
+  
+// *************************************************
+
+// *************************************************
+// основні стилі
+
+html
+  font-size: 14px
+
+body
+  font-family: $main-font
+  font-weight: 400
+  font-style: normal
+  -webkit-text-size-adjust: none
+  
+h1, h2, h3, h4, h5, h6
+  font-family: $header-font
+  font-style: normal
+  
+// додай цей стиль всюди, де може бути прокрутка всередині блока (меню, таблиця)
+.ov-scroll 
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+  
+// *************************************************
+
+// *************************************************
+// Mac («декстопи», < 1200px)
+
+@media (max-width: 1199.98px)
+  body
+    background: #eee
+  
+// *************************************************
+
+// *************************************************
+// iPad Pro («планшети», < 992px) 
+
+@media (max-width: 991.98px)
+  body
+    background: #ddd
+  
+// *************************************************
+
+// *************************************************
+// iPad («ландшафні», < 768px)
+
+@media (max-width: 767.98px)
+  body
+    background: #ccc
+  
+// *************************************************
+  
+// *************************************************
+// iPhone («телефони», < 576px)
+
+@media (max-width: 575.98px)
+  body
+    background: #bbb
+  
+// *************************************************
+    
+.wrapper > div > *
+  position: relative
+  overflow-x: hidden
+  padding: 12px
+  padding-left: m#{a}x(12px, env(safe-area-inset-left))
+  padding-right: m#{a}x(12px, env(safe-area-inset-left))

@@ -3,8 +3,6 @@
 // *************************************************
 // змінні
 
-$main-font: "GothamLight", sans-serif
-$nav-font: "BebasNeueRegular", sans-serif
 $text-font: "AzoSans", sans-serif
   
 // *************************************************
@@ -48,7 +46,7 @@ a
   
 // додай цей стиль всюди, де може бути прокрутка всередині блока (меню, таблиця)
 .ov-scroll 
-  overflow-y: auto
+  overflow-x: auto
   -webkit-overflow-scrolling: touch
   
 .head
@@ -63,6 +61,7 @@ a
   background: #08091e
   .head__logo
     z-index: 2
+    object-fit: contain
   .head__bg
     background-image: url(../img/home-image-blue-overlay.jpg)
     background-size: cover!important
@@ -83,13 +82,14 @@ a
   max-width: 684px
   color: #fff
   padding: 50px 65px
-  font-family: $main-font
-  font-weight: 300
+  font-family: $text-font
+  font-weight: 700
   font-size: 37.79px
   text-transform: uppercase
   z-index: 2
 .head__footer-logo
   z-index: 2
+  object-fit: contain
   
 .header
   background: #08091e
@@ -103,6 +103,7 @@ a
   .head__logo
     height: 49px
     margin: 20px
+    object-fit: contain
   button
     border: 0
     background: #002353
@@ -111,6 +112,7 @@ a
     vertical-align: top
     text-align: center
     cursor: pointer
+    object-fit: contain
     
 .head__logo, .header button, .head__action, .head__footer-logo
   position: relative
@@ -143,8 +145,9 @@ a
       object-position: center
     span
       color: #fff
-      font-family: $nav-font
-      font-size: 36.17px
+      font-family: $text-font
+      font-size: 26px
+      font-weight: 700
       text-transform: uppercase
       display: block
       text-align: center
@@ -178,7 +181,7 @@ a
       
       
       
-#interiors
+#interiors, #floorplans, #neighbourhood
   display: flex
   flex-direction: row
   justify-content: flex-start
@@ -191,7 +194,7 @@ a
     margin: auto 0
   a
     width: 370px
-    background: #002353
+    background: #08091e
     font-size: 24px
     font-weight: 700
     line-height: 70px
@@ -199,8 +202,24 @@ a
     text-decoration: none
     text-align: center
     color: #fff
+    display: inline-block
+  a.active
+    background: #002353
+    
+#floorplans
+  img
+    height: 90%
+    
+#neighbourhood
+  .map
+    height: 90%
+    margin: auto 20px
+    margin-left: auto
+    
+.neighbourhood__inner
+  min-width: 700px
   
-.interiors__inner
+.interiors__inner, .floorplans__inner, .neighbourhood__inner
   display: flex
   flex-direction: column
   justify-content: space-between
@@ -208,9 +227,33 @@ a
   height: 590px
   margin: auto 0
   
+.floorplans__inner
+  width: 590px
+  margin-right: auto
+  
+.plan-info
+  position: relative
+  height: 44px
+  h5
+    position: absolute
+    
+.f-plan, .g-plan, .h-plan
+  display: none
+  
 h1
   font-size: 36px
   font-weight: 700
+  text-transform: uppercase
+  
+h3
+  font-size: 28px
+  font-weight: 700
+  text-transform: uppercase
+  
+h5
+  font-size: 18px
+  font-weight: 500
+  color: #a3ad78
   text-transform: uppercase
   
 p
@@ -218,6 +261,80 @@ p
   font-weight: 400
   b
     font-weight: 700
+    
+.interiors__gallery
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #fff
+  z-index: 2
+  
+.gallery__nav
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding: 35px 75px
+  span
+    text-transform: uppercase
+    line-height: 70px
+    font-size: 24px
+    font-weight: 400
+    
+.gallery__top, .gallery__select
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  padding: 15px 0
+  width: 100vw
+  overflow-x: scroll
+  position: relative
+  
+.arrow-left
+  position: absolute
+  top: 50%
+  left: 10%
+  transform: translateY(-50%)
+  cursor: pointer
+  img
+    width: 55px!important
+    padding: 0!important
+    height: 88px!important
+  
+.arrow-right
+  position: absolute
+  top: 50%
+  right: 10%
+  transform: translateY(-50%)
+  cursor: pointer
+  img
+    width: 55px!important
+    padding: 0!important
+    height: 88px!important
+  
+.gallery__top
+  max-height: calc(100% - 260px)
+  overflow-x: hidden
+  img
+    width: auto
+    height: auto
+    max-height: calc(100vh - 460px)
+    object-fit: cover
+    object-position: center
+    padding: 0 10px
+    position: relative
+    transition: all ease .3s
+  
+.gallery__select
+  height: 120px
+  img
+    width: auto
+    height: 100%!important
+    object-fit: cover
+    object-position: center
+    padding: 0 10px
     
 // *************************************************
 
@@ -259,3 +376,4 @@ p
     
 .wrapper
   position: relative
+  overflow-x: hidden

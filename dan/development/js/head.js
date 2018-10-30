@@ -64,6 +64,16 @@ function handleBackButton() {
       opacity: 0,
       top: -100
     }, 0)
+    
+      $('.navigation').removeClass('collapsed');
+      $('li').removeClass('active');
+      
+      $('.root__section').css({
+        display: 'none',
+        opacity: 0,
+        left: '100vw'
+      });
+    
   }, 500)
 }
 
@@ -136,17 +146,17 @@ function headContent(headStatus) {
     return (
       <div className="head">
         <div className="head__bg"></div>
-        <img className="head__logo" src="img/shaughnessy-logo.svg"></img>
+        <img className="head__logo" src="img/shaughnessy-logo.png"></img>
         <div className="head__action">Touch anywhere on the screen to begin</div>
-        <img className="head__footer-logo" src="img/alabaster-homes.svg"></img>
+        <img className="head__footer-logo" src="img/alabaster-homes.png"></img>
       </div>
     );
   } else {
     return (
       <div className="header">
-        <img className="head__logo" src="img/shaughnessy-logo.svg"></img>
+        <img className="head__logo" src="img/shaughnessy-logo.png"></img>
         <button onClick={handleBackButton}>
-          <img src="img/back-button.svg"></img>
+          <img src="img/back-button.png"></img>
         </button>
       </div>
     );
