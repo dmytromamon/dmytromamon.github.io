@@ -1,0 +1,41 @@
+.navbar {
+  width: 100vw;
+  height: 96px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: calc(100vw/7);
+  box-sizing: border-box;
+  position: relative;
+  display: none;
+}
+
+.navbar__item {
+  width: calc(100vw/7 - 15px);
+  height: calc(100vw/7 - 15px);
+  max-width: 64px;
+  max-height: 64px;
+  border: 2px solid #1f191a;
+  border-radius: 50%;
+  margin: auto 5px;
+  position: relative;
+  opacity: 0;
+  left: 50px;
+}
+
+.navbar__item svg {
+  width: 50%;
+  height: 50%;
+  margin: 25%;
+  overflow: visible;
+}
+
+.navbar__fixed-item {
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+  z-index: 3;
+  opacity: 1;
+  left: inherit;
+  background: #fff;
+}
