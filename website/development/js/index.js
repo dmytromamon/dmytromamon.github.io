@@ -29,11 +29,15 @@ $(document).ready(function () {
       // This is necessary so you never see what is "behind" the navbar.
       if (st > lastScrollTop && st > navbarHeight) {
         // Scroll Down
-        $('.sidebar').addClass('sidebar-up');
+        if (($(window).width() > 767) && ($(window).width() < 992)) {
+          $('.sidebar').addClass('sidebar-up');
+        }
       } else {
         // Scroll Up
         if (st + $(window).height() < $(document).height()) {
-          $('.sidebar').removeClass('sidebar-up');
+          if (($(window).width() > 767) && ($(window).width() < 992)) {
+            $('.sidebar').removeClass('sidebar-up');
+          }
         }
       }
 
