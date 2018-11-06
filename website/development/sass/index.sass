@@ -160,6 +160,9 @@ body
   height: 40vw
   background: $secondary-color
   
+.menu-button
+  display: none
+  
 // додай цей стиль всюди, де може бути прокрутка всередині блока (меню, таблиця)
 .ov-scroll 
   overflow-y: auto
@@ -236,8 +239,56 @@ body
   .item__title
     width: 100%
   .sidebar
+    display: flex
+    flex-direction: column
+    background: rgba(245, 245, 240, .9)
     ul
-      padding-right: 15px
+      padding-bottom: 45px
+      padding-right: 0
+  #nav
+    margin-top: auto
+    margin-left: 0
+  #social 
+    flex-direction: row
+    li
+      padding-left: 0
+      padding-bottom: 10px
+  .header
+    height: 100vh
+    height: 76px
+    overflow: hidden
+  .header
+    ul
+      opacity: 0
+  .header.open-header
+    height: 100vh
+    ul
+      opacity: 1
+  .menu-button
+    display: block
+    height: 18px
+    width: 32px
+    position: absolute
+    top: 30px
+    right: m#{a}x(30px, env(safe-area-inset-left))
+    z-index: 99
+    cursor: pointer
+    .arrow
+      display: block
+      width: 32px
+      height: 2px
+      background: $text-color
+      position: absolute
+    .arrow-top
+      top: 2px
+    .arrow-bottom
+      top: 14px
+  .strong-title:first-child
+    padding-top: 24px
+  .img
+    width: 100vw
+    height: 66.66vw
+    margin-left: -30px
   
 // *************************************************
   
