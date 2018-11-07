@@ -1,0 +1,84 @@
+// *************************************************
+// очищення
+
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+input[type=text], input[type=submit], textarea
+  -webkit-appearance: none
+  
+// *************************************************
+
+// *************************************************
+// основні стилі
+
+body
+  -webkit-text-size-adjust: none
+  
+.dot
+  width: 10px
+  height: 10px
+  background: #ffe552
+  position: absolute
+  top: 0
+  left: 0
+  border-radius: 50%
+  
+.click-dot
+  cursor: pointer
+  
+.explosion-dot
+  opacity: 0
+  
+// додай цей стиль всюди, де може бути прокрутка всередині блока (меню, таблиця)
+.ov-scroll 
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+  
+// *************************************************
+
+// *************************************************
+// Mac («декстопи», < 1200px)
+
+@media (max-width: 1199.98px)
+  body
+    background: #fff
+  
+// *************************************************
+
+// *************************************************
+// iPad Pro («планшети», < 992px) 
+
+@media (max-width: 991.98px)
+  body
+    background: #fff
+  
+// *************************************************
+
+// *************************************************
+// iPad («ландшафні», < 768px)
+
+@media (max-width: 767.98px)
+  body
+    background: #fff
+  
+// *************************************************
+  
+// *************************************************
+// iPhone («телефони», < 576px)
+
+@media (max-width: 575.98px)
+  body
+    background: #fff
+  
+// *************************************************
+    
+.wrapper
+  position: relative
+  height: 100vh
+  overflow: hidden
+  padding: 12px
+  padding-left: m#{a}x(12px, env(safe-area-inset-left))
+  padding-right: m#{a}x(12px, env(safe-area-inset-left))
