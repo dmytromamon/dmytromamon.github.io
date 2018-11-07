@@ -23,7 +23,10 @@ $(document).ready(function () {
     ease: Power3.easeOut,
     opacity: 0
   }, 3)
-  var blue = Math.floor(Math.random() * 140) + 40;
+  
+  var count = $(window).width()*$(window).height()/16000;
+  
+  var blue = Math.floor(Math.random() * count) + count/4;
 
   setTimeout(function () {
     for (i = 0; i < blue; i++) {
@@ -36,7 +39,7 @@ $(document).ready(function () {
       $('.wrapper').append('<div class="dot explosion-dot" style="transform: matrix(1, 0, 0, 1, ' + randomW + ', ' + randomH + '); width: ' + randomS + 'px; height: ' + randomS + 'px; background: #52b9d8; z-index: ' + z + '"></div>');
     };
 
-    var red = Math.floor(Math.random() * 80) + 20;
+    var red = Math.floor(Math.random() * count/2) + count/8;
 
     for (i = 0; i < red; i++) {
       var randomW = Math.floor(Math.random() * $(window).width()) + 1;
@@ -48,7 +51,7 @@ $(document).ready(function () {
       $('.wrapper').append('<div class="dot explosion-dot" style="transform: matrix(1, 0, 0, 1, ' + randomW + ', ' + randomH + '); width: ' + randomS + 'px; height: ' + randomS + 'px; background: #cb2b30; z-index: ' + z + '"></div>');
     };
 
-    var green = Math.floor(Math.random() * 80) + 20;
+    var green = Math.floor(Math.random() * count/2) + count/8;
 
     for (i = 0; i < green; i++) {
       var randomW = Math.floor(Math.random() * $(window).width()) + 1;
@@ -60,7 +63,7 @@ $(document).ready(function () {
       $('.wrapper').append('<div class="dot explosion-dot" style="transform: matrix(1, 0, 0, 1, ' + randomW + ', ' + randomH + '); width: ' + randomS + 'px; height: ' + randomS + 'px; background: #1c6f64; z-index: ' + z + '"></div>');
     };
 
-    var violet = Math.floor(Math.random() * 80) + 20;
+    var violet = Math.floor(Math.random() * count/2) + count/8;
 
     for (i = 0; i < violet; i++) {
       var randomW = Math.floor(Math.random() * $(window).width()) + 1;
@@ -72,7 +75,7 @@ $(document).ready(function () {
       $('.wrapper').append('<div class="dot explosion-dot" style="transform: matrix(1, 0, 0, 1, ' + randomW + ', ' + randomH + '); width: ' + randomS + 'px; height: ' + randomS + 'px; background: #57355d; z-index: ' + z + '"></div>');
     };
 
-    var orange = Math.floor(Math.random() * 80) + 20;
+    var orange = Math.floor(Math.random() * count/2) + count/8;
 
     for (i = 0; i < orange; i++) {
       var randomW = Math.floor(Math.random() * $(window).width()) + 1;
@@ -83,6 +86,19 @@ $(document).ready(function () {
       
       $('.wrapper').append('<div class="dot explosion-dot" style="transform: matrix(1, 0, 0, 1, ' + randomW + ', ' + randomH + '); width: ' + randomS + 'px; height: ' + randomS + 'px; background: #f3ae66; z-index: ' + z + '"></div>');
     };
+
+    var yellow = Math.floor(Math.random() * count/2) + count/8;
+
+    for (i = 0; i < yellow; i++) {
+      var randomW = Math.floor(Math.random() * $(window).width()) + 1;
+      var randomH = Math.floor(Math.random() * $(window).height()) + 1;
+      var randomS = Math.floor(Math.random() * 75) + 10;
+      
+      z = Math.floor(Math.random() * 10) + 1;
+      
+      $('.wrapper').append('<div class="dot explosion-dot" style="transform: matrix(1, 0, 0, 1, ' + randomW + ', ' + randomH + '); width: ' + randomS + 'px; height: ' + randomS + 'px; background: #ffe552; z-index: ' + z + '"></div>');
+    };
+    
   }, 3000);
   
 });
@@ -115,7 +131,7 @@ function roundDots(w, h, i) {
       var newH = (Math.random() * hHalf + 1) - hHalf*(.75 - dif)
       
       tl.to($('.dot').eq(i), 1, {
-        ease: Power3.easeIn,
+        ease: Power3.easeOut,
         x: newW,
         y: newH
       }, 0)
@@ -128,7 +144,7 @@ function roundDots(w, h, i) {
       var newH = (Math.random() * hHalf + hHalf) + hHalf*(.75 - dif)
       
       tl.to($('.dot').eq(i), 1, {
-        ease: Power3.easeIn,
+        ease: Power3.easeOut,
         x: newW,
         y: newH
       }, 0)
@@ -143,7 +159,7 @@ function roundDots(w, h, i) {
       var newH = (Math.random() * hHalf + 1) - hHalf*(.75 - dif)
       
       tl.to($('.dot').eq(i), 1, {
-        ease: Power3.easeIn,
+        ease: Power3.easeOut,
         x: newW,
         y: newH
       }, 0)
@@ -156,7 +172,7 @@ function roundDots(w, h, i) {
       var newH = (Math.random() * hHalf + hHalf) + hHalf*(.75 - dif)
       
       tl.to($('.dot').eq(i), 1, {
-        ease: Power3.easeIn,
+        ease: Power3.easeOut,
         x: newW,
         y: newH
       }, 0)
@@ -176,7 +192,7 @@ $(document).on('click', '.click-dot', function () {
   var tl = new TimelineMax();
 
   tl.from($('.explosion-dot'), 1, {
-    ease: Power4.easeOut,
+    ease: Power3.easeIn,
     x: $(window).width() / 2 - 40,
     y: $(window).height() / 2 - 40
   }, 0)
@@ -188,9 +204,14 @@ $(document).on('click', '.click-dot', function () {
     ease: Power4.easeOut,
     opacity: 0
   }, 0)
+  .to($('.click-dot'), 1, {
+    ease: Power4.easeOut,
+    opacity: 0
+  }, 0)
   
   setTimeout(function(){
     $('.simple-dot').remove;
+    $('.click-dot').remove;
   }, 1000)
   
   setTimeout(function(){
@@ -200,10 +221,42 @@ $(document).on('click', '.click-dot', function () {
       
       roundDots(currentW, currentH, i);
     };
-  }, 2000)
+  }, 1000)
 })
 
-$('.explosion-dot').mouseover(function(){
-  $(this).css('top', $(this).position().top + 20)
-  $(this).css('left', $(this).position().left + 20)
+$(document).on('mousemove', '.explosion-dot', function(){
+  var i = $('.explosion-dot').index(this);
+  var wHalf = $(window).width()/2;
+  var hHalf = $(window).height()/2;
+  
+  var tl = new TimelineMax();
+  
+  var w = $('.explosion-dot').eq(i).position().left;
+  var h = $('.explosion-dot').eq(i).position().top;
+  
+  if (w < wHalf) {
+    if (h < hHalf) {
+      tl.to($('.explosion-dot').eq(i), .5, {
+        x: w - 10,
+        y: h - 10
+      }, 0)
+    } else {
+      tl.to($('.explosion-dot').eq(i), .5, {
+        x: w - 10,
+        y: h + 10
+      }, 0)
+    }
+  } else {
+    if (h < hHalf) {
+      tl.to($('.explosion-dot').eq(i), .5, {
+        x: w + 10,
+        y: h - 10
+      }, 0)
+    } else {
+      tl.to($('.explosion-dot').eq(i), .5, {
+        x: w + 10,
+        y: h + 10
+      }, 0)
+    }
+  }
 })
