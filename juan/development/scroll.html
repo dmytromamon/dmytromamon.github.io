@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Website title goes here</title>
+  <link rel="stylesheet" href="css/index.min.css">
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/TweenMax.min.js"></script>
+  <script src="libs/ScrollMagic.min.js"></script>
+  <script src="libs/animation.gsap.min.js"></script>
+  <script src="libs/debug.addIndicators.min.js"></script>
+  <script src="libs/ease.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <script>
+      var controller = new ScrollMagic.Controller();
+
+    </script>
+    <section></section>
+    <section id="tech">
+      <span>AND MERGING THEM WITH</span>
+      <span class="type-word">
+        <span class="type-letter">T</span>
+        <span class="type-letter">E</span>
+        <span class="type-letter">C</span>
+        <span class="type-letter">H</span>
+        <span class="type-letter">N</span>
+        <span class="type-letter">O</span>
+        <span class="type-letter">L</span>
+        <span class="type-letter">O</span>
+        <span class="type-letter">G</span>
+        <span class="type-letter">Y</span>
+      </span>
+      <script>
+        $(document).ready(function() {
+          var animateElem = $('#tech');
+          var scene = new ScrollMagic.Scene({
+              triggerElement: '#tech',
+              duration: 1500,
+              offset: $(window).height()
+            })
+            .setPin('#tech')
+            .addTo(controller);
+          
+          for (i = 0; i < $('.type-letter').length; i++) {
+            var scene = new ScrollMagic.Scene({
+                triggerElement: '#tech',
+                duration: 100,
+                offset: $(window).height() + 100*i
+              })
+              .setTween($('.type-letter').eq(i), .5, {
+                opacity: 1
+              })
+              .addTo(controller);
+          }
+        })
+
+      </script>
+    </section>
+    <section></section>
+  </div>
+  <script src="libs/jquery.viewportchecker.min.js"></script>
+<!--  <script src="js/app.min.js"></script>-->
+</body>
+
+</html>

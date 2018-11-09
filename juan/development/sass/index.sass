@@ -1,3 +1,21 @@
+@font-face
+	font-family: "ProximaNova-Black"
+	font-style: normal
+	font-weight: 900
+	src: local("ProximaNova-Black"), url("../fonts/proxima/ProximaNova-Black.otf")
+
+@font-face
+	font-family: "ProximaNova"
+	font-style: normal
+	font-weight: 900
+	src: local("ProximaNova-Black"), url("../fonts/proxima/ProximaNova-Black.otf")
+
+@font-face
+	font-family: "ProximaNova"
+	font-style: normal
+	font-weight: 300
+	src: local("ProximaNova-Light"), url("../fonts/proxima/ProximaNova-Light.otf")
+
 // *************************************************
 // очищення
 
@@ -16,6 +34,42 @@ input[type=text], input[type=submit], textarea
 
 body
   -webkit-text-size-adjust: none
+  font-family: "ProximaNova"
+  
+.example
+  padding: 10px
+  cursor: pointer
+  font-family: "ProximaNova-Black"
+  position: relative
+  z-index: 99
+  
+section
+  font-weight: 900
+  width: 100vw
+  height: 100vh
+  position: relative
+  z-index: 11
+  padding: 0 15%
+  
+canvas
+  z-index: 11
+
+#brand, #tech
+  display: none
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  svg
+    overflow: visible
+    
+.type-word
+  font-size: 120px
+  color: #ffe552
+  font-weight: 900
+  
+.type-letter
+  float: left
+  opacity: 0
   
 .dot
   width: 10px
@@ -79,7 +133,4 @@ body
 .wrapper
   position: relative
   height: 100vh
-  overflow: hidden
-  padding: 12px
-  padding-left: m#{a}x(12px, env(safe-area-inset-left))
-  padding-right: m#{a}x(12px, env(safe-area-inset-left))
+  overflow-x: hidden
