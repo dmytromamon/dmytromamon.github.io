@@ -1,16 +1,8 @@
 $(document).ready(function () {
   
   setTimeout(function(){
-    var tl = new TimelineMax();
-    
-    tl.staggerFrom($('#brand__svg *'), 2, {
-      ease: Power3.easeOut,
-      x: -300,
-      y: -150,
-      opacity: 0,
-      scale: 0
-    }, 0.01)
-  }, 1000)
+    startAnimation();
+  }, 500)
   
   var a = Math.floor(Math.random() * 6) + 4;
 

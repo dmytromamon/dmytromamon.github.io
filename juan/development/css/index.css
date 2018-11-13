@@ -1,14 +1,12 @@
 @font-face {
   font-family: "ProximaNova-Black";
-  font-style: normal;
-  font-weight: 900;
   src: local("ProximaNova-Black"), url("../fonts/proxima/ProximaNova-Black.otf"); }
 
 @font-face {
   font-family: "ProximaNova";
   font-style: normal;
-  font-weight: 900;
-  src: local("ProximaNova-Black"), url("../fonts/proxima/ProximaNova-Black.otf"); }
+  font-weight: 400;
+  src: local("ProximaNova-Regular"), url("../fonts/proxima/ProximaNova-Regular.otf"); }
 
 @font-face {
   font-family: "ProximaNova";
@@ -29,26 +27,17 @@ body {
   -webkit-text-size-adjust: none;
   font-family: "ProximaNova"; }
 
-.example {
-  padding: 10px;
-  cursor: pointer;
-  font-family: "ProximaNova-Black";
-  position: relative;
-  z-index: 99; }
-
 section {
-  font-weight: 900;
   width: 100vw;
   height: 100vh;
   position: relative;
-  z-index: 11;
-  padding: 0 15%; }
+  padding: 0 15%;
+  z-index: 1; }
 
 canvas {
   z-index: 11; }
 
-#brand, #tech {
-  display: none;
+#brand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,17 +48,19 @@ canvas {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
-  #brand svg, #tech svg {
-    overflow: visible; }
 
-.type-word {
-  font-size: 120px;
-  color: #ffe552;
-  font-weight: 900; }
-
-.type-letter {
-  float: left;
-  opacity: 0; }
+#brand__animation {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  margin-bottom: 50px; }
+  #brand__animation svg {
+    height: 80%;
+    top: 10%;
+    position: relative;
+    z-index: 12; }
+    #brand__animation svg .st0 {
+      fill: #fff; }
 
 .dot {
   width: 10px;
@@ -78,7 +69,8 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 50%; }
+  border-radius: 50%;
+  z-index: 2; }
 
 .click-dot {
   cursor: pointer;
