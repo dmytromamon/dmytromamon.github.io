@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17 Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.0004 17.7748622 0.0004 17.7748622 17.7811 0 17.7811"></polygon>
+    </defs>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage_Desktop1440px" transform="translate(-1347.000000, -36.000000)">
+            <g id="Group-17-Copy-4" transform="translate(1356.000000, 45.000000) scale(-1, 1) translate(-1356.000000, -45.000000) translate(1347.000000, 36.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M5.9437,6.8531 C5.9357,9.6241 8.1207,11.8451 10.8567,11.8481 C13.5357,11.8511 15.7787,9.6491 15.7857,7.0101 C15.7927,4.2121 13.6287,2.0041 10.8727,1.9981 C8.1767,1.9921 5.9517,4.1851 5.9437,6.8531 Z M-0.0003,16.3661 C1.7597,14.6081 3.5297,12.8381 5.3107,11.0601 C4.0467,9.2651 3.6427,7.3061 4.1747,5.1851 C4.5947,3.5121 5.5497,2.1891 6.9647,1.2111 C9.7847,-0.7389 13.6267,-0.2919 15.9617,2.2471 C18.2717,4.7581 18.3837,8.6291 16.2447,11.2671 C13.9527,14.0951 9.7777,14.7181 6.7237,12.4771 C4.9507,14.2491 3.1757,16.0231 1.4167,17.7811 C0.9367,17.3031 0.4757,16.8411 -0.0003,16.3661 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
