@@ -501,8 +501,14 @@ section {
   width: 50vw;
   height: 100%;
   top: 0;
-  right: 0;
-  background: #375D7C; }
+  right: 0; }
+  .video-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center; }
 
 .scroll-cta {
   display: inline-block;
