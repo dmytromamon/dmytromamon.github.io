@@ -41,7 +41,9 @@
 
 <body>
  
-  <div id="cursor"></div>
+  <div id="cursor">
+    <svg enable-background="new 0 0 60 30" height="30px" id="drag" version="1.1" viewBox="0 0 60 30" width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><polygon fill="#fff" points="56,10 53.44,10 56.641,14 50,14 50,16 56.639,16 53.44,20 56,20 60,14.999    "/><polygon fill="#fff" points="4,20 6.562,20 3.36,16 10,16 10,14 3.36,14 6.562,10 4,10 0,15.001    "/><g></g></g></g></svg>
+  </div>
 
 <!--  header block  -->
  
@@ -101,6 +103,9 @@
         </g>
         </svg>
       </div>
+      <button type="button" id="menu-toggle">
+        <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M6 36h36v-4h-36v4zm0-10h36v-4h-36v4zm0-14v4h36v-4h-36z" fill="#fff"/></svg>
+      </button>
       <ul class="header__nav">
         <li class="nav__item">
           <a href="#">Work</a>
@@ -117,8 +122,10 @@
         <li class="nav__item">
           <a href="#">Contact</a>
         </li>
+        <li class="nav__item">
+          <button class="header__button" type="button">Request a quote</button>
+        </li>
       </ul>
-      <button class="header__button" type="button">Request a quote</button>
     </div>
   </div>
   
@@ -135,6 +142,8 @@
     </div>
     <div class="carousel__inner">
       <div class="carousel__nav">
+        <div class="nav__info">Swipe 
+    <svg enable-background="new 0 0 60 30" height="30px" id="drag" version="1.1" viewBox="0 0 60 30" width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><polygon fill="#fff" points="56,10 53.44,10 56.641,14 50,14 50,16 56.639,16 53.44,20 56,20 60,14.999    "/><polygon fill="#fff" points="4,20 6.562,20 3.36,16 10,16 10,14 3.36,14 6.562,10 4,10 0,15.001    "/><g></g></g></g></svg> to change slide</div>
         <div class="carousel__left"><i class="fas fa-chevron-circle-left"></i></div>
         <div class="carousel__right"><i class="fas fa-chevron-circle-right"></i></div>
       </div>
