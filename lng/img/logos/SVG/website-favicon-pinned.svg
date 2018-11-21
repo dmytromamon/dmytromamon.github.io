@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 140.4 140.4" style="enable-background:new 0 0 140.4 140.4;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#16181C;}
-	.st1{fill:#FFFFFF;}
-</style>
-<rect x="-1.9" y="-1.9" class="st0" width="144.1" height="144.1"/>
-<polygon class="st1" points="41.4,32.5 23.1,43.1 23.1,97.5 44.1,109.5 91.1,82.4 80.7,76.3 44.1,97.5 33.6,91.4 33.6,49.1 
-	41.4,44.6 "/>
-<polygon class="st1" points="51.9,114.1 70.2,124.6 117.3,97.5 117.3,73.3 70.2,46.1 70.2,58.1 106.8,79.3 106.8,91.4 70.2,112.5 
-	62.4,108 "/>
-<polygon class="st1" points="117.3,64.2 117.3,43.1 70.2,15.9 49.3,28 49.3,82.4 59.7,76.3 59.7,34 70.2,28 106.8,49.1 106.8,58.1 
-	"/>
-</svg>
+<svg id="Шар_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140.4 140.4"><style>.st0{fill:#16181c}.st1{fill:#fff}</style><path class="st0" d="M-1.9-1.9h144.1v144.1H-1.9z"/><path class="st1" d="M41.4 32.5L23.1 43.1v54.4l21 12 47-27.1-10.4-6.1-36.6 21.2-10.5-6.1V49.1l7.8-4.5z"/><path class="st1" d="M51.9 114.1l18.3 10.5 47.1-27.1V73.3L70.2 46.1v12l36.6 21.2v12.1l-36.6 21.1-7.8-4.5z"/><path class="st1" d="M117.3 64.2V43.1L70.2 15.9 49.3 28v54.4l10.4-6.1V34l10.5-6 36.6 21.1v9z"/></svg>
