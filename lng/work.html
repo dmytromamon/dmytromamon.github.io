@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LNG Studios - Services</title>
+  <title>LNG Studios - Work</title>
   <link rel="stylesheet" href="css/index.min.css">
   <link rel="stylesheet" href="css/all.min.css">
 
@@ -39,7 +39,17 @@
   <meta name="msapplication-TileImage" content="img/logos/144w/favicon-website.png">
 </head>
 
-<body data-page="services">
+<body data-page="work">
+
+<!--  cursor block  -->
+ 
+  <div id="cursor">
+    <svg enable-background="new 0 0 60 30" height="30px" id="drag" version="1.1" viewBox="0 0 60 30" width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><polygon id="drag-right" fill="#fff" points="56,10 53.44,10 56.641,14 50,14 50,16 56.639,16 53.44,20 56,20 60,14.999    "/><polygon id="drag-left" fill="#fff" points="4,20 6.562,20 3.36,16 10,16 10,14 3.36,14 6.562,10 4,10 0,15.001    "/><g></g></g></g></svg>
+    <svg enable-background="new 0 0 50 50" height="50px" id="search" version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><circle cx="21" cy="20" fill="none" r="16" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" x1="32.229" x2="45.5" y1="32.229" y2="45.5"/></svg>
+    <svg enable-background="new 0 0 100 100" id="close" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon fill="#fff" points="77.6,21.1 49.6,49.2 21.5,21.1 19.6,23 47.6,51.1 19.6,79.2 21.5,81.1 49.6,53 77.6,81.1 79.6,79.2   51.5,51.1 79.6,23 "/></svg>
+  </div>
+
+<!--  cursor block  -->
 
 <!--  loader block  -->
 
@@ -99,14 +109,6 @@
   </div>
 
 <!--  loader block  -->
-
-<!--  cursor block  -->
- 
-  <div id="cursor">
-    <svg enable-background="new 0 0 60 30" height="30px" id="drag" version="1.1" viewBox="0 0 60 30" width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><polygon id="drag-right" fill="#fff" points="56,10 53.44,10 56.641,14 50,14 50,16 56.639,16 53.44,20 56,20 60,14.999    "/><polygon id="drag-left" fill="#fff" points="4,20 6.562,20 3.36,16 10,16 10,14 3.36,14 6.562,10 4,10 0,15.001    "/><g></g></g></g></svg>
-  </div>
-
-<!--  cursor block  -->
 
 <!--  header block  -->
  
@@ -226,65 +228,6 @@
   </div>
   
 <!--  social block  -->
-    
-<!--  services block  -->
- 
-  <div class="services">
-    <div class="services__bg">
-      <video autoplay loop>
-        <source src="img/lng-home-video.mp4" type="video/mp4">
-      </video>
-      <img style="opacity: 0" src="img/3d_architectural_renderings.jpeg">
-      <img style="opacity: 0" src="img/3d_architectural_renderings.jpeg">
-      <img style="opacity: 0" src="img/3d_architectural_renderings.jpeg">
-      <img style="opacity: 0" src="img/film+animation_production.jpg">
-      <img style="opacity: 0" src="img/3d_architectural_renderings.jpeg">
-    </div>
-    <div class="services__inner">
-      <div class="services__item">
-        <a href="#" class="services__link">
-          <span class="item__title">
-            Virtual + Augment <br>Reality Experiences
-          </span>
-          <a class="item__link">Learn more</a>
-        </a>
-      </div>
-      <div class="services__item">
-        <a href="#" class="services__link">
-          <span class="item__title">
-            3D Architectural <br>Renderings
-          </span>
-          <a class="item__link">Learn more</a>
-        </a>
-      </div>
-      <div class="services__item">
-        <a href="#" class="services__link">
-          <span class="item__title">
-            Interactive + Touchscreen <br> Applications
-          </span>
-          <a class="item__link">Learn more</a>
-        </a>
-      </div>
-      <div class="services__item">
-        <a href="#" class="services__link">
-          <span class="item__title">
-            Film + Animation <br>Production
-          </span>
-          <a class="item__link">Learn more</a>
-        </a>
-      </div>
-      <div class="services__item">
-        <a href="#" class="services__link">
-          <span class="item__title">
-            Branding, Design <br>+ Web
-          </span>
-          <a class="item__link">Learn more</a>
-        </a>
-      </div>
-    </div>
-  </div>
-  
-<!--  services block  -->
   
 <!--  request a quote block  -->
  
@@ -328,7 +271,44 @@
   
 <!--  wrapper block  -->
  
-  <div class="wrapper ov-scroll" data-content="carousel">
+  <div class="wrapper ov-scroll" data-content="work-gallery">
+    <div class="work-grid-nav">
+      <div class="work-grid__top"><i class="fas fa-chevron-circle-up"></i></div>
+      <div class="work-grid__bottom"><i class="fas fa-chevron-circle-down"></i></div>
+    </div>
+    <div class="work-grid visible">
+      <div class="main-placeholder">
+        <div class="image-box"></div>
+        <img src="http://www.lngstudios.com/images/banners/e5.jpg" alt="">
+      </div>
+      <div class="secondary-placeholder">
+        <div class="image-box"></div>
+        <img src="http://www.lngstudios.com/images/featured/home-ubc.jpg" alt="">
+        <img src="http://www.lngstudios.com/images/featured/home-cpm.jpg" alt="">
+      </div>
+    </div>
+    <div class="work-grid">
+      <div class="main-placeholder">
+        <div class="image-box"></div>
+        <img src="http://www.lngstudios.com/images/work/la-residences-thumb.jpg" alt="">
+      </div>
+      <div class="secondary-placeholder">
+        <div class="image-box"></div>
+        <img src="http://www.lngstudios.com/images/work/Stratus_TheaterThumb.jpg" alt="">
+        <img src="http://www.lngstudios.com/images/work/TudorhouseHero.jpg" alt="">
+      </div>
+    </div>
+    <div class="work-grid">
+      <div class="main-placeholder">
+        <div class="image-box"></div>
+        <img src="http://www.lngstudios.com/images/banners/e5.jpg" alt="">
+      </div>
+      <div class="secondary-placeholder">
+        <div class="image-box"></div>
+        <img src="http://www.lngstudios.com/images/featured/home-ubc.jpg" alt="">
+        <img src="http://www.lngstudios.com/images/featured/home-cpm.jpg" alt="">
+      </div>
+    </div>
   </div>
   
 <!--  wrapper block  -->

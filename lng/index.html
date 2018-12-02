@@ -44,7 +44,7 @@
 <!--  cursor block  -->
  
   <div id="cursor">
-    <svg enable-background="new 0 0 60 30" height="30px" id="drag" version="1.1" viewBox="0 0 60 30" width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><polygon fill="#fff" points="56,10 53.44,10 56.641,14 50,14 50,16 56.639,16 53.44,20 56,20 60,14.999    "/><polygon fill="#fff" points="4,20 6.562,20 3.36,16 10,16 10,14 3.36,14 6.562,10 4,10 0,15.001    "/><g></g></g></g></svg>
+    <svg enable-background="new 0 0 60 30" height="30px" id="drag" version="1.1" viewBox="0 0 60 30" width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><polygon id="drag-right" fill="#fff" points="56,10 53.44,10 56.641,14 50,14 50,16 56.639,16 53.44,20 56,20 60,14.999    "/><polygon id="drag-left" fill="#fff" points="4,20 6.562,20 3.36,16 10,16 10,14 3.36,14 6.562,10 4,10 0,15.001    "/><g></g></g></g></svg>
   </div>
 
 <!--  cursor block  -->
@@ -178,7 +178,7 @@
       </button>
       <ul class="header__nav">
         <li class="nav__item">
-          <a href="#">Work</a>
+          <a href="work.html">Work</a>
         </li>
         <li class="nav__item">
           <a href="services.html">Services</a>
@@ -333,25 +333,34 @@
  
   <div class="wrapper ov-scroll" data-content="case-study">
     <div class="content">
+      <div class="content__inner">
       <h1>Concord Pacific</h1>
       <p>As Canada's largest community builder, Concord Pacific always seeks to be on the cutting edge of technology in the real estate visualization space. Concord Pacific approached LNG Studios in search of an innovative marketing solution to showcase their projects nationwide through Virtual Reality. </p>
-      <img class="half" src="http://www.lngstudios.com/images/case_study/case-concord-left.jpg" alt="">
-      <img class="half" src="http://www.lngstudios.com/images/case_study/case-concord-right.jpg" alt="">
+      <a href="#">Read more</a>
+    </div>
+    <div class="image-slider">
+      <img src="http://www.lngstudios.com/images/case_study/case-concord-left.jpg" alt="">
+      <img src="http://www.lngstudios.com/images/case_study/case-concord-right.jpg" alt="">
+      <img src="http://www.lngstudios.com/images/case_study/case-concord-left.jpg" alt="">
+      <img src="http://www.lngstudios.com/images/case_study/case-concord-right.jpg" alt="">
+    </div>
+    <div class="content__inner">
       <h3>The Goal</h3>
       <p>VR has a unique ability to make deep, more meaningful connections with the audience.  As a virtual reality experience, we aimed to redefine the home buying experience.  Working closely with Concord Pacific, LNG Studios created a first of its kind mobile based VR marketing campaign as well as an interactive walkthrough using the HTC Vive.</p>
-      <h3>Strategy</h3>
-      <p>LNG Studios utilized a wide range of visualization, design and branding services to create the VR experiences.  The first experience; Concord360.com is a mobile based platform to view VR content for Concord's projects across Canada.  By using the viewer's own mobile phone browser, prospective customers can use VR to tour through Concord's projects across Canada.  The success of this campaign stems from the simplicity of the users's own mobile phone as the platform for viewing unique 3D content and viewed through VR Headset goggles.</p>
-      <p>Concord Pacific, eager to capitalize on the marketing opportunities afforded by VR created a promotional giveaway tied to the launch of the Concord360.com which saw several thousand VR headsets handed out through their sales centres with simultaneous launches in Beijing, Shanghai and Vancouver. Concord360.com is the first dedicated VR marketing experience for a real estate developer in Canada.</p>
-      <img class="full" src="http://www.lngstudios.com/images/case_study/concord-event-4.jpg" alt="">
-      <h3>The Unreal becomes Real</h3>
-      <p>The second VR experience provided by LNG Studios to Concord Pacific is an immersive motion tracking simulation working in conjunction with the HTC Vive. We built a completely virtual 3 bedroom unit for Concord's projects in Burnaby and Toronto which can be completely explored in free space with the HTC Vive.  This unique platform allows the user to take physical steps in the real world which are replicated in the virtual world.   By utilizing virtual reality and the HTC a customer is able to see and experience their future home in a unique and natural way thats 100 percent immersive. </p>
-      <p>Concord Pacific was quick to realize that virtual reality can be a powerful marketing tool. By leveraging the public's curiosity for VR and being able to lay claim as the first-to-market for this type of technology, Concord Pacific was able receive significant media coverage and exposure. In addition the project was quick to show the power of VR as a marketing experience to many first time users as well as the power for mobile technologies to fuel public interest.</p>
+    </div>
+    <img class="full" src="http://www.lngstudios.com/images/case_study/concord-event-4.jpg" alt="">
+    <div class="content__inner">
+      <a href="#" class="next-project">
+        In the Drivers Seat with VR
+      </a>
+    </div>
     </div>
   </div>
   
 <!--  wrapper block  -->
  
   <script src="libs/jquery.min.js"></script>
+  <script src="libs/jquery.ba-throttle-debounce.min.js"></script>
   <script src="libs/jquery.viewportchecker.min.js"></script>
   <script src="libs/TweenMax.min.js"></script>
   <script src="js/app.min.js"></script>
