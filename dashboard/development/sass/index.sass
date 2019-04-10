@@ -1,0 +1,58 @@
+@import 'fonts'
+@import 'variables'
+
+@import 'header'
+@import 'nav'
+@import 'wrapper'
+  
+// *************************************************
+
+// *************************************************
+// очищення
+
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  backface-visibility: hidden
+  outline: none
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: moz-none
+  -ms-user-select: none
+  user-select: none
+
+li
+  list-style: none
+
+input[type=text], input[type=submit], input[type=search], textarea
+  -webkit-appearance: none
+  
+// *************************************************
+
+// *************************************************
+// основні стилі
+
+body
+  font-family: $font
+  font-weight: 400
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  width: 100%
+  height: 100vh
+  
+a
+  cursor: pointer
+  
+img, svg
+  display: block
+  max-width: 100%
+  
+// додай цей стиль всюди, де може бути прокрутка всередині блока (меню, таблиця)
+.ov-scroll 
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+    
+// *************************************************

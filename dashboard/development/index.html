@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hello, Dashboard!</title>
+  <link rel="stylesheet" href="css/index.min.css">
+
+  <!--  <ICONS for apple dock>-->
+  <link rel="mask-icon" href="img/logos/SVG/website-favicon-pinned.svg" color="#ffffff">
+
+  <!--  <ICONS for apple browsers>-->
+  <link rel="shortcut icon" type="image/png" href="img/logos/ICO/favicon-website.ico">
+  <link rel="icon" type="image/png" href="img/logos/16w/favicon-website.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/logos/32w/favicon-website.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/logos/96w/favicon-website.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="img/logos/144w/favicon-website.png" sizes="144x144">
+
+  <!--  <ICONS for mobile>-->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/logos/57w/apple-touch-icon-website.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/logos/60w/apple-touch-icon-website.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/logos/72w/apple-touch-icon-website.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/logos/76w/apple-touch-icon-website.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/logos/114w/apple-touch-icon-website.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/logos/120w/apple-touch-icon-website.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/logos/144w/apple-touch-icon-website.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/logos/152w/apple-touch-icon-website.png">
+  <link rel="apple-touch-icon" sizes="256x256" href="img/logos/256w/apple-touch-icon-website.png">
+
+  <!--  <ICON - old school>-->
+  <link rel="icon" type="image/x-icon" href="img/logos/16w/favicon-website.png" />
+  <link rel="canonical" href="https://www.website.com">
+
+  <!--  <ICONS for windows tile>-->
+  <meta name="msapplication-TileColor" content="$main-color">
+  <meta name="msapplication-TileImage" content="img/logos/144w/favicon-website.png">
+
+  <!--  VUE development -->
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+  <!--  header-->
+  
+  <div class="header" id="header">
+    <div class="header__inner">
+      <div class="header__hello-message">
+        Hi, <b>{name}</b>!
+      </div>
+    </div>
+  </div>
+
+  <!--  header-->
+
+  <!--  nav-->
+
+  <div class="nav">
+    <div class="nav__inner">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <img src="img/iconfinder_ic_apps_48px_352018.svg">
+          <a href="#">Dashboard</a>
+        </li>
+        <li class="nav__item">
+          <img src="img/iconfinder_ic_trending_up_48px_352184.svg">
+          <a href="#">Reports</a>
+        </li>
+        <li class="nav__item">
+          <img src="img/iconfinder_ic_account_box_48px_352000.svg">
+          <a href="#">Users</a>
+        </li>
+        <li class="nav__item">
+          <img src="img/iconfinder_ic_settings_48px_352095.svg">
+          <a href="#">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--  nav-->
+
+  <!--  wrapper-->
+
+  <div class="wrapper">
+    <div id="summary">
+
+    </div>
+    <div id="orders">
+      <div class="title">
+        Your Orders
+      </div>
+      <ul class="orders__list">
+        <li class="orders__item">
+          <span class="orders__name">Samsung</span>
+          <span class="orders__costumer">Alan Locke</span>
+          <span class="orders__price">$580</span>
+        </li>
+        <li class="orders__item">
+          <span class="orders__name">Apple</span>
+          <span class="orders__costumer">Alan Locke</span>
+          <span class="orders__price">$580</span>
+        </li>
+        <li class="orders__item">
+          <span class="orders__name">Xiomi</span>
+          <span class="orders__costumer">Alan Locke</span>
+          <span class="orders__price">$580</span>
+        </li>
+        <li class="orders__item">
+          <span class="orders__name">Huawei</span>
+          <span class="orders__costumer">Alan Locke</span>
+          <span class="orders__price">$580</span>
+        </li>
+        <li class="orders__item">
+          <span class="orders__name">Apple</span>
+          <span class="orders__costumer">Alan Locke</span>
+          <span class="orders__price">$580</span>
+        </li>
+      </ul>
+    </div>
+    <div id="products">
+      <ul class="products__list">
+        <li class="products__item">
+          <span class="products__name">Apple</span>
+        </li>
+        <li class="products__item">
+          <span class="products__name">Samsung</span>
+        </li>
+        <li class="products__item">
+          <span class="products__name">Huawei</span>
+        </li>
+        <li class="products__item">
+          <span class="products__name">Xiomi</span>
+        </li>
+        <li class="products__item">
+          <span class="products__name">LG</span>
+        </li>
+      </ul>
+    </div>
+    <div id="app">
+      <span id="message" v-on:click="message = messageError" :wait="1000"> {{ message }}</span>
+    </div>
+  </div>
+
+  <!--  wrapper-->
+
+  <script src="libs/jquery.min.js"></script>
+  <script src="libs/TweenMax.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
