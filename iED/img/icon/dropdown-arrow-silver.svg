@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icon/dropdown-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.313154297 2.79178557 0.983049609 2.13070467 4.5 5.64765506 8.01695039 2.13070467 8.6868457 2.79178557 4.5 6.97863127"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="header/transparent-white" transform="translate(-446.000000, -74.000000)">
+            <g id="menu" transform="translate(288.101562, 66.948630)">
+                <g id="for-students-copy-2">
+                    <g id="icon/arrow-short-down" transform="translate(158.000000, 5.759766)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#b7b7b7" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="color/white" mask="url(#mask-2)" fill="#b7b7b7" fill-rule="evenodd">
+                            <g transform="translate(0.007383, 0.058359)" id="Rectangle">
+                                <rect x="0" y="0" width="9.0013459" height="9.0013459"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

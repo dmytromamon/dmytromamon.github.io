@@ -1,0 +1,109 @@
+.advisory
+  padding: 150px 0 144px
+  overflow: hidden
+  h4
+    color: $color-maroonsecondary
+    margin: 12px 0 26px
+  p
+    font-family: 'Open Sans', sans-serif
+    font-size: 14px
+    color: #838383
+    letter-spacing: 0
+    text-align: left
+    line-height: 24px
+    margin-bottom: 24px
+  p:last-of-type
+    margin-bottom: 54px
+  .advisory__name
+    font-family: 'Lato'
+    font-weight: 700
+    font-size: 24px
+    color: #65676E
+    letter-spacing: 0
+    text-align: left
+    line-height: 30px
+    position: relative
+    padding-left: 48px
+  .advisory__name::before
+    display: block
+    content: ''
+    position: absolute
+    top: 14px
+    left: 0
+    width: 34px
+    height: 1px
+    background: #979797
+  .advisory__title
+    padding-left: 48px
+    display: block
+    font-family: 'Open Sans', sans-serif
+    font-size: 15px
+    color: #65676E
+    letter-spacing: 0
+    text-align: left
+    line-height: 26px
+  .container
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+  
+.advisory__nav
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  position: absolute
+  bottom: -92px
+  right: 197px
+  
+.advisory__button
+  width: 19px
+  height: 5px
+  margin-right: 5px
+  background: #DADADA
+  transition: all ease .2s
+  cursor: pointer
+  
+.advisory__button.active
+  background: $color-maroonsecondary
+  
+.advisory__carousel
+  display: block
+  width: 100%
+  position: relative
+  
+.advisory__inner
+  width: 592px
+  
+.carousel__item
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  position: relative
+  min-height: 618px
+  img
+    position: absolute
+    right: 0
+    top: 0
+    width: calc(100% - 674px)
+    height: 618px
+    align-self: center
+    object-fit: cover
+    object-position: center
+    
+.carousel__item:nth-child(2)
+  width: 100%
+  position: absolute
+  top: 0
+  left: calc(100% - 644px)
+  .advisory__inner
+    display: none
+    opacity: 0
+    
+.carousel__item:nth-child(3)
+  width: 100%
+  position: absolute
+  top: 0
+  left: calc(200% - 1288px)
+  .advisory__inner
+    display: none
+    opacity: 0

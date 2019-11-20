@@ -1,0 +1,75 @@
+.programs
+  margin: 150px 0 144px
+  
+.programs__row
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: stretch
+  padding: 10px 0 0
+  
+.programs__program
+  width: calc(33.3333% - 23px)
+  margin-right: 32px
+  margin-bottom: 49px
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0)
+  transition: all ease .4s
+  
+.program__inner
+  background: #FFFFFF
+  font-family: 'Open Sans', sans-serif
+  font-size: 14px
+  color: $color-navyblue
+  letter-spacing: 0
+  text-align: left
+  line-height: 24px
+  text-decoration: none
+  transition: all ease .4s
+  border: 1px solid #DBDBDB
+  border-top: 0
+  padding: 16px 24px 20px
+  p
+    font-size: 14px
+    color: #65676E
+    letter-spacing: 0
+    text-align: left
+    line-height: 24px
+    margin-bottom: 28px
+  a
+    font-family: 'Open Sans', sans-serif
+    font-weight: 600
+    font-size: 16px
+    color: $color-navyblue
+    letter-spacing: 0
+    text-decoration: none
+    text-transform: capitalize
+  a:hover
+    text-decoration: underline
+  
+.programs__program:nth-child(3n)
+  margin-right: 0
+
+.program__title
+  font-family: 'Lato', sans-serif
+  font-weight: 700
+  font-size: 20px
+  color: $color-navyblue
+  letter-spacing: 0
+  line-height: 28px
+  margin-bottom: 9px
+  min-height: 56px
+  
+.programs__program:hover
+  box-shadow: 0 15px 35px 5px rgba(222,222,222,0.40)
+  .program__inner
+    border-color: #FFFFFF
+    
+.programs-teal
+  h4
+    color: $color-teal
+  .program__inner
+    color: $color-teal
+    a
+      color: $color-teal
+  .program__title
+    color: $color-teal

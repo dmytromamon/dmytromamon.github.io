@@ -1,0 +1,52 @@
+.partners
+  margin: 54px 0 150px
+  .container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  
+.partners__nav
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  
+.partners__button
+  width: 19px
+  height: 5px
+  margin-right: 5px
+  background: #DADADA
+  transition: all ease .2s
+  cursor: pointer
+  
+.partners__button.active
+  background: $color-maroonsecondary
+  
+.partners__carousel
+  display: block
+  margin-top: 10px
+  width: 830px
+  height: 39px
+  overflow: hidden
+  position: relative
+  
+.carousel__page
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  img
+    width: auto
+    max-width: 215px
+    height: 39px
+    margin-right: 52px
+    object-fit: contain
+    object-position: center
+  img:last-child
+    margin-right: 0
+  
+.partners-teal
+  h4
+    color: $color-teal
