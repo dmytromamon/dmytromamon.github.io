@@ -31,43 +31,32 @@
 </head>
 
 <body>
+  <div id="mask"></div>
   <div class="head whyied-bg">
     <div class="container">
       <div class="header">
         <div class="header__inner">
+          <div class="header__menu-button">
+            <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path d="M8,37h34v-4H8V37z M8,27h34v-4H8V27z M8,14v4h34v-4H8z" />
+            </svg>
+          </div>
+          <div class="header__close-button">
+            <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path d="M29,25.4c-0.3-0.3-0.3-0.6,0-0.9l9.6-9.6c0.3-0.3,0.4-0.6,0.4-0.9c0-0.3-0.1-0.6-0.4-0.9l-1.8-1.8c-0.3-0.3-0.6-0.4-0.9-0.4
+	c-0.4,0-0.6,0.1-0.9,0.4l-9.6,9.6c-0.3,0.3-0.6,0.3-0.9,0l-9.6-9.6c-0.3-0.3-0.6-0.4-0.9-0.4c-0.3,0-0.6,0.1-0.9,0.4l-1.8,1.8
+	c-0.3,0.3-0.4,0.6-0.4,0.9c0,0.3,0.1,0.6,0.4,0.9l9.6,9.6c0.3,0.3,0.3,0.6,0,0.9L11.3,35c-0.3,0.3-0.4,0.6-0.4,0.9
+	c0,0.3,0.1,0.6,0.4,0.9l1.8,1.8c0.3,0.3,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l9.6-9.6c0.3-0.3,0.6-0.3,0.9,0l9.6,9.6
+	c0.3,0.3,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l1.8-1.8c0.3-0.3,0.4-0.6,0.4-0.9c0-0.3-0.1-0.6-0.4-0.9L29,25.4z" />
+            </svg>
+          </div>
           <div class="header__logo">
             <a href="homepage-design-concept-2.html">
               <img src="img/00-logo.png" alt="iED logo chint">
             </a>
           </div>
           <div class="header__nav">
-            <ul class="action__list">
-              <li class="list__item inner-content">
-                English
-                <span><i class="dropdown-arrow"></i></span>
-                <ul class="item__inner lang-inner">
-                  <li class="item__inner-item">
-                    <ul class="nav__list">
-                      <li class="nav__item">
-                        <a href="/en" class="active">EN</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="/tc">繁</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="/sc">简</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="/vn">VN</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="list__item">
-                <a href="sign-in.html">Sign In</a>
-              </li>
-            </ul>
+            <div class="nav__inner">
             <ul class="nav__list">
               <li class="nav__item inner-content">
                 Educational Institutions
@@ -136,6 +125,34 @@
                 </a>
               </li>
             </ul>
+            <ul class="action__list">
+              <li class="list__item inner-content">
+                English
+                <span><i class="dropdown-arrow"></i></span>
+                <ul class="item__inner lang-inner">
+                  <li class="item__inner-item">
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a href="/en" class="active">EN</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="/tc">繁</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="/sc">简</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="/vn">VN</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <a href="sign-in.html">Sign In</a>
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
       </div>
@@ -144,7 +161,7 @@
       <span class="bradcrumbs">
         <a href="homepage-design-concept-2.html">Home</a>
         <span> > </span>
-        <span>About iED</span>
+        <span>Why iED?</span>
       </span>
     </div>
   </div>
@@ -160,13 +177,13 @@
       </div>
     </div>
     <div class="grid-block grid-block-revert grid-block-teal">
+      <img src="img/high-quality-english-education-everywhere.png" alt="high quality education ied">
       <div class="grid-block__inner">
         <small>Our goals</small>
         <h3>High Quality English Education Everywhere</h3>
         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
         <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
       </div>
-      <img src="img/high-quality-english-education-everywhere.png" alt="high quality education ied">
     </div>
     <div class="grid-block">
       <img src="img/04.%20transform-your-way-of-teaching.png" alt="transform your way of teaching iED">
@@ -182,6 +199,7 @@
       <div class="container">
         <div class="advisory__carousel">
           <div class="carousel__item">
+            <img src="img/1.png" alt="Kenneth Yeung">
             <div class="advisory__inner">
               <small>Lorem ipsum dolor</small>
               <h4>Advisory Group</h4>
@@ -194,9 +212,9 @@
                 Board Member
               </span>
             </div>
-            <img src="img/1.png" alt="Kenneth Yeung">
           </div>
           <div class="carousel__item">
+            <img src="img/2.png" alt="Kenneth Yeung1">
             <div class="advisory__inner">
               <small>Lorem ipsum dolor</small>
               <h4>Advisory Group</h4>
@@ -209,9 +227,9 @@
                 Board Member1
               </span>
             </div>
-            <img src="img/2.png" alt="Kenneth Yeung1">
           </div>
           <div class="carousel__item">
+            <img src="img/1.png" alt="Kenneth Yeung">
             <div class="advisory__inner">
               <small>Lorem ipsum dolor</small>
               <h4>Advisory Group</h4>
@@ -224,7 +242,6 @@
                 Board Member
               </span>
             </div>
-            <img src="img/1.png" alt="Kenneth Yeung">
           </div>
           <div class="advisory__nav">
             <div class="advisory__button active"></div>

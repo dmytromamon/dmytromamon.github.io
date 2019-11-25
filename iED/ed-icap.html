@@ -31,43 +31,32 @@
 </head>
 
 <body>
-  <div class="head educational-bg">
+  <div id="mask"></div>
+  <div class="head educational-bg head-small">
     <div class="container">
       <div class="header">
         <div class="header__inner">
+          <div class="header__menu-button">
+            <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path d="M8,37h34v-4H8V37z M8,27h34v-4H8V27z M8,14v4h34v-4H8z" />
+            </svg>
+          </div>
+          <div class="header__close-button">
+            <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path d="M29,25.4c-0.3-0.3-0.3-0.6,0-0.9l9.6-9.6c0.3-0.3,0.4-0.6,0.4-0.9c0-0.3-0.1-0.6-0.4-0.9l-1.8-1.8c-0.3-0.3-0.6-0.4-0.9-0.4
+	c-0.4,0-0.6,0.1-0.9,0.4l-9.6,9.6c-0.3,0.3-0.6,0.3-0.9,0l-9.6-9.6c-0.3-0.3-0.6-0.4-0.9-0.4c-0.3,0-0.6,0.1-0.9,0.4l-1.8,1.8
+	c-0.3,0.3-0.4,0.6-0.4,0.9c0,0.3,0.1,0.6,0.4,0.9l9.6,9.6c0.3,0.3,0.3,0.6,0,0.9L11.3,35c-0.3,0.3-0.4,0.6-0.4,0.9
+	c0,0.3,0.1,0.6,0.4,0.9l1.8,1.8c0.3,0.3,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l9.6-9.6c0.3-0.3,0.6-0.3,0.9,0l9.6,9.6
+	c0.3,0.3,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l1.8-1.8c0.3-0.3,0.4-0.6,0.4-0.9c0-0.3-0.1-0.6-0.4-0.9L29,25.4z" />
+            </svg>
+          </div>
           <div class="header__logo">
             <a href="homepage-design-concept-2.html">
               <img src="img/00-logo.png" alt="iED logo chint">
             </a>
           </div>
           <div class="header__nav">
-            <ul class="action__list">
-              <li class="list__item inner-content">
-                English
-                <span><i class="dropdown-arrow"></i></span>
-                <ul class="item__inner lang-inner">
-                  <li class="item__inner-item">
-                    <ul class="nav__list">
-                      <li class="nav__item">
-                        <a href="/en" class="active">EN</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="/tc">繁</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="/sc">简</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="/vn">VN</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="list__item">
-                <a href="sign-in.html">Sign In</a>
-              </li>
-            </ul>
+            <div class="nav__inner">
             <ul class="nav__list">
               <li class="nav__item inner-content">
                 Educational Institutions
@@ -136,6 +125,34 @@
                 </a>
               </li>
             </ul>
+            <ul class="action__list">
+              <li class="list__item inner-content">
+                English
+                <span><i class="dropdown-arrow"></i></span>
+                <ul class="item__inner lang-inner">
+                  <li class="item__inner-item">
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a href="/en" class="active">EN</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="/tc">繁</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="/sc">简</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="/vn">VN</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="list__item">
+                <a href="sign-in.html">Sign In</a>
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
       </div>
@@ -200,6 +217,7 @@
       </div>
     </div>
     <div class="grid-block grid-block-big grid-block-revert">
+      <img src="img/icap-1.png" alt="ICAP students">
       <div class="grid-block__inner">
         <h3>About Illinois Composite Admissions Program (ICAP)</h3>
         <p>Fusce mattis sociis scelerisque lacus, fusce pellentesque commodo hymenaeos, vitae dignissim dolor erat ac leo pulvinar, turpis eget. Risus tempor. Eget aliquam neque integer ridiculus, venenatis donec at sodales et, sed nisl nibh nulla vitae condimentum vitae. Sit consequat magna nisl odio, nulla vel ullamcorper sed laoreet ut, vestibulum pede adipiscing, donec pulvinar.</p>
@@ -217,7 +235,6 @@
           <li>Students enrolled will be assigned to an academic counsellor. This is an added benefit and support personnel to help you successfully complete courses. The counsellor will also help you with tracking your path to a U.S. university</li>
         </ul>
       </div>
-      <img src="img/icap-1.png" alt="ICAP students">
     </div>
     <div class="grid-block grid-block-big">
       <img src="img/icap-3.png" alt="icap program students">
@@ -232,6 +249,7 @@
       </div>
     </div>
     <div class="grid-block grid-block-big grid-block-revert">
+      <img src="img/icap-2.png" alt="student ICAP laboratory">
       <div class="grid-block__inner">
         <h3>Courses in this Program</h3>
         <p>Quisque nulla mollis dolor tellus, facilisis culpa, magna vel sit, facilisis vel urna. Nunc et porta ac tortor, lacus diam dapibus, venenatis lacus nisl dictum tincidunt eleifend leo, velit tempor ipsum eros.</p>
@@ -259,7 +277,6 @@
           <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
         </ul>
       </div>
-      <img src="img/icap-2.png" alt="student ICAP laboratory">
     </div>
 
     <div class="container">
@@ -307,6 +324,11 @@
                 <a href="ed-teacher-training.html">Find out more</a>
               </div>
             </div>
+          </div>
+          <div class="programs__nav">
+            <div class="programs__button active"></div>
+            <div class="programs__button"></div>
+            <div class="programs__button"></div>
           </div>
         </div>
       </div>

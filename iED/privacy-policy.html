@@ -26,20 +26,105 @@
 
   <title>City grid</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:700|Nunito|Open+Sans:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div id="mask"></div>
   <div class="head privacy-bg">
     <div class="container">
       <div class="header">
         <div class="header__inner">
+          <div class="header__menu-button">
+            <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path d="M8,37h34v-4H8V37z M8,27h34v-4H8V27z M8,14v4h34v-4H8z" />
+            </svg>
+          </div>
+          <div class="header__close-button">
+            <svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path d="M29,25.4c-0.3-0.3-0.3-0.6,0-0.9l9.6-9.6c0.3-0.3,0.4-0.6,0.4-0.9c0-0.3-0.1-0.6-0.4-0.9l-1.8-1.8c-0.3-0.3-0.6-0.4-0.9-0.4
+	c-0.4,0-0.6,0.1-0.9,0.4l-9.6,9.6c-0.3,0.3-0.6,0.3-0.9,0l-9.6-9.6c-0.3-0.3-0.6-0.4-0.9-0.4c-0.3,0-0.6,0.1-0.9,0.4l-1.8,1.8
+	c-0.3,0.3-0.4,0.6-0.4,0.9c0,0.3,0.1,0.6,0.4,0.9l9.6,9.6c0.3,0.3,0.3,0.6,0,0.9L11.3,35c-0.3,0.3-0.4,0.6-0.4,0.9
+	c0,0.3,0.1,0.6,0.4,0.9l1.8,1.8c0.3,0.3,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l9.6-9.6c0.3-0.3,0.6-0.3,0.9,0l9.6,9.6
+	c0.3,0.3,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l1.8-1.8c0.3-0.3,0.4-0.6,0.4-0.9c0-0.3-0.1-0.6-0.4-0.9L29,25.4z" />
+            </svg>
+          </div>
           <div class="header__logo">
             <a href="homepage-design-concept-2.html">
               <img src="img/00-logo.png" alt="iED logo chint">
             </a>
           </div>
           <div class="header__nav">
+            <div class="nav__inner">
+            <ul class="nav__list">
+              <li class="nav__item inner-content">
+                Educational Institutions
+                <span><i class="dropdown-arrow"></i></span>
+                <ul class="item__inner">
+                  <li class="item__inner-item">
+                    <a href="educational-institution.html">View Programs</a>
+                  </li>
+                  <li class="item__inner-item">
+                    <div class="inner-item__title">Educational Institution programs:</div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a href="ed-partner-highschool-program.html">Partner High School Programs</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="ed-arizona-composite.html">Arizona Composite Admissions program (ACAP)</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="ed-ied-english-program.html">iED English Program</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="ed-icap.html">Illinois Composite Admissions program (ICAP)</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="ed-teacher-training.html">Teacher Training</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item inner-content">
+                Students
+                <span><i class="dropdown-arrow"></i></span>
+                <ul class="item__inner">
+                  <li class="item__inner-item">
+                    <a href="students.html">View Programs</a>
+                  </li>
+                  <li class="item__inner-item">
+                    <div class="inner-item__title">Student programs:</div>
+                    <ul class="nav__list">
+                      <li class="nav__item">
+                        <a href="student-ied-english-program.html">iED English Program</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="student-acap.html">Arizona Composite Admissions program (ACAP)</a>
+                      </li>
+                      <li class="nav__item active">
+                        <a href="student-icap.html">Illinois Composite Admissions program (ICAP)</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="why-iEd-3.html">About iEd</a>
+              </li>
+              <li class="nav__item">
+                <a href="partnership.html">Partnership</a>
+              </li>
+              <li class="nav__item">
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="sign-up-institution-01.html" class="button button-cta">
+                  Apply for Programs
+                </a>
+              </li>
+            </ul>
             <ul class="action__list">
               <li class="list__item inner-content">
                 English
@@ -48,7 +133,7 @@
                   <li class="item__inner-item">
                     <ul class="nav__list">
                       <li class="nav__item">
-                        <a href="#" class="active">EN</a>
+                        <a href="/en" class="active">EN</a>
                       </li>
                       <li class="nav__item">
                         <a href="/tc">繁</a>
@@ -67,74 +152,7 @@
                 <a href="sign-in.html">Sign In</a>
               </li>
             </ul>
-            <ul class="nav__list">
-              <li class="nav__item inner-content">
-                Education Institutions
-                <span><i class="dropdown-arrow"></i></span>
-                <ul class="item__inner">
-                  <li class="item__inner-item">
-                    <a href="#">View Programs</a>
-                  </li>
-                  <li class="item__inner-item">
-                    <div class="inner-item__title">Educational Institution programs:</div>
-                    <ul class="nav__list">
-                      <li class="nav__item">
-                        <a href="#">Partner High School Programs</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#">Arizona Composite Admissions program (ACAP)</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#">iED English Program</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#">Illinois Composite Admissions program (ICAP)</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#">Teacher Training</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav__item inner-content">
-                Students
-                <span><i class="dropdown-arrow"></i></span>
-                <ul class="item__inner">
-                  <li class="item__inner-item">
-                    <a href="#">View Programs</a>
-                  </li>
-                  <li class="item__inner-item">
-                    <div class="inner-item__title">Student programs:</div>
-                    <ul class="nav__list">
-                      <li class="nav__item">
-                        <a href="#">iED English Program</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#">Arizona Composite Admissions program (ACAP)</a>
-                      </li>
-                      <li class="nav__item">
-                        <a href="#">Illinois Composite Admissions program (ICAP)</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav__item">
-                <a href="#">About iEd</a>
-              </li>
-              <li class="nav__item">
-                <a href="#">Partnership</a>
-              </li>
-              <li class="nav__item">
-                <a href="#">Contact Us</a>
-              </li>
-              <li class="nav__item">
-                <a href="sign-up-institution-01.html" class="button button-cta">
-                  Apply for Programs
-                </a>
-              </li>
-            </ul>
+          </div>
           </div>
         </div>
       </div>
@@ -326,22 +344,22 @@
       <div class="footer__links">
         <ul class="links__list">
           <li class="links__item">
-            <a href="#">Educational Institutions</a>
+            <a href="educational-institution.html">Educational Institutions</a>
           </li>
           <li class="links__item">
-            <a href="#">Students</a>
+            <a href="students.html">Students</a>
           </li>
           <li class="links__item">
-            <a href="#">About iEd</a>
+            <a href="why-iEd-3.html">About iEd</a>
           </li>
           <li class="links__item">
-            <a href="#">Contact Us</a>
+            <a href="contact-us.html">Contact Us</a>
           </li>
           <li class="links__item">
-            <a href="#">Partnerships</a>
+            <a href="partnership.html">Partnerships</a>
           </li>
           <li class="links__item">
-            <a href="#">FAQ</a>
+            <a href="faqs.html">FAQ</a>
           </li>
         </ul>
       </div>
@@ -356,10 +374,10 @@
       <span>Copyright © 2014-2019 Immersive Education. All Rights Reserved.</span>
       <ul class="footer__list">
         <li class="list__item">
-          <a href="#">Terms of Service</a>
+          <a href="terms-and-conditions.html">Terms of Service</a>
         </li>
         <li class="list__item">
-          <a href="#">Privacy &amp; Policy</a>
+          <a href="privacy-policy.html">Privacy &amp; Policy</a>
         </li>
       </ul>
     </div>
