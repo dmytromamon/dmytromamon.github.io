@@ -201,23 +201,23 @@
           </div>
           <form action="" id="fill-out-form">
             <div class="sb">
-              <input type="text" placeholder="First Name">
-              <input type="text" placeholder="Last Name">
+              <input type="text" placeholder="First Name" name="firstname">
+              <input type="text" placeholder="Last Name" name="lastname">
             </div>
             <div class="sb">
-              <input type="text" placeholder="E-mail Address">
+              <input type="text" placeholder="E-mail Address" name="email">
               <div class="custom-select" style="width: 95px">
-                <select name="country-number" id="country-number">
+                <select name="countrynumber" id="country-number">
                   <option value="0">+852</option>
                   <option value="country-usa">+852</option>
                   <option value="country-ukraine">+380</option>
                 </select>
               </div>
-              <input type="number" placeholder="23456789">
+              <input type="number" name="phone" placeholder="23456789">
             </div>
             <div class="sb">
-              <input type="text" placeholder="Name of Organization">
-              <input type="text" placeholder="Job Title">
+              <input type="text" name="organization" placeholder="Name of Organization">
+              <input type="text" name="jobtitle" placeholder="Job Title">
             </div>
             <input type="button" class="button-submit" value="Submit">
           </form>
@@ -277,6 +277,7 @@
   </div>
 
   <script src="libs/jquery.min.js"></script>
+  <script src="libs/jquery.ba-throttle-debounce.min.js"></script>
   <script src="libs/TweenMax.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>

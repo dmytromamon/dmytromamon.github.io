@@ -201,24 +201,24 @@
           </div>
           <form action="" id="registration">
             <div class="sb">
-              <input type="text" placeholder="First Name">
-              <input type="text" placeholder="Last Name">
+              <input type="text" placeholder="First Name" name="firstname">
+              <input type="text" placeholder="Last Name" name="last name">
             </div>
             <div class="sb">
-              <input type="text" placeholder="E-mail Address">
+              <input type="text" placeholder="E-mail Address" name="email">
               <div class="custom-select" style="width: 95px">
-                <select name="country-number" id="country-number">
+                <select name="countrynumber" id="country-number">
                   <option value="0">+852</option>
                   <option value="country-usa">+852</option>
                   <option value="country-ukraine">+380</option>
                 </select>
               </div>
-              <input type="number" placeholder="23456789">
+              <input type="number" placeholder="23456789" name="phone">
             </div>
             <div class="sb">
-              <input type="text" placeholder="Name of School">
-              <div class="custom-select" style="width: 270px">
-                <select name="school-year" id="school-year" class="select-wide">
+              <input type="text" class="half-select" placeholder="Name of School" name="school">
+              <div class="custom-select half-select" style="width: 270px">
+                <select name="schoolyear" id="school-year" class="select-wide">
                   <option value="0">School Year</option>
                   <option value="country-usa">1</option>
                   <option value="country-ukraine">2</option>
@@ -285,6 +285,7 @@
   </div>
 
   <script src="libs/jquery.min.js"></script>
+  <script src="libs/jquery.ba-throttle-debounce.min.js"></script>
   <script src="libs/TweenMax.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>

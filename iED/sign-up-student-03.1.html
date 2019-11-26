@@ -201,14 +201,14 @@
           </div>
           <form action="" id="registration-payment">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-xl-6">
                 <div class="title">Registration Form</div>
                 <div class="sb">
-                  <input type="text" placeholder="First Name">
-                  <input type="text" placeholder="Last Name">
+                  <input type="text" placeholder="First Name" name="firstname">
+                  <input type="text" placeholder="Last Name" name="lastname">
                 </div>
                 <div class="sb">
-                  <input type="text" placeholder="E-mail Address">
+                  <input type="text" placeholder="E-mail Address" name="email">
                   <div class="custom-select" style="width: 95px">
                     <select name="country-number" id="country-number">
                       <option value="0">+852</option>
@@ -216,12 +216,12 @@
                       <option value="country-ukraine">+380</option>
                     </select>
                   </div>
-                  <input type="number" placeholder="23456789">
+                  <input type="number" placeholder="23456789" name="phone">
                 </div>
                 <div class="sb">
-                  <input type="text" class="half-select" placeholder="Name of School">
+                  <input type="text" class="half-select" placeholder="Name of School" name="school">
                   <div class="custom-select half-select" style="width: 270px">
-                    <select name="school-year" id="school-year" class="select-wide">
+                    <select name="schoolyear" id="school-year" class="select-wide">
                       <option value="0">School Year</option>
                       <option value="country-usa">1</option>
                       <option value="country-ukraine">2</option>
@@ -232,21 +232,21 @@
                 </div>
                 <div class="title">Payment Method</div>
                 <div class="sb">
-                  <input type="radio" id="paypal" name="select-payment" value="paypal" checked>
+                  <input type="radio" id="paypal" name="selectpayment" value="paypal" checked>
                   <label for="paypal" class="form-button form-button-small">
                     <img src="img/paypal.png" alt="paypal">
                   </label>
-                  <input type="radio" id="paydollar" name="select-payment" value="paydollar">
+                  <input type="radio" id="paydollar" name="selectpayment" value="paydollar">
                   <label for="paydollar" class="form-button form-button-small">
                     <img src="img/paydollar.png" alt="paydollar">
                   </label>
-                  <input type="radio" id="wepay" name="select-payment" value="wepay">
+                  <input type="radio" id="wepay" name="selectpayment" value="wepay">
                   <label for="wepay" class="form-button form-button-small">
                     <img src="img/wechat-pay.png" alt="wechat pay">
                   </label>
                 </div>
               </div>
-              <div class="choose-program col-md-5 offset-md-1">
+              <div class="choose-program col-xl-5 offset-xl-1">
                 <div class="choose-program__inner">
                   <table>
                     <tr>
@@ -326,6 +326,7 @@
   </div>
 
   <script src="libs/jquery.min.js"></script>
+  <script src="libs/jquery.ba-throttle-debounce.min.js"></script>
   <script src="libs/TweenMax.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
