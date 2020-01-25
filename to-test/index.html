@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Scroll page — title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Condensed:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/particles.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="header"></div>
+
+  <section id="head">
+    <div class="head__inner container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 offset-2 col-8">
+          <h1>Do More Science at Less Cost</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-xl-0 col-xl-12 offset-lg-1 col-lg-10 offset-2 col-8">
+          <div class="head__copy">BenchSci is the only company that can diagnose and resolve pharmaceutical R&amp;D inefficiency resulting from suboptimal reagent selection</div>
+        </div>
+      </div>
+    </div>
+    <div class="head__bg">
+      <!-- count particles -->
+      <div class="count-particles">
+        <span class="js-count-particles">--</span> particles
+      </div>
+
+      <!-- particles.js container -->
+      <div id="particles-js"></div>
+    </div>
+    <a href="#scroll-section" class="head__button">
+      <div class="button" id="scroll-down-button">
+        <svg width="44" height="110" viewBox="0 0 44 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="path-1-inside-1" fill="white">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22 0C34.1503 0 44 8.73045 44 19.5V58.5V60.6667H43.8657C42.6498 70.4166 33.324 78 22 78C10.676 78 1.35024 70.4166 0.13427 60.6667H0V58.5V19.5C0 8.73045 9.84974 0 22 0Z" />
+          </mask>
+          <path d="M44 60.6667V62.6667H46V60.6667H44ZM43.8657 60.6667V58.6667H42.0997L41.8811 60.4191L43.8657 60.6667ZM0.13427 60.6667L2.11889 60.4191L1.90033 58.6667H0.13427V60.6667ZM0 60.6667H-2V62.6667H0V60.6667ZM46 19.5C46 7.40593 35.0212 -2 22 -2V2C33.2793 2 42 10.055 42 19.5H46ZM46 58.5V19.5H42V58.5H46ZM46 60.6667V58.5H42V60.6667H46ZM43.8657 62.6667H44V58.6667H43.8657V62.6667ZM41.8811 60.4191C40.8111 68.9987 32.4955 76 22 76V80C34.1526 80 44.4884 71.8344 45.8504 60.9142L41.8811 60.4191ZM22 76C11.5045 76 3.18891 68.9987 2.11889 60.4191L-1.85035 60.9142C-0.488424 71.8344 9.84745 80 22 80V76ZM0 62.6667H0.13427V58.6667H0V62.6667ZM-2 58.5V60.6667H2V58.5H-2ZM-2 19.5V58.5H2V19.5H-2ZM22 -2C8.97876 -2 -2 7.40593 -2 19.5H2C2 10.055 10.7207 2 22 2V-2Z" fill="white" mask="url(#path-1-inside-1)" />
+          <line x1="22" y1="18" x2="22" y2="25" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path class="mouse__arrow" d="M11 87L22 98L33 87" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path class="mouse__arrow" d="M11 98L22 109L33 98" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </a>
+  </section>
+  <section class="scroll-animation" id="scroll-section">
+    <div class="container">
+      <div class="row">
+        <div class="offset-xl-1 col-xl-10 offset-lg-2 col-lg-8 offset-md-1 col-md-10 offset-1 col-10">
+          <h3>Experiments are the lifeblood of R&amp;D, but reagent failure drains important resources and impedes the advancement of quality candidates</h3>
+        </div>
+      </div>
+    </div>
+    <div id="text1">
+      <div class="container container-wide">
+        <div class="row margin-low">
+          <div class="offset-md-6 col-md-6">
+            <div class="section__title">
+              <strong>36.1%</strong>
+              <b>of experimental failure</b>
+              is due to reagents not working as intended**
+            </div>
+          </div>
+          <div class="col-md-6 col-reverse col-animation">
+            <div class="animation__block" id="trigger1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="text2">
+    <div class="container container-wide">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="section__title">
+            <strong>$17.6 billion</strong>
+            <b>is lost by biopharma</b>
+            on this problem each year*†
+          </div>
+        </div>
+        <div class="col-md-6 col-animation">
+          <div class="animation__block" id="trigger2">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="text3">
+    <div class="container container-wide">
+      <div class="row margin-negative">
+        <div class="offset-md-6 col-md-6">
+          <div class="section__title">
+            Pipelines stall and
+            <b>patients wait as drugs</b>
+            <strong>get delayed</strong>
+          </div>
+        </div>
+        <div class="col-md-6 col-reverse col-animation">
+          <div class="animation__block" id="trigger3">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="offset-xl-1 col-xl-10">
+          <div class="section__note">
+            * Freedman, L., Cockburn, I. and Simcoe, T. (2015). The Economics of Reproducibility in Preclinical Research. PLOS Biology, 13(6), p.e1002165.
+          </div>
+          <div class="section__note">
+            † Freedman et al. report figures for the US only. We have extrapolated their data to reflect the fact that the US accounts for 58% of global pharmaceutical R&amp;D. <br>See <a href="https://www.abpi.org.uk/facts-and-figures/science-and-innovation/worldwide-pharmaceutical-company-rd-expenditure-by-country/">https://www.abpi.org.uk/facts-and-figures/science-and-innovation/worldwide-pharmaceutical-company-rd-expenditure-by-country/</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="video">
+    <video src=""></video>
+    <div class="container">
+      <div class="row">
+        <div class="offset-xl-2 col-xl-8 offset-lg-3 col-lg-6 offset-md-1 col-md-10 offset-1 col-10">
+          <h3>BenchSci returns time to scientists and reduces unnecessary spend</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-lg-1 col-lg-10">
+          <p>We exponentially increase the speed and quality of life-saving research by empowering scientists with the world’s most advanced biomedical artificial intelligence to run more successful experiments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tabs">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-1 col-md-10">
+          <h3 class="mt">Using machine learning, BenchSci puts the world’s biomedical knowledge at scientists fingertips</h3>
+        </div>
+      </div>
+    </div>
+    <div class="tabs-pin">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tabs">
+            <div class="tab" id="tab1">Curate</div>
+            <div class="tab" id="tab2">Decode</div>
+            <div class="tab" id="tab3">Present</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="placeholder">
+      <div class="placeholder__content" id="content1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>This is a paragraph that lives inside the “Curate” panel Let’s put this text box in here to test the coded file.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="placeholder__content" id="content2">
+        <img src="img/Test_SVG.svg" alt="">
+      </div>
+      <div class="placeholder__content" id="content3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>This is a paragraph that lives inside the “Curate” panel Let’s put this text box in here to test the coded file.</p>
+            </div>
+            <div class="col-md-6">
+              <p>This is a paragraph that lives inside the “Curate” panel Let’s put this text box in here to test the coded file.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-1 col-md-10">
+          <h3>How it looks</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 video-container">
+          <img src="img/video_bg.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="infographics">
+    <div class="container">
+      <div class="row">
+        <div class="offset-xl-1 col-xl-10 offset-md-2 col-md-8 offset-1 col-10">
+          <h3>BenchSci is the world leader in AI-Assisted Reagent Selection and experiment design</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container container-wide">
+      <div class="row">
+        <div class="col-md-6 inforgraphic__col">
+          <svg version="1.1" id="wheel1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 660 540" style="enable-background:new 0 0 660 540;" xml:space="preserve">
+            <style type="text/css">
+              .st0 {
+                fill: none;
+                stroke: #FFFFFF;
+                stroke-width: 2;
+              }
+
+              .st1 {
+                fill: none;
+              }
+
+              .st2 {
+                fill: #ADBEC0;
+              }
+
+              .st3 {
+                fill: none;
+                stroke: url(#SVGID_1_);
+                stroke-width: 52;
+              }
+
+            </style>
+            <path class="st0" d="M243.4,39.01h52l32,36" />
+            <g class="move">
+              <rect x="3.4" y="3.01" class="st1" width="233" height="63" />
+              <image style="overflow:visible;" width="466" height="126" xlink:href="data:image/png;base64,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" transform="matrix(0.5 0 0 0.5 0 0)">
+              </image>
+              <circle class="st0" cx="417" cy="298" r="149" />
+              <g>
+                <path class="st2" d="M417,517.5c-58.63,0-113.75-22.83-155.21-64.29S197.5,356.63,197.5,298s22.83-113.75,64.29-155.21
+		S358.37,78.5,417,78.5s113.75,22.83,155.21,64.29S636.5,239.37,636.5,298s-22.83,113.75-64.29,155.21S475.63,517.5,417,517.5z
+		 M417,130.5c-92.36,0-167.5,75.14-167.5,167.5c0,92.36,75.14,167.5,167.5,167.5c92.36,0,167.5-75.14,167.5-167.5
+		C584.5,205.64,509.36,130.5,417,130.5z" />
+              </g>
+              <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="197.5" y1="298" x2="636.5" y2="298" gradientTransform="matrix(-0.7071 0.7071 -0.7071 -0.7071 922.5814 213.8543)">
+                <stop offset="0" style="stop-color:#12A5AE" />
+                <stop offset="1" style="stop-color:#6534CF" />
+              </linearGradient>
+              <circle class="st3 wheel1-circle" cx="417" cy="298" r="193.5" />
+              <circle class="st0" cx="417" cy="298" r="238" />
+            </g>
+          </svg>
+        </div>
+        <div class="offset-xl-0 col-xl-6 col-md-5 inforgraphic__col">
+          <div class="text-container">
+            <p class="teal">15 of the top 20 pharmaceutical companies in the world trust BenchSci, and it is used by over 31,000 scientists at 3,600 institutions worldwide</p>
+          </div>
+        </div>
+      </div>
+      <div class="row row-reverse">
+        <div class="offset-md-6 col-md-6 inforgraphic__col">
+          <svg id="calendar" width="464" height="462" viewBox="0 0 464 462" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="131" y="3" width="332" height="457" stroke="white" stroke-width="2" />
+            <rect class="calendar-rectangle" x="150" y="441" width="294" height="0" fill="url(#paint0_linear)" />
+            <path d="M35.6997 456.05C35.6997 456.85 35.5997 457.567 35.3997 458.2C35.2064 458.833 34.9164 459.37 34.5297 459.81C34.1497 460.243 33.6797 460.577 33.1197 460.81C32.5597 461.043 31.9164 461.16 31.1897 461.16C30.5297 461.16 29.8564 461.067 29.1697 460.88C29.183 460.687 29.1997 460.497 29.2197 460.31C29.2397 460.117 29.2564 459.927 29.2697 459.74C29.283 459.627 29.323 459.537 29.3897 459.47C29.463 459.397 29.573 459.36 29.7197 459.36C29.8397 459.36 29.9964 459.39 30.1897 459.45C30.3897 459.51 30.6564 459.54 30.9897 459.54C31.4297 459.54 31.823 459.473 32.1697 459.34C32.5164 459.207 32.8064 459 33.0397 458.72C33.273 458.44 33.4497 458.083 33.5697 457.65C33.6964 457.21 33.7597 456.69 33.7597 456.09V446.67H35.6997V456.05ZM46.6314 455.68L44.3814 449.85C44.3147 449.677 44.2447 449.477 44.1714 449.25C44.0981 449.017 44.0281 448.77 43.9614 448.51C43.8214 449.05 43.6781 449.5 43.5314 449.86L41.2814 455.68H46.6314ZM50.6714 461H49.1714C48.9981 461 48.8581 460.957 48.7514 460.87C48.6447 460.783 48.5647 460.673 48.5114 460.54L47.1714 457.08H40.7414L39.4014 460.54C39.3614 460.66 39.2847 460.767 39.1714 460.86C39.0581 460.953 38.9181 461 38.7514 461H37.2514L42.9814 446.67H44.9414L50.6714 461ZM64.1666 446.67V461H63.1966C63.0432 461 62.9132 460.973 62.8066 460.92C62.7066 460.867 62.6066 460.777 62.5066 460.65L54.2166 449.85C54.2299 450.017 54.2399 450.18 54.2466 450.34C54.2532 450.5 54.2566 450.65 54.2566 450.79V461H52.5566V446.67H53.5566C53.6432 446.67 53.7166 446.677 53.7766 446.69C53.8366 446.697 53.8899 446.713 53.9366 446.74C53.9832 446.76 54.0299 446.793 54.0766 446.84C54.1232 446.88 54.1732 446.933 54.2266 447L62.5166 457.79C62.5032 457.617 62.4899 457.45 62.4766 457.29C62.4699 457.123 62.4666 456.967 62.4666 456.82V446.67H64.1666Z" fill="white" />
+            <path d="M40.4453 12.84C40.4453 13.9133 40.2753 14.89 39.9353 15.77C39.5953 16.65 39.1153 17.4033 38.4953 18.03C37.8753 18.6567 37.1286 19.1433 36.2553 19.49C35.3886 19.83 34.4286 20 33.3753 20H28.0253V5.67H33.3753C34.4286 5.67 35.3886 5.84333 36.2553 6.19C37.1286 6.53 37.8753 7.01667 38.4953 7.65C39.1153 8.27667 39.5953 9.03 39.9353 9.91C40.2753 10.79 40.4453 11.7667 40.4453 12.84ZM38.4553 12.84C38.4553 11.96 38.3353 11.1733 38.0953 10.48C37.8553 9.78667 37.5153 9.2 37.0753 8.72C36.6353 8.24 36.102 7.87333 35.4753 7.62C34.8486 7.36667 34.1486 7.24 33.3753 7.24H29.9653V18.43H33.3753C34.1486 18.43 34.8486 18.3033 35.4753 18.05C36.102 17.7967 36.6353 17.4333 37.0753 16.96C37.5153 16.48 37.8553 15.8933 38.0953 15.2C38.3353 14.5067 38.4553 13.72 38.4553 12.84ZM52.0802 18.42L52.0702 20H43.2402V5.67H52.0702V7.25H45.1802V12.01H50.7602V13.53H45.1802V18.42H52.0802ZM64.5306 17.04C64.6373 17.04 64.7306 17.0833 64.8106 17.17L65.5806 18C64.994 18.68 64.2806 19.21 63.4406 19.59C62.6073 19.97 61.5973 20.16 60.4106 20.16C59.384 20.16 58.4506 19.9833 57.6106 19.63C56.7706 19.27 56.054 18.77 55.4606 18.13C54.8673 17.4833 54.4073 16.71 54.0806 15.81C53.754 14.91 53.5906 13.92 53.5906 12.84C53.5906 11.76 53.7606 10.77 54.1006 9.87C54.4406 8.97 54.9173 8.19667 55.5306 7.55C56.1506 6.90333 56.8906 6.40333 57.7506 6.05C58.6106 5.69 59.5606 5.51 60.6006 5.51C61.6206 5.51 62.5206 5.67333 63.3006 6C64.0806 6.32667 64.7673 6.77 65.3606 7.33L64.7206 8.22C64.6806 8.28667 64.6273 8.34333 64.5606 8.39C64.5006 8.43 64.4173 8.45 64.3106 8.45C64.1906 8.45 64.044 8.38667 63.8706 8.26C63.6973 8.12667 63.4706 7.98 63.1906 7.82C62.9106 7.66 62.5606 7.51667 62.1406 7.39C61.7206 7.25667 61.204 7.19 60.5906 7.19C59.8506 7.19 59.174 7.32 58.5606 7.58C57.9473 7.83333 57.4173 8.20333 56.9706 8.69C56.5306 9.17667 56.1873 9.77 55.9406 10.47C55.694 11.17 55.5706 11.96 55.5706 12.84C55.5706 13.7333 55.6973 14.53 55.9506 15.23C56.2106 15.93 56.5606 16.5233 57.0006 17.01C57.4473 17.49 57.9706 17.8567 58.5706 18.11C59.1773 18.3633 59.8306 18.49 60.5306 18.49C60.9573 18.49 61.3406 18.4667 61.6806 18.42C62.0273 18.3667 62.344 18.2867 62.6306 18.18C62.924 18.0733 63.194 17.94 63.4406 17.78C63.694 17.6133 63.944 17.4167 64.1906 17.19C64.304 17.09 64.4173 17.04 64.5306 17.04Z" fill="white" />
+            <path d="M34.3325 256.05C34.3325 256.85 34.2325 257.567 34.0325 258.2C33.8392 258.833 33.5492 259.37 33.1625 259.81C32.7825 260.243 32.3125 260.577 31.7525 260.81C31.1925 261.043 30.5492 261.16 29.8225 261.16C29.1625 261.16 28.4892 261.067 27.8025 260.88C27.8158 260.687 27.8325 260.497 27.8525 260.31C27.8725 260.117 27.8892 259.927 27.9025 259.74C27.9158 259.627 27.9558 259.537 28.0225 259.47C28.0958 259.397 28.2058 259.36 28.3525 259.36C28.4725 259.36 28.6292 259.39 28.8225 259.45C29.0225 259.51 29.2892 259.54 29.6225 259.54C30.0625 259.54 30.4558 259.473 30.8025 259.34C31.1492 259.207 31.4392 259 31.6725 258.72C31.9058 258.44 32.0825 258.083 32.2025 257.65C32.3292 257.21 32.3925 256.69 32.3925 256.09V246.67H34.3325V256.05ZM43.3795 259.46C43.9729 259.46 44.5029 259.36 44.9695 259.16C45.4362 258.96 45.8295 258.68 46.1495 258.32C46.4762 257.96 46.7229 257.53 46.8895 257.03C47.0629 256.53 47.1495 255.98 47.1495 255.38V246.67H49.0795V255.38C49.0795 256.207 48.9462 256.973 48.6795 257.68C48.4195 258.387 48.0429 259 47.5495 259.52C47.0629 260.033 46.4662 260.437 45.7595 260.73C45.0529 261.023 44.2595 261.17 43.3795 261.17C42.4995 261.17 41.7062 261.023 40.9995 260.73C40.2929 260.437 39.6929 260.033 39.1995 259.52C38.7062 259 38.3262 258.387 38.0595 257.68C37.7995 256.973 37.6695 256.207 37.6695 255.38V246.67H39.5995V255.37C39.5995 255.97 39.6829 256.52 39.8495 257.02C40.0229 257.52 40.2695 257.95 40.5895 258.31C40.9162 258.67 41.3129 258.953 41.7795 259.16C42.2529 259.36 42.7862 259.46 43.3795 259.46ZM64.1666 246.67V261H63.1966C63.0432 261 62.9132 260.973 62.8066 260.92C62.7066 260.867 62.6066 260.777 62.5066 260.65L54.2166 249.85C54.2299 250.017 54.2399 250.18 54.2466 250.34C54.2532 250.5 54.2566 250.65 54.2566 250.79V261H52.5566V246.67H53.5566C53.6432 246.67 53.7166 246.677 53.7766 246.69C53.8366 246.697 53.8899 246.713 53.9366 246.74C53.9832 246.76 54.0299 246.793 54.0766 246.84C54.1232 246.88 54.1732 246.933 54.2266 247L62.5166 257.79C62.5032 257.617 62.4899 257.45 62.4766 257.29C62.4699 257.123 62.4666 256.967 62.4666 256.82V246.67H64.1666Z" fill="white" />
+            <path d="M39.3325 216.05C39.3325 216.85 39.2325 217.567 39.0325 218.2C38.8392 218.833 38.5492 219.37 38.1625 219.81C37.7825 220.243 37.3125 220.577 36.7525 220.81C36.1925 221.043 35.5492 221.16 34.8225 221.16C34.1625 221.16 33.4892 221.067 32.8025 220.88C32.8158 220.687 32.8325 220.497 32.8525 220.31C32.8725 220.117 32.8892 219.927 32.9025 219.74C32.9158 219.627 32.9558 219.537 33.0225 219.47C33.0958 219.397 33.2058 219.36 33.3525 219.36C33.4725 219.36 33.6292 219.39 33.8225 219.45C34.0225 219.51 34.2892 219.54 34.6225 219.54C35.0625 219.54 35.4558 219.473 35.8025 219.34C36.1492 219.207 36.4392 219 36.6725 218.72C36.9058 218.44 37.0825 218.083 37.2025 217.65C37.3292 217.21 37.3925 216.69 37.3925 216.09V206.67H39.3325V216.05ZM48.3795 219.46C48.9729 219.46 49.5029 219.36 49.9695 219.16C50.4362 218.96 50.8295 218.68 51.1495 218.32C51.4762 217.96 51.7229 217.53 51.8895 217.03C52.0629 216.53 52.1495 215.98 52.1495 215.38V206.67H54.0795V215.38C54.0795 216.207 53.9462 216.973 53.6795 217.68C53.4195 218.387 53.0429 219 52.5495 219.52C52.0629 220.033 51.4662 220.437 50.7595 220.73C50.0529 221.023 49.2595 221.17 48.3795 221.17C47.4995 221.17 46.7062 221.023 45.9995 220.73C45.2929 220.437 44.6929 220.033 44.1995 219.52C43.7062 219 43.3262 218.387 43.0595 217.68C42.7995 216.973 42.6695 216.207 42.6695 215.38V206.67H44.5995V215.37C44.5995 215.97 44.6829 216.52 44.8495 217.02C45.0229 217.52 45.2695 217.95 45.5895 218.31C45.9162 218.67 46.3129 218.953 46.7795 219.16C47.2529 219.36 47.7862 219.46 48.3795 219.46ZM65.6866 219.37V221H57.5566V206.67H59.4866V219.37H65.6866Z" fill="white" />
+            <path d="M33.9888 408.25V413.26H39.8788V414.84H33.9888V421H32.0488V406.67H40.8788V408.25H33.9888ZM52.1973 419.42L52.1873 421H43.3573V406.67H52.1873V408.25H45.2973V413.01H50.8773V414.53H45.2973V419.42H52.1973ZM59.9303 419.46C60.4836 419.46 60.9603 419.397 61.3603 419.27C61.7603 419.143 62.087 418.967 62.3403 418.74C62.6003 418.507 62.7903 418.233 62.9103 417.92C63.0303 417.6 63.0903 417.25 63.0903 416.87C63.0903 416.13 62.827 415.547 62.3003 415.12C61.7736 414.687 60.9836 414.47 59.9303 414.47H56.8303V419.46H59.9303ZM56.8303 408.2V413.09H59.3903C59.937 413.09 60.4103 413.03 60.8103 412.91C61.217 412.79 61.5503 412.623 61.8103 412.41C62.077 412.197 62.2736 411.94 62.4003 411.64C62.527 411.333 62.5903 411 62.5903 410.64C62.5903 409.793 62.337 409.177 61.8303 408.79C61.3236 408.397 60.537 408.2 59.4703 408.2H56.8303ZM59.4703 406.67C60.3503 406.67 61.107 406.757 61.7403 406.93C62.3803 407.103 62.9036 407.35 63.3103 407.67C63.7236 407.99 64.027 408.383 64.2203 408.85C64.4136 409.31 64.5103 409.83 64.5103 410.41C64.5103 410.763 64.4536 411.103 64.3403 411.43C64.2336 411.75 64.0703 412.05 63.8503 412.33C63.6303 412.61 63.3503 412.863 63.0103 413.09C62.677 413.31 62.2836 413.49 61.8303 413.63C62.8836 413.83 63.6736 414.207 64.2003 414.76C64.7336 415.307 65.0003 416.027 65.0003 416.92C65.0003 417.527 64.887 418.08 64.6603 418.58C64.4403 419.08 64.1136 419.51 63.6803 419.87C63.2536 420.23 62.727 420.51 62.1003 420.71C61.4736 420.903 60.7603 421 59.9603 421H54.9003V406.67H59.4703Z" fill="white" />
+            <path d="M38.0916 366.67V381H36.3916V370.47C36.3916 370.33 36.3949 370.18 36.4016 370.02C36.4149 369.86 36.4282 369.697 36.4416 369.53L31.5216 378.49C31.3682 378.79 31.1349 378.94 30.8216 378.94H30.5416C30.2282 378.94 29.9949 378.79 29.8416 378.49L24.8216 369.49C24.8616 369.843 24.8816 370.17 24.8816 370.47V381H23.1816V366.67H24.6116C24.7849 366.67 24.9182 366.687 25.0116 366.72C25.1049 366.753 25.1949 366.847 25.2816 367L30.2316 375.82C30.3116 375.98 30.3882 376.147 30.4616 376.32C30.5416 376.493 30.6149 376.67 30.6816 376.85C30.7482 376.67 30.8182 376.493 30.8916 376.32C30.9649 376.14 31.0449 375.97 31.1316 375.81L35.9916 367C36.0716 366.847 36.1582 366.753 36.2516 366.72C36.3516 366.687 36.4882 366.67 36.6616 366.67H38.0916ZM49.3658 375.68L47.1158 369.85C47.0491 369.677 46.9791 369.477 46.9058 369.25C46.8324 369.017 46.7624 368.77 46.6958 368.51C46.5558 369.05 46.4124 369.5 46.2658 369.86L44.0158 375.68H49.3658ZM53.4058 381H51.9058C51.7324 381 51.5924 380.957 51.4858 380.87C51.3791 380.783 51.2991 380.673 51.2458 380.54L49.9058 377.08H43.4758L42.1358 380.54C42.0958 380.66 42.0191 380.767 41.9058 380.86C41.7924 380.953 41.6524 381 41.4858 381H39.9858L45.7158 366.67H47.6758L53.4058 381ZM59.2609 373.61C59.8209 373.61 60.3143 373.543 60.7409 373.41C61.1743 373.27 61.5343 373.077 61.8209 372.83C62.1143 372.577 62.3343 372.277 62.4809 371.93C62.6276 371.583 62.7009 371.2 62.7009 370.78C62.7009 369.927 62.4209 369.283 61.8609 368.85C61.3009 368.417 60.4609 368.2 59.3409 368.2H57.2209V373.61H59.2609ZM65.8809 381H64.1609C63.8076 381 63.5476 380.863 63.3809 380.59L59.6609 375.47C59.5476 375.31 59.4243 375.197 59.2909 375.13C59.1643 375.057 58.9643 375.02 58.6909 375.02H57.2209V381H55.2909V366.67H59.3409C60.2476 366.67 61.0309 366.763 61.6909 366.95C62.3509 367.13 62.8943 367.393 63.3209 367.74C63.7543 368.087 64.0743 368.507 64.2809 369C64.4876 369.487 64.5909 370.033 64.5909 370.64C64.5909 371.147 64.5109 371.62 64.3509 372.06C64.1909 372.5 63.9576 372.897 63.6509 373.25C63.3509 373.597 62.9809 373.893 62.5409 374.14C62.1076 374.387 61.6143 374.573 61.0609 374.7C61.3076 374.84 61.5209 375.043 61.7009 375.31L65.8809 381Z" fill="white" />
+            <path d="M37.3541 335.68L35.1041 329.85C35.0374 329.677 34.9674 329.477 34.8941 329.25C34.8207 329.017 34.7507 328.77 34.6841 328.51C34.5441 329.05 34.4007 329.5 34.2541 329.86L32.0041 335.68H37.3541ZM41.3941 341H39.8941C39.7207 341 39.5807 340.957 39.4741 340.87C39.3674 340.783 39.2874 340.673 39.2341 340.54L37.8941 337.08H31.4641L30.1241 340.54C30.0841 340.66 30.0074 340.767 29.8941 340.86C29.7807 340.953 29.6407 341 29.4741 341H27.9741L33.7041 326.67H35.6641L41.3941 341ZM47.5092 334.1C48.0626 334.1 48.5492 334.027 48.9692 333.88C49.3959 333.733 49.7526 333.53 50.0392 333.27C50.3326 333.003 50.5526 332.687 50.6992 332.32C50.8459 331.953 50.9192 331.55 50.9192 331.11C50.9192 330.197 50.6359 329.483 50.0692 328.97C49.5092 328.457 48.6559 328.2 47.5092 328.2H45.2092V334.1H47.5092ZM47.5092 326.67C48.4159 326.67 49.2026 326.777 49.8692 326.99C50.5426 327.197 51.0992 327.493 51.5392 327.88C51.9792 328.267 52.3059 328.733 52.5192 329.28C52.7392 329.827 52.8492 330.437 52.8492 331.11C52.8492 331.777 52.7326 332.387 52.4992 332.94C52.2659 333.493 51.9226 333.97 51.4692 334.37C51.0226 334.77 50.4659 335.083 49.7992 335.31C49.1392 335.53 48.3759 335.64 47.5092 335.64H45.2092V341H43.2792V326.67H47.5092ZM59.2609 333.61C59.8209 333.61 60.3143 333.543 60.7409 333.41C61.1743 333.27 61.5343 333.077 61.8209 332.83C62.1143 332.577 62.3343 332.277 62.4809 331.93C62.6276 331.583 62.7009 331.2 62.7009 330.78C62.7009 329.927 62.4209 329.283 61.8609 328.85C61.3009 328.417 60.4609 328.2 59.3409 328.2H57.2209V333.61H59.2609ZM65.8809 341H64.1609C63.8076 341 63.5476 340.863 63.3809 340.59L59.6609 335.47C59.5476 335.31 59.4243 335.197 59.2909 335.13C59.1643 335.057 58.9643 335.02 58.6909 335.02H57.2209V341H55.2909V326.67H59.3409C60.2476 326.67 61.0309 326.763 61.6909 326.95C62.3509 327.13 62.8943 327.393 63.3209 327.74C63.7543 328.087 64.0743 328.507 64.2809 329C64.4876 329.487 64.5909 330.033 64.5909 330.64C64.5909 331.147 64.5109 331.62 64.3509 332.06C64.1909 332.5 63.9576 332.897 63.6509 333.25C63.3509 333.597 62.9809 333.893 62.5409 334.14C62.1076 334.387 61.6143 334.573 61.0609 334.7C61.3076 334.84 61.5209 335.043 61.7009 335.31L65.8809 341Z" fill="white" />
+            <path d="M38.1502 286.67V301H36.4502V290.47C36.4502 290.33 36.4535 290.18 36.4602 290.02C36.4735 289.86 36.4868 289.697 36.5002 289.53L31.5802 298.49C31.4268 298.79 31.1935 298.94 30.8802 298.94H30.6002C30.2868 298.94 30.0535 298.79 29.9002 298.49L24.8802 289.49C24.9202 289.843 24.9402 290.17 24.9402 290.47V301H23.2402V286.67H24.6702C24.8435 286.67 24.9768 286.687 25.0702 286.72C25.1635 286.753 25.2535 286.847 25.3402 287L30.2902 295.82C30.3702 295.98 30.4468 296.147 30.5202 296.32C30.6002 296.493 30.6735 296.67 30.7402 296.85C30.8068 296.67 30.8768 296.493 30.9502 296.32C31.0235 296.14 31.1035 295.97 31.1902 295.81L36.0502 287C36.1302 286.847 36.2168 286.753 36.3102 286.72C36.4102 286.687 36.5468 286.67 36.7202 286.67H38.1502ZM49.4244 295.68L47.1744 289.85C47.1077 289.677 47.0377 289.477 46.9644 289.25C46.891 289.017 46.821 288.77 46.7544 288.51C46.6144 289.05 46.471 289.5 46.3244 289.86L44.0744 295.68H49.4244ZM53.4644 301H51.9644C51.791 301 51.651 300.957 51.5444 300.87C51.4377 300.783 51.3577 300.673 51.3044 300.54L49.9644 297.08H43.5344L42.1944 300.54C42.1544 300.66 42.0777 300.767 41.9644 300.86C41.851 300.953 41.711 301 41.5444 301H40.0444L45.7744 286.67H47.7344L53.4644 301ZM60.7295 295.29V301H58.7895V295.29L53.5395 286.67H55.2395C55.4129 286.67 55.5495 286.713 55.6495 286.8C55.7495 286.88 55.8362 286.987 55.9095 287.12L59.1895 292.69C59.3095 292.923 59.4195 293.143 59.5195 293.35C59.6195 293.55 59.7062 293.753 59.7795 293.96C59.8529 293.753 59.9362 293.55 60.0295 293.35C60.1229 293.143 60.2262 292.923 60.3395 292.69L63.6095 287.12C63.6695 287.007 63.7529 286.903 63.8595 286.81C63.9662 286.717 64.1029 286.67 64.2695 286.67H65.9795L60.7295 295.29Z" fill="white" />
+            <path d="M32.5884 175.68L30.3384 169.85C30.2718 169.677 30.2018 169.477 30.1284 169.25C30.0551 169.017 29.9851 168.77 29.9184 168.51C29.7784 169.05 29.6351 169.5 29.4884 169.86L27.2384 175.68H32.5884ZM36.6284 181H35.1284C34.9551 181 34.8151 180.957 34.7084 180.87C34.6018 180.783 34.5218 180.673 34.4684 180.54L33.1284 177.08H26.6984L25.3584 180.54C25.3184 180.66 25.2418 180.767 25.1284 180.86C25.0151 180.953 24.8751 181 24.7084 181H23.2084L28.9384 166.67H30.8984L36.6284 181ZM44.0436 179.46C44.6369 179.46 45.1669 179.36 45.6336 179.16C46.1003 178.96 46.4936 178.68 46.8136 178.32C47.1403 177.96 47.3869 177.53 47.5536 177.03C47.7269 176.53 47.8136 175.98 47.8136 175.38V166.67H49.7436V175.38C49.7436 176.207 49.6103 176.973 49.3436 177.68C49.0836 178.387 48.7069 179 48.2136 179.52C47.7269 180.033 47.1303 180.437 46.4236 180.73C45.7169 181.023 44.9236 181.17 44.0436 181.17C43.1636 181.17 42.3703 181.023 41.6636 180.73C40.9569 180.437 40.3569 180.033 39.8636 179.52C39.3703 179 38.9903 178.387 38.7236 177.68C38.4636 176.973 38.3336 176.207 38.3336 175.38V166.67H40.2636V175.37C40.2636 175.97 40.3469 176.52 40.5136 177.02C40.6869 177.52 40.9336 177.95 41.2536 178.31C41.5803 178.67 41.9769 178.953 42.4436 179.16C42.9169 179.36 43.4503 179.46 44.0436 179.46ZM64.8606 174.11V179.61C64.1406 180.13 63.3706 180.52 62.5506 180.78C61.7373 181.033 60.844 181.16 59.8706 181.16C58.7173 181.16 57.6773 180.983 56.7506 180.63C55.824 180.27 55.0306 179.77 54.3706 179.13C53.7173 178.483 53.214 177.71 52.8606 176.81C52.5073 175.91 52.3306 174.92 52.3306 173.84C52.3306 172.747 52.5006 171.75 52.8406 170.85C53.1873 169.95 53.6773 169.18 54.3106 168.54C54.944 167.893 55.714 167.393 56.6206 167.04C57.5273 166.687 58.5406 166.51 59.6606 166.51C60.2273 166.51 60.754 166.553 61.2406 166.64C61.7273 166.72 62.1773 166.84 62.5906 167C63.004 167.153 63.3873 167.343 63.7406 167.57C64.094 167.79 64.424 168.04 64.7306 168.32L64.1806 169.2C64.094 169.333 63.9806 169.42 63.8406 169.46C63.7073 169.493 63.5573 169.46 63.3906 169.36C63.2306 169.267 63.0473 169.153 62.8406 169.02C62.634 168.887 62.3806 168.76 62.0806 168.64C61.7873 168.513 61.4373 168.407 61.0306 168.32C60.6306 168.233 60.154 168.19 59.6006 168.19C58.794 168.19 58.064 168.323 57.4106 168.59C56.7573 168.85 56.2006 169.227 55.7406 169.72C55.2806 170.207 54.9273 170.8 54.6806 171.5C54.434 172.193 54.3106 172.973 54.3106 173.84C54.3106 174.74 54.4373 175.547 54.6906 176.26C54.9506 176.967 55.3173 177.57 55.7906 178.07C56.2706 178.563 56.8506 178.94 57.5306 179.2C58.2106 179.46 58.974 179.59 59.8206 179.59C60.4873 179.59 61.0773 179.517 61.5906 179.37C62.1106 179.217 62.6173 179.007 63.1106 178.74V175.59H60.8806C60.754 175.59 60.6506 175.553 60.5706 175.48C60.4973 175.407 60.4606 175.317 60.4606 175.21V174.11H64.8606Z" fill="white" />
+            <path d="M40.7459 128.91C40.6859 129.01 40.6193 129.087 40.5459 129.14C40.4793 129.187 40.3959 129.21 40.2959 129.21C40.1826 129.21 40.0493 129.153 39.8959 129.04C39.7426 128.927 39.5493 128.803 39.3159 128.67C39.0893 128.53 38.8126 128.403 38.4859 128.29C38.1659 128.177 37.7759 128.12 37.3159 128.12C36.8826 128.12 36.4993 128.18 36.1659 128.3C35.8393 128.413 35.5626 128.57 35.3359 128.77C35.1159 128.97 34.9493 129.207 34.8359 129.48C34.7226 129.747 34.6659 130.037 34.6659 130.35C34.6659 130.75 34.7626 131.083 34.9559 131.35C35.1559 131.61 35.4159 131.833 35.7359 132.02C36.0626 132.207 36.4293 132.37 36.8359 132.51C37.2493 132.643 37.6693 132.783 38.0959 132.93C38.5293 133.077 38.9493 133.243 39.3559 133.43C39.7693 133.61 40.1359 133.84 40.4559 134.12C40.7826 134.4 41.0426 134.743 41.2359 135.15C41.4359 135.557 41.5359 136.057 41.5359 136.65C41.5359 137.277 41.4293 137.867 41.2159 138.42C41.0026 138.967 40.6893 139.443 40.2759 139.85C39.8693 140.257 39.3659 140.577 38.7659 140.81C38.1726 141.043 37.4959 141.16 36.7359 141.16C35.8026 141.16 34.9559 140.993 34.1959 140.66C33.4359 140.32 32.7859 139.863 32.2459 139.29L32.8059 138.37C32.8593 138.297 32.9226 138.237 32.9959 138.19C33.0759 138.137 33.1626 138.11 33.2559 138.11C33.3426 138.11 33.4393 138.147 33.5459 138.22C33.6593 138.287 33.7859 138.373 33.9259 138.48C34.0659 138.587 34.2259 138.703 34.4059 138.83C34.5859 138.957 34.7893 139.073 35.0159 139.18C35.2493 139.287 35.5126 139.377 35.8059 139.45C36.0993 139.517 36.4293 139.55 36.7959 139.55C37.2559 139.55 37.6659 139.487 38.0259 139.36C38.3859 139.233 38.6893 139.057 38.9359 138.83C39.1893 138.597 39.3826 138.32 39.5159 138C39.6493 137.68 39.7159 137.323 39.7159 136.93C39.7159 136.497 39.6159 136.143 39.4159 135.87C39.2226 135.59 38.9659 135.357 38.6459 135.17C38.3259 134.983 37.9593 134.827 37.5459 134.7C37.1326 134.567 36.7126 134.433 36.2859 134.3C35.8593 134.16 35.4393 134 35.0259 133.82C34.6126 133.64 34.2459 133.407 33.9259 133.12C33.6059 132.833 33.3459 132.477 33.1459 132.05C32.9526 131.617 32.8559 131.083 32.8559 130.45C32.8559 129.943 32.9526 129.453 33.1459 128.98C33.3459 128.507 33.6326 128.087 34.0059 127.72C34.3859 127.353 34.8493 127.06 35.3959 126.84C35.9493 126.62 36.5826 126.51 37.2959 126.51C38.0959 126.51 38.8226 126.637 39.4759 126.89C40.1359 127.143 40.7159 127.51 41.2159 127.99L40.7459 128.91ZM53.1153 139.42L53.1053 141H44.2753V126.67H53.1053V128.25H46.2153V133.01H51.7953V134.53H46.2153V139.42H53.1153ZM60.0483 134.1C60.6016 134.1 61.0883 134.027 61.5083 133.88C61.9349 133.733 62.2916 133.53 62.5783 133.27C62.8716 133.003 63.0916 132.687 63.2383 132.32C63.3849 131.953 63.4583 131.55 63.4583 131.11C63.4583 130.197 63.1749 129.483 62.6083 128.97C62.0483 128.457 61.1949 128.2 60.0483 128.2H57.7483V134.1H60.0483ZM60.0483 126.67C60.9549 126.67 61.7416 126.777 62.4083 126.99C63.0816 127.197 63.6383 127.493 64.0783 127.88C64.5183 128.267 64.8449 128.733 65.0583 129.28C65.2783 129.827 65.3883 130.437 65.3883 131.11C65.3883 131.777 65.2716 132.387 65.0383 132.94C64.8049 133.493 64.4616 133.97 64.0083 134.37C63.5616 134.77 63.0049 135.083 62.3383 135.31C61.6783 135.53 60.9149 135.64 60.0483 135.64H57.7483V141H55.8183V126.67H60.0483Z" fill="white" />
+            <path d="M39.8786 93.84C39.8786 94.9133 39.7086 95.9 39.3686 96.8C39.0286 97.6933 38.5486 98.4633 37.9286 99.11C37.3086 99.7567 36.5619 100.26 35.6886 100.62C34.8219 100.973 33.8619 101.15 32.8086 101.15C31.7553 101.15 30.7953 100.973 29.9286 100.62C29.0619 100.26 28.3186 99.7567 27.6986 99.11C27.0786 98.4633 26.5986 97.6933 26.2586 96.8C25.9186 95.9 25.7486 94.9133 25.7486 93.84C25.7486 92.7667 25.9186 91.7833 26.2586 90.89C26.5986 89.99 27.0786 89.2167 27.6986 88.57C28.3186 87.9167 29.0619 87.41 29.9286 87.05C30.7953 86.69 31.7553 86.51 32.8086 86.51C33.8619 86.51 34.8219 86.69 35.6886 87.05C36.5619 87.41 37.3086 87.9167 37.9286 88.57C38.5486 89.2167 39.0286 89.99 39.3686 90.89C39.7086 91.7833 39.8786 92.7667 39.8786 93.84ZM37.8886 93.84C37.8886 92.96 37.7686 92.17 37.5286 91.47C37.2886 90.77 36.9486 90.18 36.5086 89.7C36.0686 89.2133 35.5353 88.84 34.9086 88.58C34.2819 88.32 33.5819 88.19 32.8086 88.19C32.0419 88.19 31.3453 88.32 30.7186 88.58C30.0919 88.84 29.5553 89.2133 29.1086 89.7C28.6686 90.18 28.3286 90.77 28.0886 91.47C27.8486 92.17 27.7286 92.96 27.7286 93.84C27.7286 94.72 27.8486 95.51 28.0886 96.21C28.3286 96.9033 28.6686 97.4933 29.1086 97.98C29.5553 98.46 30.0919 98.83 30.7186 99.09C31.3453 99.3433 32.0419 99.47 32.8086 99.47C33.5819 99.47 34.2819 99.3433 34.9086 99.09C35.5353 98.83 36.0686 98.46 36.5086 97.98C36.9486 97.4933 37.2886 96.9033 37.5286 96.21C37.7686 95.51 37.8886 94.72 37.8886 93.84ZM52.7142 98.04C52.8209 98.04 52.9142 98.0833 52.9942 98.17L53.7642 99C53.1776 99.68 52.4642 100.21 51.6242 100.59C50.7909 100.97 49.7809 101.16 48.5942 101.16C47.5676 101.16 46.6342 100.983 45.7942 100.63C44.9542 100.27 44.2376 99.77 43.6442 99.13C43.0509 98.4833 42.5909 97.71 42.2642 96.81C41.9376 95.91 41.7742 94.92 41.7742 93.84C41.7742 92.76 41.9442 91.77 42.2842 90.87C42.6242 89.97 43.1009 89.1967 43.7142 88.55C44.3342 87.9033 45.0742 87.4033 45.9342 87.05C46.7942 86.69 47.7442 86.51 48.7842 86.51C49.8042 86.51 50.7042 86.6733 51.4842 87C52.2642 87.3267 52.9509 87.77 53.5442 88.33L52.9042 89.22C52.8642 89.2867 52.8109 89.3433 52.7442 89.39C52.6842 89.43 52.6009 89.45 52.4942 89.45C52.3742 89.45 52.2276 89.3867 52.0542 89.26C51.8809 89.1267 51.6542 88.98 51.3742 88.82C51.0942 88.66 50.7442 88.5167 50.3242 88.39C49.9042 88.2567 49.3876 88.19 48.7742 88.19C48.0342 88.19 47.3576 88.32 46.7442 88.58C46.1309 88.8333 45.6009 89.2033 45.1542 89.69C44.7142 90.1767 44.3709 90.77 44.1242 91.47C43.8776 92.17 43.7542 92.96 43.7542 93.84C43.7542 94.7333 43.8809 95.53 44.1342 96.23C44.3942 96.93 44.7442 97.5233 45.1842 98.01C45.6309 98.49 46.1542 98.8567 46.7542 99.11C47.3609 99.3633 48.0142 99.49 48.7142 99.49C49.1409 99.49 49.5242 99.4667 49.8642 99.42C50.2109 99.3667 50.5276 99.2867 50.8142 99.18C51.1076 99.0733 51.3776 98.94 51.6242 98.78C51.8776 98.6133 52.1276 98.4167 52.3742 98.19C52.4876 98.09 52.6009 98.04 52.7142 98.04ZM65.7036 88.3H61.0636V101H59.1336V88.3H54.4836V86.67H65.7036V88.3Z" fill="white" />
+            <path d="M35.0064 46.67V61H34.0364C33.8831 61 33.7531 60.9733 33.6464 60.92C33.5464 60.8667 33.4464 60.7767 33.3464 60.65L25.0564 49.85C25.0697 50.0167 25.0797 50.18 25.0864 50.34C25.0931 50.5 25.0964 50.65 25.0964 50.79V61H23.3964V46.67H24.3964C24.4831 46.67 24.5564 46.6767 24.6164 46.69C24.6764 46.6967 24.7297 46.7133 24.7764 46.74C24.8231 46.76 24.8697 46.7933 24.9164 46.84C24.9631 46.88 25.0131 46.9333 25.0664 47L33.3564 57.79C33.3431 57.6167 33.3297 57.45 33.3164 57.29C33.3097 57.1233 33.3064 56.9667 33.3064 56.82V46.67H35.0064ZM51.9098 53.84C51.9098 54.9133 51.7398 55.9 51.3998 56.8C51.0598 57.6933 50.5798 58.4633 49.9598 59.11C49.3398 59.7567 48.5932 60.26 47.7198 60.62C46.8532 60.9733 45.8932 61.15 44.8398 61.15C43.7865 61.15 42.8265 60.9733 41.9598 60.62C41.0932 60.26 40.3498 59.7567 39.7298 59.11C39.1098 58.4633 38.6298 57.6933 38.2898 56.8C37.9498 55.9 37.7798 54.9133 37.7798 53.84C37.7798 52.7667 37.9498 51.7833 38.2898 50.89C38.6298 49.99 39.1098 49.2167 39.7298 48.57C40.3498 47.9167 41.0932 47.41 41.9598 47.05C42.8265 46.69 43.7865 46.51 44.8398 46.51C45.8932 46.51 46.8532 46.69 47.7198 47.05C48.5932 47.41 49.3398 47.9167 49.9598 48.57C50.5798 49.2167 51.0598 49.99 51.3998 50.89C51.7398 51.7833 51.9098 52.7667 51.9098 53.84ZM49.9198 53.84C49.9198 52.96 49.7998 52.17 49.5598 51.47C49.3198 50.77 48.9798 50.18 48.5398 49.7C48.0998 49.2133 47.5665 48.84 46.9398 48.58C46.3132 48.32 45.6132 48.19 44.8398 48.19C44.0732 48.19 43.3765 48.32 42.7498 48.58C42.1232 48.84 41.5865 49.2133 41.1398 49.7C40.6998 50.18 40.3598 50.77 40.1198 51.47C39.8798 52.17 39.7598 52.96 39.7598 53.84C39.7598 54.72 39.8798 55.51 40.1198 56.21C40.3598 56.9033 40.6998 57.4933 41.1398 57.98C41.5865 58.46 42.1232 58.83 42.7498 59.09C43.3765 59.3433 44.0732 59.47 44.8398 59.47C45.6132 59.47 46.3132 59.3433 46.9398 59.09C47.5665 58.83 48.0998 58.46 48.5398 57.98C48.9798 57.4933 49.3198 56.9033 49.5598 56.21C49.7998 55.51 49.9198 54.72 49.9198 53.84ZM65.9448 46.67L60.1048 61H58.3648L52.5248 46.67H54.0748C54.2482 46.67 54.3882 46.7133 54.4948 46.8C54.6015 46.8867 54.6815 46.9967 54.7348 47.13L58.7748 57.24C58.8615 57.4667 58.9448 57.7133 59.0248 57.98C59.1115 58.2467 59.1882 58.5267 59.2548 58.82C59.3215 58.5267 59.3915 58.2467 59.4648 57.98C59.5382 57.7133 59.6182 57.4667 59.7048 57.24L63.7348 47.13C63.7748 47.0167 63.8515 46.9133 63.9648 46.82C64.0848 46.72 64.2282 46.67 64.3948 46.67H65.9448Z" fill="white" />
+            <line x1="74" y1="11" x2="130" y2="11" stroke="white" stroke-width="2" />
+            <line x1="74" y1="251" x2="130" y2="251" stroke="white" stroke-width="2" />
+            <line x1="74" y1="291" x2="130" y2="291" stroke="white" stroke-width="2" />
+            <line x1="74" y1="331" x2="130" y2="331" stroke="white" stroke-width="2" />
+            <line x1="74" y1="371" x2="130" y2="371" stroke="white" stroke-width="2" />
+            <line x1="74" y1="411" x2="130" y2="411" stroke="white" stroke-width="2" />
+            <line x1="74" y1="211" x2="130" y2="211" stroke="white" stroke-width="2" />
+            <line x1="74" y1="171" x2="130" y2="171" stroke="white" stroke-width="2" />
+            <line x1="74" y1="131" x2="130" y2="131" stroke="white" stroke-width="2" />
+            <line x1="74" y1="91" x2="130" y2="91" stroke="white" stroke-width="2" />
+            <line x1="74" y1="51" x2="130" y2="51" stroke="white" stroke-width="2" />
+            <line x1="74" y1="451" x2="130" y2="451" stroke="white" stroke-width="2" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="166.705" y1="36.1286" x2="508.224" y2="477.134" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#AE12A6" />
+                <stop offset="1" stop-color="#6534CF" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="infographics__calendar">$0m</div>
+        </div>
+        <div class="offset-xl-0 col-xl-6 offset-md-1 col-md-5 inforgraphic__col reverse">
+          <div class="text-container">
+            <p class="pink">Companies using BenchSci save up to $6 million per year in hard costs alone*</p>
+            <small>** Based on proprietary customer spend analysis. Depends on a number of factors, including a company’s total annual reagent spend and its waste ratio.</small>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 inforgraphic__col">
+          <div class="quote">
+            <div class="quote__text">
+              <div class="quote__start">
+                <img src="img/quote_start.svg" alt="">
+              </div>
+              If we had BenchSci we would have saved 3 months on our project
+              <div class="quote__end">
+                <img src="img/quote_end.svg" alt="">
+              </div>
+            </div>
+            <small>— Scientist at Major Pharma</small>
+          </div>
+        </div>
+        <div class="col-md-6 inforgraphic__col">
+          <p class="orange">Researchers using BenchSci move faster, with less time searching for and validating reagents</p>
+        </div>
+      </div>
+    </div>
+    <div class="container partners">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="teal">In partnership with the world's leading scientific publishers</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <img src="img/partners/spring%20nature%203.png" alt="springer nature">
+          </div>
+          <div class="col-md-4 col-6">
+            <img src="img/partners/pnas%203.png" alt="pnas">
+          </div>
+          <div class="col-md-4 col-6">
+            <img src="img/partners/karger%203.png" alt="karger">
+          </div>
+          <div class="col-md-4 col-6">
+            <img src="img/partners/wolters%203.png" alt="wolters kluwer">
+          </div>
+          <div class="col-md-4 col-6">
+            <img src="img/partners/wiley%203.png" alt="wiley">
+          </div>
+          <div class="col-md-4 col-6">
+            <img src="img/partners/aspet%203.png" alt="aspet">
+          </div>
+          <div class="col-md-4 col-6">
+            <img src="img/partners/asbmb%203.png" alt="asbmb">
+          </div>
+          <div class="col-md-4 col-6">
+            <img src="img/partners/faseb%203.png" alt="faseb">
+          </div>
+          <div class="col-md-4 col-6">
+            <img src="img/partners/jama%201.png" alt="jama">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container container-wide">
+      <div class="row row-reverse">
+        <div class="offset-md-6 col-xl-6 col-md-5 inforgraphic__col">
+          <svg id="wheel2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480">
+            <style>
+              .st20 {
+                fill: none;
+                stroke: #fff;
+                stroke-width: 2
+              }
+
+              .st21 {
+                fill: #adbec0
+              }
+
+              .st22 {
+                fill: none;
+                stroke: url(#SVGID_21_);
+                stroke-width: 52
+              }
+
+            </style>
+            <circle class="st20" cx="239.96" cy="240.33" r="149" />
+            <path class="st21" d="M239.96 459.83c-58.63 0-113.75-22.83-155.21-64.29s-64.29-96.58-64.29-155.21S43.29 126.58 84.75 85.12s96.58-64.29 155.21-64.29 113.75 22.83 155.21 64.29 64.29 96.58 64.29 155.21-22.83 113.75-64.29 155.21-96.58 64.29-155.21 64.29zm0-387c-92.36 0-167.5 75.14-167.5 167.5s75.14 167.5 167.5 167.5 167.5-75.14 167.5-167.5-75.14-167.5-167.5-167.5z" />
+            <linearGradient id="SVGID_21_" gradientUnits="userSpaceOnUse" x1="292.914" y1="-8.525" x2="731.918" y2="-8.525" gradientTransform="scale(-1 1) rotate(45 -164.174 -792.293)">
+              <stop offset="0" stop-color="#ae12a6" />
+              <stop offset="1" stop-color="#6534cf" />
+            </linearGradient>
+            <circle class="st22 wheel2-circle" cx="239.96" cy="240.33" r="193.5" />
+            <circle class="st20" cx="239.96" cy="240.33" r="238" />
+          </svg>
+          <div class="infographics__wheel2">83%</div>
+        </div>
+        <div class="col-md-6 inforgraphic__col reverse">
+          <p class="pink">Over 80% of scientists say that BenchSci accelerates their work*</p>
+            <small>* On average from surveys conducted on hundreds of industry scientists across various therapeutic areas and geographies.</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 inforgraphic__col">
+          <img src="img/gradient-ventures.png" alt="gradient ventures">
+        </div>
+        <div class="col-md-6 inforgraphic__col">
+          <p class="orange">Proudly funded by Gradient Ventures, Google’s AI fund</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="learn-more">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-1 col-md-10">
+          <h3>Improve both the speed and quality of your R&amp;D with BenchSci</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="learn-more">
+            <img src="img/Flask_Plexus%201.png" alt="">
+            <span class="learn-more__title">
+              Industry
+            </span>
+            <div class="learn-more__text">Get BenchSci’s AI-Assisted Reagent Selection for your enterprise</div>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="learn-more">
+            <img src="img/Graduation_Plexus%201.png" alt="" class="wide-img">
+            <span class="learn-more__title">
+              Academics
+            </span>
+            <div class="learn-more__text">Get free access to BenchSci’s <span class="nowrap">AI-Assisted</span> Antibody Selection</div>
+            <a href="">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer"></div>
+
+  <!--  jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!--  bootstrap 4 (may be removed)-->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!--  GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+  <!--  Viewport Checker-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js.map"></script>
+
+  <!--  ScrollMagic (may be removed)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+  <!--  Particles.js-->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!--  Scripts-->
+  <script src="js/app.js"></script>
+  <script src="libs/app-particles.js"></script>
+</body>
+
+</html>
