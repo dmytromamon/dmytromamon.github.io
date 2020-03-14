@@ -1,0 +1,362 @@
+body, html
+  overflow-x: hidden
+
+body
+  position: relative
+  font-family: 'Montserrat', sans-serif
+  color: #1F1F1F
+
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  
+.nav-scroller
+  background: #EDF7FA
+  min-height: 46px
+  padding: 14px 0 13px
+  span
+    font-size: 14px
+    font-weight: 500
+  
+.nav-link
+  color: #FF8364
+  padding: 0
+  transition: color .3s ease
+  img
+    width: 14px
+    height: 22px
+    float: left
+    margin-right: 6px
+    object-position: center
+    object-fit: contain
+  span
+    font-size: 16px
+    font-weight: 700
+    
+.nav-link:hover
+  color: #FFB677
+  text-decoration: none
+    
+.navbar
+  background: #5F6CAF
+  padding: 0
+  .row
+    width: 100%
+    margin: 0
+    .col-lg-12
+      padding: 0
+  .nav-item
+    .nav-link
+      color: #EDF7FA
+      font-size: 14px
+      font-weight: 500
+      text-transform: uppercase
+      padding: 0 16px
+      transition: color .3s ease
+    .nav-link:hover
+      color: #FFB677
+  .active
+    .nav-link
+      color: #FF8364
+    .btn
+      background: #EDF7FA
+      color: #FF8364
+  .btn
+    margin-left: 16px
+  
+.navbar-brand
+  font-size: 21px
+  padding: 16px 0
+  font-weight: 700
+  font-family: 'Montserrat Alternates', sans-serif
+  color: #FFF
+  transition: color .3s ease
+  .color
+    color: #FFB677
+    transition: color .3s ease
+  
+.navbar-brand:hover
+  color: #FFFFFF
+  text-decoration: none
+  .color
+    color: #FF8364
+    
+.btn
+  padding: 8px 16px
+  border-radius: 5px
+  background: #FF8364
+  color: #FFF
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 500
+  transition: background .3s ease
+  
+.btn:hover
+  background: #FFB677
+  color: #FFF
+  
+section
+  margin: 80px 0
+  
+.illustration-chart
+  svg
+    margin-right: 48px
+    margin-bottom: 48px
+  svg:last-child
+    margin-right: 0
+  
+h1, h3
+  font-weight: 700
+  font-family: 'Montserrat Alternates', sans-serif
+  
+h1
+  font-size: 32px
+  margin-bottom: 20px
+  
+h3
+  font-size: 26px
+  margin-bottom: 20px
+  
+h1 + p
+  margin-bottom: 36px
+  font-size: 16px
+  
+p
+  font-size: 14px
+  
+.card.bg-warning
+  border: 0
+  background-color: transparent!important
+  .card-header
+    background: #FF8364
+    border: 0
+    border-radius: 5px 5px 0 0
+    padding: 8px 16px
+    h4
+      font-size: 14px
+      font-weight: 500
+      color: #FFF
+  .card-body
+    background: #FFB677
+    color: #1F1F1F
+    border-radius: 0 0 5px 5px 
+    padding: 8px 16px
+    transition: all ease .3s
+    p
+      margin-bottom: 0
+    
+.card.bg-primary
+  border: 0
+  background-color: transparent!important
+  .card-header
+    background: #5F6CAF
+    border: 0
+    border-radius: 5px 5px 0 0
+    padding: 8px 16px
+    h4
+      font-size: 14px
+      font-weight: 500
+      color: #FFF
+  .card-body
+    background: #EDF7FA
+    color: #1F1F1F
+    border-radius: 0 0 5px 5px 
+    padding: 8px 16px
+    transition: all ease .3s
+    p
+      margin-bottom: 0
+      
+a.card:hover
+  text-decoration: none
+  
+.card.bg-warning:hover
+  .card-body
+    background: #FF8364
+    color: #FFF
+  
+.card.bg-primary:hover
+  .card-body
+    background: #5F6CAF
+    color: #FFF
+  
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover
+  background-color: transparent!important
+      
+.contact-icons
+  img
+    display: block
+    margin-bottom: 20px
+  a
+    font-size: 16px
+    font-weight: 700
+    margin-bottom: 20px
+    display: block
+    color: #FF8364
+    
+.card.bg-secondary
+  border: 0
+  background-color: transparent!important
+  .card-header
+    background: #EDF7FA
+    border: 0
+    border-radius: 5px 5px 0 0
+    padding: 20px 16px
+    h4
+      font-size: 21px
+      font-weight: 700
+      font-family: 'Montserrat Alternates', sans-serif
+  .card-body
+    background: #FFF
+    border: 1px solid #EDF7FA
+    color: #1F1F1F
+    border-radius: 0 0 5px 5px 
+    padding: 24px 16px 16px
+    p
+      margin-bottom: 20px
+    p:last-child
+      margin-bottom: 0
+    
+footer
+  margin-bottom: 64px
+  .nav-item
+    .nav-link
+      color: #5F6CAF
+      font-size: 14px
+      font-weight: 500
+      text-transform: uppercase
+      padding: 0 16px
+      transition: color .3s ease
+    .nav-link:hover
+      color: #FFB677
+  .active
+    .nav-link
+      color: #FF8364
+    .btn
+      background: #EDF7FA
+      color: #FF8364
+  .btn
+    margin-left: 16px
+  span
+    display: block
+    margin-top: 32px
+    
+.navbar-toggler
+  background: #FF8364
+  padding: 8px 10px
+  height: 38px
+  border: 0
+  border-radius: 5px
+  img
+    vertical-align: inherit
+    
+#_34-chat 
+  #Path_11, #Line_6, #Line_7
+    opacity: 0
+  
+#_36-404_error
+  #Path_14, #Path_15, #Path_16, #Path_17, #Rectangle_8
+    opacity: 0
+    
+form
+  label
+    font-size: 14px
+    font-weight: 500
+    margin-bottom: 8px
+  img
+    display: block
+    height: 40px
+    margin-bottom: 20px
+  a
+    color: #FFB677
+    text-decoration: underline
+    margin-bottom: 20px
+    display: inline-block
+    
+.form-control
+  font-size: 14px
+  font-weight: 400
+  padding: 8px 16px
+  border-radius: 5px
+  border-color: #EDF7FA
+  color: #1F1F1F
+  margin-bottom: 20px
+  
+.form-control::placeholder
+  color: #5F6CAF
+  
+.form-control:active
+  color: #5F6CAF
+  
+.form-group
+  margin-bottom: 0
+
+.form-control:focus
+  background-color: #fff
+  border: 1px solid #FF8364
+  outline: 0
+  box-shadow: none
+  
+.btn-primary
+  background: #5F6CAF
+  border: 0
+  padding: 8px 16px
+  font-size: 14px
+  font-weight: 500
+
+@media (max-width: 991.98px)
+  .navbar
+    .d-flex
+      display: block!important
+    .btn
+      margin-left: 0
+    .row
+      .col-lg-12
+        padding: 0 15px
+  .navbar-toggler
+    position: absolute
+    right: 0
+    top: 13px
+  .nav-item
+    margin: 20px 0
+    .nav-link
+      color: #EDF7FA
+      font-size: 14px
+      font-weight: 500
+      text-transform: uppercase
+      padding: 0 16px
+  .active
+    .nav-link
+      color: #FF8364
+  .illustration-chart
+    margin-top: 80px
+  .col-auto:first-child
+    padding-right: 24px
+  .col-auto:last-child
+    padding-left: 24px
+  .card-deck
+    .card
+      margin-bottom: 36px
+  .contact-icons
+    margin-bottom: 44px
+    
+@media (max-width: 575.98px)
+  .navbar-toggler
+    right: 15px
+  .illustration-chart
+    svg
+      margin-right: 24px
+      margin-bottom: 24px
+    svg:last-child
+      margin-right: 0
+  .col-auto:first-child
+    padding-right: 12px
+  .col-auto:last-child
+    padding-left: 12px
+    
+@media (max-width: 414.98px)
+  footer
+    .flex-row
+      flex-direction: column!important
+    .btn
+      margin-left: 0
