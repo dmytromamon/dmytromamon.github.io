@@ -1,0 +1,96 @@
+{
+   "questions": [
+       {
+           "question": "<span class='question-center'>Position yourself between the two statements to explore your attitudes and beliefs.</span>",
+           "answerLeft": "Sexual violence is an individual problem – a few bad people doing bad things.",
+           "answerRight": "Conditions that allow sexual violence are created in a whole eco-system of combined actions, attitudes, policies and laws of society.",
+				 	 "overallRight": 37,
+				 	 "links": [
+						 {
+							 "link": "https://link1",
+							 "name": "link1 name"
+						 },
+						 {
+							 "link": "https://link2",
+							 "name": "link2 name"
+						 },
+						 {
+							 "link": "https://link3",
+							 "name": "link3 name"
+						 }
+					 ]
+       },
+       {
+           "question": "<span class='question-left'>Position yourself between the two statements to explore your attitudes and beliefs.</span><span class='question-right'>Position yourself between the two statements to explore your attitudes and beliefs.</span>",
+           "answerLeft": "Visit to MacDonalds",
+           "answerRight": "Visit to doctor",
+				 	 "overallRight": 64
+       },
+       {
+           "question": "<span class='question-center'>Position yourself between the two statements to explore your attitudes and beliefs.</span>",
+           "answerLeft": "Harry Potter",
+           "answerRight": "The Mysterious Island",
+				 	 "overallRight": 19,
+				 	 "links": [
+						 {
+							 "link": "https://link1",
+							 "name": "link1 name"
+						 },
+						 {
+							 "link": "https://link2",
+							 "name": "link2 name"
+						 }
+					 ]
+       },
+       {
+           "question": "<span class='question-center'>Position yourself between the two statements to explore your attitudes and beliefs.</span>",
+           "answerLeft": "Facebook",
+           "answerRight": "Instagram",
+				 	 "overallRight": 84,
+				 	 "links": [
+						 {
+							 "link": "https://link1",
+							 "name": "link1 name"
+						 },
+						 {
+							 "link": "https://link2",
+							 "name": "link2 name"
+						 }
+					 ]
+       },
+       {
+           "question": "<span class='question-center'>Position yourself between the two statements to explore your attitudes and beliefs.</span>",
+           "answerLeft": "Car",
+           "answerRight": "Table",
+				 	 "overallRight": 48
+       },
+       {
+           "question": "<span class='question-center'>Position yourself between the two statements to explore your attitudes and beliefs.</span>",
+           "answerLeft": "mother",
+           "answerRight": "grandmother",
+				 	 "overallRight": 39,
+				 	 "links": [
+						 {
+							 "link": "https://link1",
+							 "name": "link1 name"
+						 }
+					 ]
+       },
+       {
+           "question": "<span class='question-center'>Position yourself between the two statements to explore your attitudes and beliefs.</span>",
+           "answerLeft": "mother",
+           "answerRight": "grandmother",
+				 	 "overallRight": 92,
+				 	 "links": [
+						 {
+							 "link": "https://link1",
+							 "name": "link1 name"
+						 },
+						 {
+							 "link": "https://link2",
+							 "name": "link2 name"
+						 }
+					 ]
+       }
+   ]
+}
