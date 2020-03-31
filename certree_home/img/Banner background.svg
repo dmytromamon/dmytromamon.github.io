@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="228px" viewBox="0 0 1440 228" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Banner background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-14.1310307%" x2="50%" y2="241.666667%" id="linearGradient-1">
+            <stop stop-color="#318CE7" offset="0%"></stop>
+            <stop stop-color="#074286" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1440" height="228"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="85.4757414%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="158" cy="158" r="57"></circle>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="114" height="114" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <circle id="path-7" cx="158" cy="158" r="124"></circle>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="248" height="248" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <circle id="path-9" cx="158" cy="158" r="158"></circle>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="316" height="316" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <path d="M15.343144,36.5841031 C15.5611921,36.5878781 15.7738952,36.671357 15.9313524,36.8149321 C16.397503,37.2547481 16.8602801,37.6969242 17.3201218,38.1401493 C17.6271503,38.4436892 17.6413451,38.9647552 17.3201218,39.2823248 L16.9092171,39.6727527 L17.15161,39.9006145 C17.3507297,40.0918529 17.5264973,40.2917019 17.5576658,40.5393603 C17.5881146,40.7817989 17.4980827,41.0322794 17.3201218,41.20776 L16.9092171,41.6004607 L17.15161,41.8270278 C17.3507297,42.0176342 17.5264973,42.2177241 17.5576658,42.4646644 C17.5881146,42.707103 17.4980827,42.9577146 17.3201218,43.1327144 C16.8602801,43.5774693 16.3968458,44.0194706 15.9313524,44.4582551 C15.6636663,44.7030757 15.1413499,44.7887837 15.1218539,44.4901782 L15.1218539,36.7842066 C15.1288637,36.6749409 15.1413499,36.5831141 15.343144,36.5841031 Z M12.6555933,31.5929091 L12.6555933,35.168299 L4.97001421,27.5330662 C3.69005968,26.2594935 2.41149379,24.9844802 1.13566805,23.7066405 C-0.309587495,22.2424811 -0.445813424,19.6250885 1.13463849,18.0231232 L1.48649892,17.670239 L3.18246768,19.3580433 C3.21601387,19.3915223 3.25143518,19.4227722 3.28737784,19.4514435 L2.93603,19.8072561 L2.93603,19.8072561 C2.38719467,20.3706297 2.36956507,21.3555938 2.9536596,21.941345 L12.6555933,31.5929091 Z M15.0960054,29.1772646 C16.7185072,27.571526 18.3435209,25.9681379 19.9586106,24.3553546 L22.407165,21.8908206 L22.407165,21.8908206 C22.9253632,21.3232949 22.9264147,20.3716787 22.3652377,19.8031477 C19.4916649,16.9264023 16.6268543,14.0397355 13.7166554,11.1981298 C13.4315324,10.9241353 13.0382836,10.7672299 12.6432824,10.7682351 C12.2506907,10.7719939 11.862743,10.9311283 11.5816946,11.2058221 C9.96002513,12.8075688 8.33607751,14.4078295 6.71865776,16.0143402 L6.63480323,15.9232127 L6.63480323,15.9232127 L4.93304702,14.2295954 C6.55112395,12.6184082 8.17213622,11.0104989 9.79573335,9.40534307 C10.4767178,8.74072992 11.3866427,8.32997423 12.3406848,8.25359271 L12.676316,8.24079 L12.676316,8.24079 C13.7236651,8.25036167 14.75717,8.67308853 15.5086187,9.40634831 C18.4058057,12.2713368 21.2942744,15.1451977 24.1738055,18.0272316 C25.6368786,19.5108403 25.7486408,22.1347889 24.155361,23.7295426 L15.0960054,32.7430828 L15.0960054,29.1772646 Z" id="path-11"></path>
+        <circle id="path-12" cx="132" cy="132" r="48"></circle>
+        <mask id="mask-13" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="96" height="96" fill="white">
+            <use xlink:href="#path-12"></use>
+        </mask>
+        <circle id="path-14" cx="132" cy="132" r="132"></circle>
+        <mask id="mask-15" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="264" height="264" fill="white">
+            <use xlink:href="#path-14"></use>
+        </mask>
+    </defs>
+    <g id="Certree-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Certree.com---Home-V02---Full-Contact-form" transform="translate(0.000000, -916.000000)">
+            <g id="Banner" transform="translate(0.000000, 916.000000)">
+                <g id="Banner-background">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="#46515F" xlink:href="#path-2"></use>
+                        <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="Fat-lines-2" mask="url(#mask-3)" fill="url(#linearGradient-4)" opacity="0.158851">
+                        <g transform="translate(716.000000, 0.000000)">
+                            <rect id="Rectangle" transform="translate(104.000000, 236.000000) rotate(30.000000) translate(-104.000000, -236.000000) " x="64" y="98" width="80" height="276" rx="40"></rect>
+                            <rect id="Rectangle-Copy-2" transform="translate(281.000000, 140.000000) rotate(30.000000) translate(-281.000000, -140.000000) " x="241" y="2" width="80" height="276" rx="40"></rect>
+                            <rect id="Rectangle-Copy-3" transform="translate(347.000000, 255.000000) rotate(30.000000) translate(-347.000000, -255.000000) " x="307" y="117" width="80" height="276" rx="40"></rect>
+                            <rect id="Rectangle-Copy-4" transform="translate(502.000000, 202.000000) rotate(30.000000) translate(-502.000000, -202.000000) " x="462" y="64" width="80" height="276" rx="40"></rect>
+                        </g>
+                    </g>
+                    <g id="circles" mask="url(#mask-3)">
+                        <g transform="translate(-50.000000, -64.000000)">
+                            <g id="Group-8" transform="translate(1159.000000, 22.000000)">
+                                <use id="Oval" stroke="#FFFFFF" mask="url(#mask-6)" stroke-width="2" stroke-dasharray="3" xlink:href="#path-5"></use>
+                                <use id="Oval-Copy" stroke="#FFFFFF" mask="url(#mask-8)" stroke-width="4" opacity="0.56" stroke-dasharray="3" xlink:href="#path-7"></use>
+                                <use id="Oval-Copy-2" stroke="#FFFFFF" mask="url(#mask-10)" stroke-width="5" opacity="0.400000006" stroke-dasharray="3" xlink:href="#path-9"></use>
+                                <g id="certree_key,-white" transform="translate(146.000000, 133.000000)">
+                                    <g id="certree_icon-web-white">
+                                        <g id="Shape">
+                                            <use fill="#44516B" xlink:href="#path-11"></use>
+                                            <use fill="#FFFFFF" xlink:href="#path-11"></use>
+                                        </g>
+                                        <path d="M13.0423581,16.1729739 C13.4731092,16.1729739 13.8234231,16.5222743 13.8234231,16.952169 L13.8234231,22.1958702 L18.543767,17.5232349 L18.543767,17.5232349 L20.2308027,19.2021668 L20.333496,19.2933381 L20.333496,19.2933381 L13.8234231,25.7707357 L13.8234231,47.7787302 C13.8234231,48.209819 13.4731092,48.5589567 13.0423581,48.5589567 L12.1634189,48.5589567 C11.7317915,48.5589567 11.3820034,48.209819 11.3820034,47.7787302 L11.3820034,16.952169 C11.3820034,16.5222743 11.7317915,16.1729739 12.1634189,16.1729739 L13.0423581,16.1729739 Z M10.2127716,24.5010691 C7.18432639,21.4925055 4.15196007,18.4877007 1.13566805,15.4675113 C-0.309587495,14.0012977 -0.445813424,11.3857845 1.13463849,9.78263918 C4.01231205,6.90056154 6.89955396,4.02884227 9.79573335,1.16477161 C10.4767178,0.500436581 11.3866427,0.0896700576 12.3406848,0.0129230619 L12.676316,0 L12.676316,0 C13.7236651,0.0100524379 14.75717,0.432691891 15.5086187,1.16608279 C18.4058057,4.03102759 21.2942744,6.90484475 24.1738055,9.78639792 C25.6368786,11.2705311 25.7486408,13.8942611 24.155361,15.4904134 L23.7752556,15.8683851 L23.6831645,15.7673362 L23.6831645,15.7673362 L21.9861837,14.0783081 L22.3722475,13.6875305 L22.3722475,13.6875305 C22.9264147,13.11865 22.9334245,12.1384936 22.3652377,11.5627948 C19.4916649,8.68535003 16.6268543,5.79872693 13.7166554,2.95760205 C13.4315324,2.68312679 13.0394665,2.52796959 12.6432824,2.52796959 C12.250165,2.53146609 11.862743,2.69099391 11.5816946,2.96503211 C8.69033441,5.82259055 5.79025583,8.6725441 2.93603,11.5663787 C2.38616511,12.1315006 2.36836903,13.1140608 2.9536596,13.7003365 L10.2127716,20.9226197 L10.2127716,24.5010691 Z" id="Shape" fill="#FFFFFF"></path>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Group-7" stroke-dasharray="3">
+                                <use id="Oval" stroke="#FFFFFF" mask="url(#mask-13)" stroke-width="2" xlink:href="#path-12"></use>
+                                <use id="Oval-Copy-2" stroke="#FFFFFF" mask="url(#mask-15)" stroke-width="4" opacity="0.400000006" xlink:href="#path-14"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
