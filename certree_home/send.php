@@ -22,11 +22,15 @@ $checkbox = $_REQUEST['checkbox'];
     $send = mail ($to, $subject, $message, $headers);
     if ($send == 'true')
     {
-    echo '
-
-<h1 class="b-hero__form__small">Thank you for your message! I will contact you shortly!</h1>
-
-';
+    echo '<h5>Thank you, ' + $firstName + '</h5>
+            <p>Your message was sent to our Team. You should receive a reply from a representative of our web site by the end of the next business day by email at ' + $email + '.</p>
+            <p>Certree Team</p>
+            <div class="text-center">
+              <a class="btn" id="return-form">
+                <img src="img/icon/angle-right.svg" alt="">
+                Send an other message
+              </a>
+            </div>';
     }
     else
     {
