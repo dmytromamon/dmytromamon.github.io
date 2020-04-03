@@ -8,7 +8,7 @@ $checkbox = $_REQUEST['checkbox'];
 
     if (isset($_POST['email'])) {$mail = $_POST['email'];}
 
-    $to = "dmytromamon@icloud.com"; /*your email*/
+    $to = "support@certree.com"; /*your email*/
     $sendfrom   = $email; /*user email*/
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
