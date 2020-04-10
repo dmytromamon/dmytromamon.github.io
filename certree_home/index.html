@@ -23,29 +23,35 @@
 </head>
 
 <body>
-  <div class="nav-scroller">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <ul class="nav-scroller__nav">
-          
-          <li class="nav-scroller__item">
-            <a class="nav-scroller__link" href="#about">About</a>
-          </li>
-          
-          <li class="nav-scroller__item">
-            <a class="nav-scroller__link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-scroller__item">
-            <a class="nav-scroller__link" href="#support">Support</a>
-          </li>
-        </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler__arrow"></span>
+    <span class="navbar-toggler__arrow"></span>
+    <span class="navbar-toggler__arrow"></span>
+  </button>
+  <div class="navbar-collapse navbar-expand-lg flex-grow-0" id="navbarMenu">   <div class="nav-scroller">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <ul class="nav-scroller__nav">
+            
+            <li class="nav-scroller__item">
+              <a class="nav-scroller__link" href="#about">About</a>
+            </li>
+            
+            <li class="nav-scroller__item">
+              <a class="nav-scroller__link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-scroller__item">
+              <a class="nav-scroller__link" href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<nav class="header navbar navbar-expand-md">
+<nav class="header navbar navbar-expand-lg">
   <div class="container-fluid">
     <div class="row">
       <div class="col d-flex">
@@ -55,12 +61,6 @@
           </a>
           <span>Trust Redefined</span>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler__arrow"></span>
-          <span class="navbar-toggler__arrow"></span>
-          <span class="navbar-toggler__arrow"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarMenu">
           <ul class="navbar__nav">
             
             <li class="navbar__item">
@@ -80,12 +80,11 @@
             <li class="navbar__item">
               <a class="navbar__link btn ml-0" href="#">Sign In</a>
             </li>
-            <li class="navbar__item">
+            <li class="navbar__item d-none d-md-none d-lg-block">
               <a class="navbar__link btn" href="#">Sign Up</a>
             </li>
           </ul>
         </div>
-      </div>
     </div>
   </div>
 </nav>
@@ -262,10 +261,10 @@
   <section class="revert-bg">
     <div class="container">
       <div class="row">
-        <div class="col-xl-3 offset-xl-1 col-lg-3">
+        <div class="col-xl-3 offset-xl-1 col-lg-3 al-full-w">
           <h2>Why Certree?</h2>
         </div>
-        <div class="col-xl-7 col-lg-9">
+        <div class="col-xl-7 col-lg-9 al-full-w">
           <div class="video-placeholder">
             <img src="img/Play.svg" alt="" class="play-button">
             <a class="stop-button"></a>
@@ -274,13 +273,13 @@
         </div>
       </div>
       <div class="row" id="about">
-        <div class="col-xl-10 offset-xl-1 col-lg-12 offset-lg-0">
+        <div class="col-xl-10 offset-xl-1 full-w">
           <div class="container">
             <div class="row bordered">
-              <div class="col-lg-3">
+              <div class="col-lg-3 full-w">
                 <h4>About Certree</h4>
               </div>
-              <div class="col-lg-9">
+              <div class="col-lg-9 full-w">
                 <p>Just as your secrets are safe with a tree, you can trust your secrets with Certree. In a world where most companies harvest our personal data for their benefit, Certree exists to protect our data privacy and allows each of us to have a secure private vault for our personal documents. By design, nobody at Certree can see the information on our platform.</p> <p>With Certree’s Employee Protection application, we put employees, each of us, in control of how our personal sensitive information is shared and with whom. Our purpose is to safeguard employee privacy and protect employer brand.</p>
                 <a href="#join-us">Please join us and become an advocate for your own data privacy.</a>
               </div>
@@ -289,7 +288,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-6 offset-xl-1 col-lg-7" id="contact">
+        <div class="col-xl-6 offset-xl-1 p-full-w" id="contact">
           <div class="bordered">
             <form id="join-us">
               <h4>Become an Advocate</h4>
@@ -308,7 +307,7 @@
             </form>
           </div>
         </div>
-        <div class="col-xl-4 col-lg-5" id="support">
+        <div class="col-xl-4 col-lg-5 lp-full-w" id="support">
           <div class="bordered no-border">
             <h4>Support</h4>
             <p><a href="mailto:support@certree.com">support@certree.com</a></p>

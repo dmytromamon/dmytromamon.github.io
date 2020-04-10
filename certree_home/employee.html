@@ -23,29 +23,35 @@
 </head>
 
 <body>
-  <div class="nav-scroller">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <ul class="nav-scroller__nav">
-          
-          <li class="nav-scroller__item">
-            <a class="nav-scroller__link" href="#about">About</a>
-          </li>
-          
-          <li class="nav-scroller__item">
-            <a class="nav-scroller__link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-scroller__item">
-            <a class="nav-scroller__link" href="#support">Support</a>
-          </li>
-        </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler__arrow"></span>
+    <span class="navbar-toggler__arrow"></span>
+    <span class="navbar-toggler__arrow"></span>
+  </button>
+  <div class="navbar-collapse navbar-expand-lg flex-grow-0" id="navbarMenu">   <div class="nav-scroller">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <ul class="nav-scroller__nav">
+            
+            <li class="nav-scroller__item">
+              <a class="nav-scroller__link" href="#about">About</a>
+            </li>
+            
+            <li class="nav-scroller__item">
+              <a class="nav-scroller__link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-scroller__item">
+              <a class="nav-scroller__link" href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<nav class="header navbar navbar-expand-md">
+<nav class="header navbar navbar-expand-lg">
   <div class="container-fluid">
     <div class="row">
       <div class="col d-flex">
@@ -55,12 +61,6 @@
           </a>
           <span>Trust Redefined</span>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler__arrow"></span>
-          <span class="navbar-toggler__arrow"></span>
-          <span class="navbar-toggler__arrow"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarMenu">
           <ul class="navbar__nav">
             
             <li class="navbar__item active">
@@ -80,12 +80,11 @@
             <li class="navbar__item">
               <a class="navbar__link btn ml-0" href="#">Sign In</a>
             </li>
-            <li class="navbar__item">
+            <li class="navbar__item d-none d-md-none d-lg-block">
               <a class="navbar__link btn" href="#">Sign Up</a>
             </li>
           </ul>
         </div>
-      </div>
     </div>
   </div>
 </nav>
