@@ -1,0 +1,884 @@
+{
+  "dealers": [
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Aberdeen",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "Finning Aberdeen was a progression from Caledonian Tractors who were the original CAT dealers for Scotland. Original coverage for the northeast was from the Fishing port of Fraserburgh. CAT Engines had revolutionised fishing safety and vessels could now safely go to sea and return again and again under there own steam. Believe it or not until CAT engines were installed on these vessels’ reliability was very poor and trips were short. It was common for boats to be brought in by either there fishing mate or the RNLI. This new dependability enabled the fishing boats to travel further for longer and as such the sizes of vessel increased. Aberdeen was now the harbour of choice to land these bigger catches. Some pictures of the original Branch at Aberdeen albert quay attached, however this branch was quickly too small. A purpose built to “CAT guidance” facility was built (Believe it or not CAT have descriptions and designs for how a branch should be laid out in SIS). It was opened on the 17th October 1980 by the then President of the Scottish Fisherman’s Federation. At the time it was supporting construction heavily with all the oil and gas pipeline works, Oil and gas and of course Marine. As it stands this branch is presently in its 40th years of proud service."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "leedsparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Leeds, Yorkshire"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 75,
+        "desktopY": 25,
+        "mobileX": 68,
+        "mobileY": 45
+      }
+    }, 
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Bristol",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "We are a small but well-equipped Response & Repair facility, this means all our engineers are field based."
+          },
+          {
+            "p": "We moved into our present depot 6 years ago and have been busy ever since. We run 17 engineers from here, from here we also control the Nanpean Field operation in Cornwall with 7 engineers."
+          },
+          {
+            "p": "Our depot provides field service visits as well as workshop space, we can take quick turnaround repairs in here which frees up the larger facilities for major repairs."
+          },
+          {
+            "p": "Rollo Power Solutions has office space and warehouse space in our depot as well, Paul Taylor manages the Rollo Parts team."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 31,
+        "desktopY": 69,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Cannock",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "Parts Direct moved to Lakeside in 2016 (I think) and now we have joined with the branches to become one Team. We have a total of 42 years of knowledge with a team of 6 advisors, 2 internal account managers and 1 Parts Admin based at Lakeside. The team are based next to the Parts Counter Collection so we can engage with customers when required."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 50,
+        "desktopY": 50,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Cardiff/Llantrisant",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "Llantrisant branch is Wales only Finning branch and has recently achieved RRR status. The building is relatively new, it was purpose built approx. 20 years ago, previously, we were based on the outskirts of Cardiff, at a site that most recognised at Culverhouse Cross, a fabricated building with an office block attached to the front end, a very basic but functional building that was quite an impressive size at the time. At the front-end section was a huge sign showing the name BOWMAKER who were the named dealers at the time before merging into the FINNING family. The building became outdated and aged, along with a lot of the internal infrastructure, overhead cranes in the workshop, offices, all showed their age, so when we first visited the new site based in Llantrisant it definitely had the Wow factor, light spacious work areas, all fully air conditioned, state of the art double overhead cranes in the main workshop plus an independent overhead crane in the specialist rebuild area, transmission and engine bays. The workshop is split into two sections, the main machine repair section incorporates five repair bays, with a separate transmission and engine bay. The transmission bay boasts a fully operational test bed. The engine repair section has three dedicated bays for this purpose. A dedicated section for hydraulic cylinder repairs is available, where we have two repair beds, one for the smaller cylinders and a separate one for the more larger cylinders, there is also a fully functioning FHS (Finning Hose Service) available to customers, either attending the branch to be made up or the option of three mobile engineers. The site also includes a parts warehouse and parts department, integrated offices, works canteen and meeting rooms, again all fully Air Conditioned. Interestingly, the then Finning workforce were used in the move from Culverhouse Cross too Llantrisant, with the help of a local transport & logistics company. The very first machine into our workshop on the same weekend, incidentally, was a Caterpillar D8 owned by one of our largest customers, Walters Plant."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 31,
+        "desktopY": 60,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Chesterfield",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "In Chesterfield we have a wash and paint facility, and we are a RR workshop for repairs. We have 3 Field Service Controllers, 2 Workshop Controller and 2 Block Labour Controllers.  We also have a parts collection area for customers. Purpose built at the time in the dealer evolution. Opened 1997 and £5m build cost. Several thousand tonnes of coal were removed from under the development to offset the build costs. Bowmaker Plant owned this and surrounding land for many years before the build. The maximum capacity design was based on being able to take a 777 in the main workshop bottom doors and in the paint shop a 777 with the skip raised (hence the height), as part of a flexible floor plan. At design time we were still the Cat Lift Truck dealer which produced the small bay which had the 8 tonne ramp in it. The left had smaller part of the workshop was designed as the component rebuild section. And backed onto that was the self-contained stores."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 55,
+        "desktopY": 60,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Dublin",
+        "id": 0,
+        "blurb": [
+          {
+            "p": " "
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 32,
+        "desktopY": 38,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Glasgow",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "Finning UK Glasgow Branch is a Regional Distribution Centre centrally located for businesses in the local and surrounding area.  The branch covers Field Service and Workshop repairs and is staffed by approximately 60 engineers and staff."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 66,
+        "desktopY": 35,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Inverness",
+        "id": 0,
+        "blurb": [
+          {
+            "p": " "
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 80,
+        "desktopY": 10,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Leeds",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "At Finning UK of Leeds we sell, rent and provide parts and service for equiment and engines to customers in various industries, including mining, construction, petroleum, forestry and a wide range of power systems applications."
+          },
+          {
+            "p": "At Finning UK of Leeds we sell, rent and provide parts and service for equiment and engines to customers in various industries, including mining, construction, petroleum, forestry and a wide range of power systems applications."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "leedsparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Leeds, Yorkshire"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 65,
+        "desktopY": 45,
+        "mobileX": 68,
+        "mobileY": 45
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Lakeside",
+        "id": 0,
+        "blurb": [
+          {
+            "p": " "
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 56,
+        "desktopY": 47,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Lisburn",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "The Finning Lisburn Depot was originally based in Blaris Industrial Estate in Lisburn and moved here to our new premises in Ferguson Drive in January 2019. We have a total of 55 employees in the branch with the length of service ranging from 1 year to the longest serving of 46 years. We operate 14 field engineers and 8 repair/rebuild engineers in the workshop. Lisburn prides itself on having a strong Customer experience and a well-established Employee engagement platform."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 42,
+        "desktopY": 28,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Nanpean",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "Finning UK Nanpean branch predominantly looks after the companies involved in the china clay industry covering the quarries, dry mines, rail yards and docks. Cornwall has the largest deposits of China Clay in the world. It is estimated that a further 100 years of supply remains. It was formed by the chemical alteration of the moorland granites as they were cooling from molten rock buried in the Earth's crust, some 280 million years ago. Well worth looking up Cornwall china clay on Google. "
+          },
+          {
+            "p": "Imerys Minerals mine the sites below using a fleet of 775 off high way trucks, several D8/D9 tractors, three 990 loaders and a recent addition to the fleet, a 998KXE. Within the quarries there are a number of contractors and hire fleet machines that Finning UK at Nanpean regularly cover for breakdowns and service work. The dry mines, rail yard, docks at Par and Fowey use a verity of smaller loaders such as JCB, Volvo and Komatsu all of which our workshop service and maintain."
+          },
+          {
+            "p": "At the moment, Nanpean branch has a total of 14 engineers covering field service and  workshop. The field service team look after Devon and Cornwall, they and are jointly run through Bristol and Nanpean. Although the engineers are home based, they collect parts from Nanpean and regularly return customers machines to the workshop following in to complete repairs as needed."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 20,
+        "desktopY": 68,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Peterborough",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "- Customer collection point"
+          },
+          {
+            "p": "- Machine workshop"
+          },
+          {
+            "p": "- Goods in warehouse"
+          },
+          {
+            "p": "- Limited parts storage"
+          },
+          {
+            "p": "- Finning service"
+          },
+          {
+            "p": "- Diperk service."
+          },
+          {
+            "p": "There are always biscuits, Friday is leg day! (Matt & Dave are gym buddies)"
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 45,
+        "desktopY": 74,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    },
+    {
+      "graphic-content": {
+        "youtube": "href",
+        "pics": [
+          {
+            "src": "url"
+          }
+        ]
+      },
+      "main": {
+        "name": "Winsford",
+        "id": 0,
+        "blurb": [
+          {
+            "p": "- RR Branch "
+          },
+          {
+            "p": "- Workshop & field service "
+          },
+          {
+            "p": "- Cylinder bed for repair cylinders"
+          },
+          {
+            "p": "- Rail maintenance "
+          },
+          {
+            "p": "- Welding facilities"
+          },
+          {
+            "p": "8 bay workshop, 2 overhead cranes for maintenance. Workshop staff up to 12 engineers."
+          },
+          {
+            "p": "25 field service engineers covering areas of north wales, Cheshire, Lancashire & Cumbria."
+          }
+        ]
+      },
+      "keyPoints": [
+        {
+          "title": "Support",
+          "icon": "headphones"
+        },
+        {
+          "title": "Finance",
+          "icon": "documents"
+        },
+        {
+          "title": "Engine Reconstruction",
+          "icon": "settings"
+        }
+      ],
+      "contact": {
+        "tel": "01132534221",
+        "mail": "manchesterparts@finning.com",
+        "address": [
+          {
+            "row": "Gelderd Road, Gildersome,"
+          },
+          {
+            "row": "Manchester"
+          }, 
+          {
+            "row": "LS27 7JS"
+          },
+          {
+            "row": "United Kingdom"
+          }
+        ],
+        "office": "Mon - Fri 08.00 - 18.00",
+        "parts": "Mon - Fri 08.00 - 17.00"
+      },
+      "coordinates": {
+        "desktopX": 54,
+        "desktopY": 31,
+        "mobileX": 30,
+        "mobileY": 30
+      }
+    }
+  ]
+}
