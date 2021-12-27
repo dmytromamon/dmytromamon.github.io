@@ -30,8 +30,7 @@
         </div>
         <div class="rnd-slider__item">
           <div class="rnd-slider__graphic"> 
-            <video loop muted webkit-playsinline playsinline>
-              <source src="img/mixkit-tree-with-yellow-flowers-1173-large.mp4#t=0.001" type="video/mp4">
+            <video loop muted webkit-playsinline playsinline src="img/mixkit-red-frog-on-a-log-1487.mp4" type="video/mp4">
             </video>
           </div>
           <div class="rnd-slider__content content">
@@ -43,8 +42,7 @@
         </div>
         <div class="rnd-slider__item">
           <div class="rnd-slider__graphic"> 
-            <video loop muted webkit-playsinline playsinline>
-              <source src="img/mixkit-tree-with-yellow-flowers-1173-large.mp4#t=0.001" type="video/mp4">
+            <video loop muted webkit-playsinline playsinline src="img/mixkit-tree-with-yellow-flowers-1173-large.mp4" type="video/mp4">
             </video>
           </div>
           <div class="rnd-slider__content content">
@@ -100,154 +98,155 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
-      'use strict';
-      const sliderContainer = document.querySelector('.rnd-slider__container');
-      const sliderItems = document.querySelectorAll('.rnd-slider__item');
-      const sliderContents = document.querySelectorAll('.content__inner');
-      const buttonLeft = document.querySelector('#slideLeft');
-      const buttonRight = document.querySelector('#slideRight');
-      const rotationDegree = 7;
-      const radius = 350;
-      let currentItem = Math.round(sliderItems.length/2) - 1;
-      
-      for (let i = currentItem; i < sliderItems.length; i++) {
-          gsap.to(sliderContainer, {
-              marginLeft: -40*currentItem + 'vh',
-              duration: 1
-          });
-          for (let i = 0; i < sliderItems.length; i++) {
-              gsap.to(sliderItems[i], {
-                  yPercent: 0,
-                  y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
-                  rotation: -rotationDegree*(currentItem - i),
+      (function() {
+          'use strict';
+          const sliderContainer = document.querySelector('.rnd-slider__container');
+          const sliderItems = document.querySelectorAll('.rnd-slider__item');
+          const sliderContents = document.querySelectorAll('.content__inner');
+          const buttonLeft = document.querySelector('#slideLeft');
+          const buttonRight = document.querySelector('#slideRight');
+          const rotationDegree = 7;
+          const radius = 350;
+          let currentItem = Math.round(sliderItems.length/2) - 1;
+          
+          for (let i = currentItem; i < sliderItems.length; i++) {
+              gsap.to(sliderContainer, {
+                  marginLeft: -40*currentItem + 'vh',
                   duration: 1
               });
-              gsap.to(sliderContents[i], {
-                  xPercent: 0,
-                  x: -20 * (currentItem - i) + 'vh',
-                  opacity: 1 - Math.abs(currentItem - i)*2,
-                  duration: 1
-              });
-              document.querySelectorAll('video').forEach(vid => vid.pause());
+              for (let i = 0; i < sliderItems.length; i++) {
+                  gsap.to(sliderItems[i], {
+                      yPercent: 0,
+                      y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
+                      rotation: -rotationDegree*(currentItem - i),
+                      duration: 1
+                  });
+                  gsap.to(sliderContents[i], {
+                      xPercent: 0,
+                      x: -20 * (currentItem - i) + 'vh',
+                      opacity: 1 - Math.abs(currentItem - i)*2,
+                      duration: 1
+                  });
+              }
               if (sliderItems[currentItem].querySelector("video")) {
                   sliderItems[currentItem].querySelector("video").play();
               }
           }
-      }
-      
-      buttonLeft.addEventListener("click", slideLeft);
-      buttonRight.addEventListener("click", slideRight);
-      
-      function slideLeft(){
-          if (currentItem > 0) {
-              currentItem--;
+          
+          buttonLeft.addEventListener("click", slideLeft);
+          buttonRight.addEventListener("click", slideRight);
+          
+          function slideLeft(){
+              if (currentItem > 0) {
+                  currentItem--;
+              }
+              recalcPositions();
           }
-          recalcPositions();
-      }
-      
-      function slideRight(){
-          if (currentItem < sliderItems.length - 1) {
-              currentItem++;
+          
+          function slideRight(){
+              if (currentItem < sliderItems.length - 1) {
+                  currentItem++;
+              }
+              recalcPositions();
           }
-          recalcPositions();
-      }
-      
-      function recalcPositions(){
-          checkVideos();
-          buttonLeft.classList.remove("disabled");
-          buttonRight.classList.remove("disabled");
-          if (currentItem == 0) {
-              buttonLeft.classList.add("disabled");
-          }
-          if (currentItem == (sliderItems.length - 1)) {
-              buttonRight.classList.add("disabled");
-          }
-          gsap.to(sliderContainer, {
-              marginLeft: -40*currentItem + 'vh',
-              duration: .4
-          });
-          for (let i = 0; i < sliderItems.length; i++) {
-              gsap.to(sliderItems[i], {
-                  yPercent: 0,
-                  y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
-                  rotation: -rotationDegree*(currentItem - i),
+          
+          function recalcPositions(){
+              checkVideos();
+              buttonLeft.classList.remove("disabled");
+              buttonRight.classList.remove("disabled");
+              if (currentItem == 0) {
+                  buttonLeft.classList.add("disabled");
+              }
+              if (currentItem == (sliderItems.length - 1)) {
+                  buttonRight.classList.add("disabled");
+              }
+              gsap.to(sliderContainer, {
+                  marginLeft: -40*currentItem + 'vh',
                   duration: .4
               });
-              gsap.to(sliderContents[i], {
-                  xPercent: 0,
-                  x: -20 * (currentItem - i) + 'vh',
-                  opacity: 1 - Math.abs(currentItem - i)*2,
-                  duration: .4
-              });
+              for (let i = 0; i < sliderItems.length; i++) {
+                  gsap.to(sliderItems[i], {
+                      yPercent: 0,
+                      y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
+                      rotation: -rotationDegree*(currentItem - i),
+                      duration: .4
+                  });
+                  gsap.to(sliderContents[i], {
+                      xPercent: 0,
+                      x: -20 * (currentItem - i) + 'vh',
+                      opacity: 1 - Math.abs(currentItem - i)*2,
+                      duration: .4
+                  });
+              }
           }
-      }
-      
-      sliderContainer.addEventListener("mousedown", handleSliderDrag);
-      sliderContainer.addEventListener("touchstart", handleSliderDrag);
-      
-      function handleSliderDrag(e){
-          const moved = gsap.getProperty(sliderContainer, "marginLeft");
-          if ("ontouchstart" in document.documentElement) {
-              const origin = e.touches[0].pageX;
-              document.ontouchmove = function(e) {
-                  moveAt(e, origin, moved);
-              };
-              document.ontouchend = function() {
-                  currentItem = Math.round(currentItem);
-                  recalcPositions();
-                  document.ontouchmove = null;
-                  document.ontouchend = null;
-              };
-          } else {
-              const origin = e.clientX;
-              document.onmousemove = function(e) {
-                  moveAt(e, origin, moved);
-              };
-              document.onmouseup = function() {
-                  currentItem = Math.round(currentItem);
-                  recalcPositions();
-                  document.onmousemove = null;
-                  document.onmouseup = null;
-              };
+          
+          sliderContainer.addEventListener("mousedown", handleSliderDrag);
+          sliderContainer.addEventListener("touchstart", handleSliderDrag);
+          
+          function handleSliderDrag(e){
+              const moved = gsap.getProperty(sliderContainer, "marginLeft");
+              if ("ontouchstart" in document.documentElement) {
+                  const origin = e.touches[0].pageX;
+                  document.ontouchmove = function(e) {
+                      moveAt(e, origin, moved);
+                  };
+                  document.ontouchend = function() {
+                      currentItem = Math.round(currentItem);
+                      recalcPositions();
+                      document.ontouchmove = null;
+                      document.ontouchend = null;
+                  };
+              } else {
+                  const origin = e.clientX;
+                  document.onmousemove = function(e) {
+                      moveAt(e, origin, moved);
+                  };
+                  document.onmouseup = function() {
+                      currentItem = Math.round(currentItem);
+                      recalcPositions();
+                      document.onmousemove = null;
+                      document.onmouseup = null;
+                  };
+              }
           }
-      }
-      
-      function moveAt(e, origin, moved){
-          let moveTo;
-          if ("ontouchstart" in document.documentElement) {
-              moveTo = origin - e.touches[0].pageX;
-          } else {
-              moveTo = origin - e.clientX;
+          
+          function moveAt(e, origin, moved){
+              let moveTo;
+              if ("ontouchstart" in document.documentElement) {
+                  moveTo = origin - e.touches[0].pageX;
+              } else {
+                  moveTo = origin - e.clientX;
+              }
+              moveTo = moveTo/5 - moved;
+              if ((moveTo > -10) && (moveTo < (sliderItems.length - 1) * 40 + 10)) {
+                  currentItem = moveTo / 40;
+                  gsap.set(sliderContainer, {
+                      marginLeft: -moveTo
+                  });
+              }
+              for (let i = 0; i < sliderItems.length; i++) {
+                  gsap.set(sliderItems[i], {
+                      yPercent: 0,
+                      y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
+                      rotation: -rotationDegree*(currentItem - i)
+                  });
+                  gsap.set(sliderContents[i], {
+                      xPercent: 0,
+                      x: -20 * (currentItem - i) + 'vh',
+                      opacity: 1 - Math.abs(currentItem - i)*2
+                  });
+              }
+              currentItem = Math.round(currentItem);
+              checkVideos();
           }
-          moveTo = moveTo/5 - moved;
-          if ((moveTo > -10) && (moveTo < (sliderItems.length - 1) * 40 + 10)) {
-              currentItem = moveTo / 40;
-              gsap.set(sliderContainer, {
-                  marginLeft: -moveTo
-              });
+          
+          function checkVideos(){
+            document.querySelectorAll('video').forEach(vid => vid.pause());
+              if (sliderItems[currentItem].querySelector("video")) {
+                  sliderItems[currentItem].querySelector("video").play();
+              }
           }
-          for (let i = 0; i < sliderItems.length; i++) {
-              gsap.set(sliderItems[i], {
-                  yPercent: 0,
-                  y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
-                  rotation: -rotationDegree*(currentItem - i)
-              });
-              gsap.set(sliderContents[i], {
-                  xPercent: 0,
-                  x: -20 * (currentItem - i) + 'vh',
-                  opacity: 1 - Math.abs(currentItem - i)*2
-              });
-          }
-          currentItem = Math.round(currentItem);
-          checkVideos();
-      }
-      
-      function checkVideos(){
-        document.querySelectorAll('video').forEach(vid => vid.pause());
-          if (sliderItems[currentItem].querySelector("video")) {
-              sliderItems[currentItem].querySelector("video").play();
-          }
-      }
+      })();
     </script>
   </body>
 </html>
