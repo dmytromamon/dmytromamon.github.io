@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <body>
+    <div class="rnd-slider" id="slider">
+      <div class="rnd-slider__container">
+        <div class="rnd-slider__item">
+          <div class="rnd-slider__graphic"> <img src="img/seller1.jpg" alt=""></div>
+          <div class="rnd-slider__content content">
+            <div class="content__inner">
+              <div class="content__title">Points gives you</div>
+              <div class="content__copy">Dozens of experiences in dozens of countries around the world. Online, physical, workshops, lectures, webinars and more... All to inspire you to explore yourself in deeper and gain new perspectives</div>
+            </div>
+          </div>
+        </div>
+        <div class="rnd-slider__item">
+          <div class="rnd-slider__graphic"> <img src="img/seller3.jpg" alt=""></div>
+          <div class="rnd-slider__content content">
+            <div class="content__inner">
+              <div class="content__title">Points gives you</div>
+              <div class="content__copy">Dozens of experiences in dozens of countries around the world. Online, physical, workshops, lectures, webinars and more... All to inspire you to explore yourself in deeper and gain new perspectives</div>
+            </div>
+          </div>
+        </div>
+        <div class="rnd-slider__item">
+          <div class="rnd-slider__graphic"> 
+            <video loop muted webkit-playsinline playsinline>
+              <source src="img/mixkit-tree-with-yellow-flowers-1173-large.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="rnd-slider__content content">
+            <div class="content__inner">
+              <div class="content__title">This is video</div>
+              <div class="content__copy">Here you have an example of the video implementation. You can see video pauses and plays when you drag.</div>
+            </div>
+          </div>
+        </div>
+        <div class="rnd-slider__item">
+          <div class="rnd-slider__graphic"> <img src="img/seller2.jpg" alt=""></div>
+          <div class="rnd-slider__content content">
+            <div class="content__inner">
+              <div class="content__title">Points gives you</div>
+              <div class="content__copy">Dozens of experiences in dozens of countries around the world. Online, physical, workshops, lectures, webinars and more... All to inspire you to explore yourself in deeper and gain new perspectives</div>
+            </div>
+          </div>
+        </div>
+        <div class="rnd-slider__item">
+          <div class="rnd-slider__graphic"> <img src="img/seller3.jpg" alt=""></div>
+          <div class="rnd-slider__content content">
+            <div class="content__inner">
+              <div class="content__title">Points gives you</div>
+              <div class="content__copy">Dozens of experiences in dozens of countries around the world. Online, physical, workshops, lectures, webinars and more... All to inspire you to explore yourself in deeper and gain new perspectives</div>
+            </div>
+          </div>
+        </div>
+        <div class="rnd-slider__item">
+          <div class="rnd-slider__graphic"> <img src="img/seller4.jpg" alt=""></div>
+          <div class="rnd-slider__content content">
+            <div class="content__inner">
+              <div class="content__title">Points gives you</div>
+              <div class="content__copy">Dozens of experiences in dozens of countries around the world. Online, physical, workshops, lectures, webinars and more... All to inspire you to explore yourself in deeper and gain new perspectives</div>
+            </div>
+          </div>
+        </div>
+        <div class="rnd-slider__item">
+          <div class="rnd-slider__graphic"> <img src="img/seller5.jpg" alt=""></div>
+          <div class="rnd-slider__content content">
+            <div class="content__inner">
+              <div class="content__title">Points gives you</div>
+              <div class="content__copy">Dozens of experiences in dozens of countries around the world. Online, physical, workshops, lectures, webinars and more... All to inspire you to explore yourself in deeper and gain new perspectives</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rnd-slider__buttons buttons"> 
+        <div class="buttons__inner"> 
+          <button id="slideLeft" type="button"></button>
+          <button id="slideRight" type="button"></button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+      'use strict';
+      const sliderContainer = document.querySelector('.rnd-slider__container');
+      const sliderItems = document.querySelectorAll('.rnd-slider__item');
+      const sliderContents = document.querySelectorAll('.content__inner');
+      const buttonLeft = document.querySelector('#slideLeft');
+      const buttonRight = document.querySelector('#slideRight');
+      const rotationDegree = 7;
+      const radius = 350;
+      let currentItem = Math.round(sliderItems.length/2) - 1;
+      
+      for (let i = currentItem; i < sliderItems.length; i++) {
+          gsap.to(sliderContainer, {
+              marginLeft: -40*currentItem + 'vh',
+              duration: 1
+          });
+          for (let i = 0; i < sliderItems.length; i++) {
+              gsap.to(sliderItems[i], {
+                  yPercent: 0,
+                  y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
+                  rotation: -rotationDegree*(currentItem - i),
+                  duration: 1
+              });
+              gsap.to(sliderContents[i], {
+                  xPercent: 0,
+                  x: -20 * (currentItem - i) + 'vh',
+                  opacity: 1 - Math.abs(currentItem - i)*2,
+                  duration: 1
+              });
+          }
+      }
+      
+      buttonLeft.addEventListener("click", slideLeft);
+      buttonRight.addEventListener("click", slideRight);
+      
+      function slideLeft(){
+          if (currentItem > 0) {
+              currentItem--;
+          }
+          recalcPositions();
+      }
+      
+      function slideRight(){
+          if (currentItem < sliderItems.length - 1) {
+              currentItem++;
+          }
+          recalcPositions();
+      }
+      
+      function recalcPositions(){
+          checkVideos();
+          buttonLeft.classList.remove("disabled");
+          buttonRight.classList.remove("disabled");
+          if (currentItem == 0) {
+              buttonLeft.classList.add("disabled");
+          }
+          if (currentItem == (sliderItems.length - 1)) {
+              buttonRight.classList.add("disabled");
+          }
+          gsap.to(sliderContainer, {
+              marginLeft: -40*currentItem + 'vh',
+              duration: .4
+          });
+          for (let i = 0; i < sliderItems.length; i++) {
+              gsap.to(sliderItems[i], {
+                  yPercent: 0,
+                  y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
+                  rotation: -rotationDegree*(currentItem - i),
+                  duration: .4
+              });
+              gsap.to(sliderContents[i], {
+                  xPercent: 0,
+                  x: -20 * (currentItem - i) + 'vh',
+                  opacity: 1 - Math.abs(currentItem - i)*2,
+                  duration: .4
+              });
+          }
+      }
+      
+      sliderContainer.addEventListener("mousedown", handleSliderDrag);
+      sliderContainer.addEventListener("touchstart", handleSliderDrag);
+      
+      function handleSliderDrag(e){
+          const moved = gsap.getProperty(sliderContainer, "marginLeft");
+          if ("ontouchstart" in document.documentElement) {
+              const origin = e.touches[0].pageX;
+              document.ontouchmove = function(e) {
+                  moveAt(e, origin, moved);
+              };
+              document.ontouchend = function() {
+                  currentItem = Math.round(currentItem);
+                  recalcPositions();
+                  document.ontouchmove = null;
+                  document.ontouchend = null;
+              };
+          } else {
+              const origin = e.clientX;
+              document.onmousemove = function(e) {
+                  moveAt(e, origin, moved);
+              };
+              document.onmouseup = function() {
+                  currentItem = Math.round(currentItem);
+                  recalcPositions();
+                  document.onmousemove = null;
+                  document.onmouseup = null;
+              };
+          }
+      }
+      
+      function moveAt(e, origin, moved){
+          let moveTo;
+          if ("ontouchstart" in document.documentElement) {
+              moveTo = origin - e.touches[0].pageX;
+          } else {
+              moveTo = origin - e.clientX;
+          }
+          moveTo = moveTo/5 - moved;
+          if ((moveTo > -10) && (moveTo < (sliderItems.length - 1) * 40 + 10)) {
+              currentItem = moveTo / 40;
+              gsap.set(sliderContainer, {
+                  marginLeft: -moveTo
+              });
+          }
+          for (let i = 0; i < sliderItems.length; i++) {
+              gsap.set(sliderItems[i], {
+                  yPercent: 0,
+                  y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
+                  rotation: -rotationDegree*(currentItem - i)
+              });
+              gsap.set(sliderContents[i], {
+                  xPercent: 0,
+                  x: -20 * (currentItem - i) + 'vh',
+                  opacity: 1 - Math.abs(currentItem - i)*2
+              });
+          }
+          currentItem = Math.round(currentItem);
+          checkVideos();
+      }
+      
+      function checkVideos(){
+          if (sliderItems[currentItem].querySelector("video")) {
+              sliderItems[currentItem].querySelector("video").play();
+          } else {
+              sliderContainer.querySelector("video").pause();
+          }
+      }
+    </script>
+  </body>
+</html>
