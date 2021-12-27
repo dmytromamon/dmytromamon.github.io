@@ -42,6 +42,19 @@
           </div>
         </div>
         <div class="rnd-slider__item">
+          <div class="rnd-slider__graphic"> 
+            <video loop muted webkit-playsinline playsinline>
+              <source src="img/mixkit-tree-with-yellow-flowers-1173-large.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="rnd-slider__content content">
+            <div class="content__inner">
+              <div class="content__title">This is video</div>
+              <div class="content__copy">Here you have an example of the video implementation. You can see video pauses and plays when you drag.</div>
+            </div>
+          </div>
+        </div>
+        <div class="rnd-slider__item">
           <div class="rnd-slider__graphic"> <img src="img/seller2.jpg" alt=""></div>
           <div class="rnd-slider__content content">
             <div class="content__inner">
@@ -115,9 +128,9 @@
                   opacity: 1 - Math.abs(currentItem - i)*2,
                   duration: 1
               });
+              document.querySelectorAll('video').forEach(vid => vid.pause());
               if (sliderItems[currentItem].querySelector("video")) {
                   sliderItems[currentItem].querySelector("video").play();
-                  sliderItems[currentItem].querySelector("video").pause();
               }
           }
       }
@@ -230,10 +243,9 @@
       }
       
       function checkVideos(){
+        document.querySelectorAll('video').forEach(vid => vid.pause());
           if (sliderItems[currentItem].querySelector("video")) {
               sliderItems[currentItem].querySelector("video").play();
-          } else {
-              sliderContainer.querySelector("video").pause();
           }
       }
     </script>
