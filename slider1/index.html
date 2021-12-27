@@ -30,7 +30,7 @@
         </div>
         <div class="rnd-slider__item">
           <div class="rnd-slider__graphic"> 
-            <video loop muted webkit-playsinline playsinline src="img/mixkit-red-frog-on-a-log-1487.mp4" type="video/mp4">
+            <video autoplay loop muted playsinline src="img/mixkit-red-frog-on-a-log-1487.mp4" type="video/mp4">
             </video>
           </div>
           <div class="rnd-slider__content content">
@@ -42,7 +42,7 @@
         </div>
         <div class="rnd-slider__item">
           <div class="rnd-slider__graphic"> 
-            <video loop muted webkit-playsinline playsinline src="img/mixkit-tree-with-yellow-flowers-1173-large.mp4" type="video/mp4">
+            <video autoplay loop muted playsinline src="img/mixkit-tree-with-yellow-flowers-1173-large.mp4" type="video/mp4">
             </video>
           </div>
           <div class="rnd-slider__content content">
@@ -109,29 +109,26 @@
           const radius = 350;
           let currentItem = Math.round(sliderItems.length/2) - 1;
           
-          for (let i = currentItem; i < sliderItems.length; i++) {
-              gsap.to(sliderContainer, {
-                  marginLeft: -40*currentItem + 'vh',
+          gsap.to(sliderContainer, {
+              marginLeft: -40*currentItem + 'vh',
+              duration: 1
+          });
+          for (let i = 0; i < sliderItems.length; i++) {
+              gsap.to(sliderItems[i], {
+                  yPercent: 0,
+                  y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
+                  rotation: -rotationDegree*(currentItem - i),
                   duration: 1
               });
-              for (let i = 0; i < sliderItems.length; i++) {
-                  gsap.to(sliderItems[i], {
-                      yPercent: 0,
-                      y: radius - (radius * Math.cos(Math.PI * 2 * rotationDegree * (currentItem - i) / 360)) + 'vh',
-                      rotation: -rotationDegree*(currentItem - i),
-                      duration: 1
-                  });
-                  gsap.to(sliderContents[i], {
-                      xPercent: 0,
-                      x: -20 * (currentItem - i) + 'vh',
-                      opacity: 1 - Math.abs(currentItem - i)*2,
-                      duration: 1
-                  });
-              }
-              if (sliderItems[currentItem].querySelector("video")) {
-                  sliderItems[currentItem].querySelector("video").play();
-              }
+              gsap.to(sliderContents[i], {
+                  xPercent: 0,
+                  x: -20 * (currentItem - i) + 'vh',
+                  opacity: 1 - Math.abs(currentItem - i)*2,
+                  duration: 1
+              });
           }
+          
+          checkVideos();
           
           buttonLeft.addEventListener("click", slideLeft);
           buttonRight.addEventListener("click", slideRight);
@@ -241,7 +238,7 @@
           }
           
           function checkVideos(){
-            document.querySelectorAll('video').forEach(vid => vid.pause());
+              document.querySelectorAll('video').forEach(vid => vid.pause());
               if (sliderItems[currentItem].querySelector("video")) {
                   sliderItems[currentItem].querySelector("video").play();
               }
