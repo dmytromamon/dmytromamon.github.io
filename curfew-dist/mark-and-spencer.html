@@ -1,0 +1,208 @@
+<!DOCTYPE html><html class="wksp wksp_director" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><title>Curfew</title><meta name="description" content=""/><meta property="og:title" content="curfew title"/><meta property="og:description" content="curfew description"/><meta property="og:type" content="website"/><meta property="og:url" content="http://curfew.tv/"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="http://curfew.tv/img/og__image1200x630.jpg?07143514"/><meta property="vk:image" content="http://curfew.tv/img/og__image1200x630.jpg?07143514"/><meta name="msapplication-tap-highlight" content="no"/><meta name="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="format-detection" content="telephone=no"/><meta name="format-detection" content="date=no"/><meta name="format-detection" content="address=no"/><meta name="format-detection" content="email=no"/><meta content="notranslate" name="google"/><link rel="shortcut icon" href="img/favicon.ico?07143514"/><link rel="stylesheet" href="https://use.typekit.net/eaj0gqj.css"><style>@font-face{font-family:neuehaasgrotdisp55romanweb;src:url(fonts/neuehaasgrotdisp55romanweb.woff2) format("woff2"),url(fonts/neuehaasgrotdisp55romanweb.woff) format("woff");font-weight:500;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:neuehaasgrotdisp65medium;src:url(fonts/neuehaasgrotdisp65medium-600-normal.woff2) format("woff2"),url(fonts/neuehaasgrotdisp65medium-600-normal.woff) format("woff");font-weight:600;font-style:normal;font-stretch:normal;font-display:swap}@font-face{font-family:canelaregularweb;src:url(fonts/canelaregularweb.woff2) format("woff2"),url(fonts/canelaregularweb.woff) format("woff");font-weight:400;font-style:normal;font-stretch:normal;font-display:swap}</style><link href="css/main.min.css?07143514" rel="stylesheet"><script>function getCookie(name) {
+    var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+function setCookie(name, value, options) {
+    options = {
+        path: '/',
+    };
+    if (options.expires instanceof Date) {
+        options.expires = options.expires.toUTCString();
+    }
+    var updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+    for (var optionKey in options) {
+        updatedCookie += "; " + optionKey;
+        var optionValue = options[optionKey];
+        if (optionValue !== true) {
+            updatedCookie += "=" + optionValue;
+        }
+    }
+    document.cookie = updatedCookie;
+}
+
+if (!getCookie('theme')) {
+    var cookieExpireDate = new Date(Date.now() + 3600 * 24 * 365 * 1000);
+    setCookie('theme', 'theme_dark', cookieExpireDate);
+}
+
+window.getTheme = getCookie('theme');
+var root = document.documentElement;
+
+if (getTheme === 'theme_dark') {
+    root.className += ' theme_dark';
+}
+
+if (getTheme === 'theme_light') {
+    root.className += ' theme_light';
+}
+
+// show loader on each page
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    var
+        loaderItemDark = document.querySelector('.preloader__item_dark'),
+        loaderItemLight = document.querySelector('.preloader__item_light');
+
+    if (getTheme === 'theme_dark') {
+        loaderItemDark.classList.add("is-visible");
+        loaderItemLight.classList.remove("is-visible");
+    } else if (getTheme === 'theme_light') {
+        loaderItemLight.classList.add("is-visible");
+        loaderItemDark.classList.remove("is-visible");
+    } else {
+        loaderItemLight.classList.add("is-visible");
+    }
+
+});
+
+// show loader only one time per session
+
+// document.addEventListener('DOMContentLoaded', function () {
+//
+//     window.loaderState = sessionStorage.getItem('loader');
+//
+//     if (!window.loaderState || window.loaderState === undefined || window.loaderState === null) {
+//
+//         sessionStorage.setItem('loader', 'isShowed');
+//
+//         var
+//                 loaderItemDark = document.querySelector('.preloader__item_dark'),
+//                 loaderItemLight = document.querySelector('.preloader__item_light');
+//
+//         if (getTheme === 'theme_dark') {
+//             loaderItemDark.classList.add("is-visible");
+//             loaderItemLight.classList.remove("is-visible");
+//         } else if (getTheme === 'theme_light') {
+//             loaderItemLight.classList.add("is-visible");
+//             loaderItemDark.classList.remove("is-visible");
+//         } else {
+//             loaderItemLight.classList.add("is-visible");
+//         }
+//
+//     }
+//
+// });
+</script></head><body><div class="wksp__static"><div class="preloader wksp__preloader" data-preloader=""><div class="preloader__item preloader__item_light"><div class="preloader__fig" data-lottie-light=""></div></div><div class="preloader__item preloader__item_dark"><div class="preloader__fig" data-lottie-dark=""></div></div><div class="preloader__shape_color"></div></div><div class="cursor wksp__cursor"></div><div class="scroll-line wksp__scroll-line"></div><div class="tpan wksp__tpan"><div class="tpan__in"><a class="logo tpan__logo" href="/"><svg class="vi vi_icon vi_icon_logo_pic logo__pic"><use xlink:href="img/sprite.svg?07143514#vi_icon_logo_pic"></use></svg><svg class="vi vi_icon vi_icon_logo_pic_hover_light logo__pic-hover logo__pic-hover_light"><use xlink:href="img/sprite.svg?07143514#vi_icon_logo_pic_hover_light"></use></svg><svg class="vi vi_icon vi_icon_logo_pic_hover_dark logo__pic-hover logo__pic-hover_dark"><use xlink:href="img/sprite.svg?07143514#vi_icon_logo_pic_hover_dark"></use></svg><div class="logo__brand-name logo__brand-name_light"><img class="img-block vi vi_img vi_img_logo_brand_name_light logo__brand-name__sprite" id="sprite1" src="img/logo_brand_name_light.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_light logo__brand-name__sprite" id="sprite2" src="img/logo_brand_name_light.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_light logo__brand-name__sprite" id="sprite3" src="img/logo_brand_name_light.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_light logo__brand-name__sprite" id="sprite4" src="img/logo_brand_name_light.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_light logo__brand-name__sprite" id="sprite5" src="img/logo_brand_name_light.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_light logo__brand-name__sprite" id="sprite6" src="img/logo_brand_name_light.svg?07143514" alt="" width="1" height="1"/></div><div class="logo__brand-name logo__brand-name_dark"><img class="img-block vi vi_img vi_img_logo_brand_name_dark logo__brand-name__sprite" id="sprite1" src="img/logo_brand_name_dark.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_dark logo__brand-name__sprite" id="sprite2" src="img/logo_brand_name_dark.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_dark logo__brand-name__sprite" id="sprite3" src="img/logo_brand_name_dark.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_dark logo__brand-name__sprite" id="sprite4" src="img/logo_brand_name_dark.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_dark logo__brand-name__sprite" id="sprite5" src="img/logo_brand_name_dark.svg?07143514" alt="" width="1" height="1"/><img class="img-block vi vi_img vi_img_logo_brand_name_dark logo__brand-name__sprite" id="sprite6" src="img/logo_brand_name_dark.svg?07143514" alt="" width="1" height="1"/></div></a><div class="tpan__aside"><div class="menu tpan__menu"><ul class="menu__list"><li class="menu__item"><a class="menu__link" href="directors.html">Directors</a></li><li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li></ul></div><div class="switcher tpan__switcher" data-switcher=""><div class="switcher__items"><div class="switcher__item is-active" data-view="light"></div><div class="switcher__item" data-view="dark"></div></div></div></div></div></div><div class="scdown-wrap wksp__scdown-wrap"><div class="scdown wksp__scdown" data-scdown=""><svg class="vi vi_icon vi_icon_scdown_pic scdown__pic"><use xlink:href="img/sprite.svg?07143514#vi_icon_scdown_pic"></use></svg></div></div></div><div data-scroll data-directors-zindex-change><div data-scroll-content><div class="wksp__wrapper" id="top"><div class="main main_director wksp__main"><div data-rolldown-container=""><div class="diname wksp__diname"><div class="wksp__center"><div class="diname__in"><div class="diname__name"><span class="diname__name-text" data-name="">Mark & Spencer</span></div><a class="diname__link js-scrollTo" href="#bio"><span class="diname__link-text">BIO</span></a></div></div></div><div class="diwork-rolldown [ diwork-rolldown_director-inner ] diwork-rolldown_director wksp__diwork-rolldown" data-diwork-rolldown=""><div class="wksp__center"><div class="diwork-rolldown__in"><div class="diwork-rolldown__body"><img class="img-block vi vi_img diwork-rolldown__pic" src="img/istub.png?07143514" alt="" width="1" height="1" data-rolldown-pic=""/><div class="play diwork-rolldown__play" data-open-modal="video-home" data-video="" data-modal-title="" data-modal-subtitle="" data-modal-diname=""><div class="play__in"><div class="play__words"><span class="play__words-text">Play</span></div></div></div></div><div class="diwork-rolldown__foo"><div class="diwork-rolldown__title"><span class="diwork-rolldown__title-text" data-title="">Pantene</span></div><div class="diwork-rolldown__subtitle"><span class="diwork-rolldown__subtitle-text" data-subtitle="">Coming Home</span></div></div></div></div></div></div><div class="works wksp__works"><div class="wksp__center"><div class="cols works__cols"><div class="col works__col cols__col"><div class="diwork works__diwork" data-open-modal-mobile="video" data-video="https://player.vimeo.com/video/165505958" data-diwork-dibigpic="img/diwork_pic_big_17.jpg" data-diwork-diname="Mark &amp; Spencer" data-diwork-dititle="Lifetime" data-diwork-disubtitle="Enjoy Being a Girl" data-rolldown-trigger=""><img class="img-block vi vi_img lazyload diwork__pic" data-src="img/diwork_pic_17.jpg?07143514" src="img/istub.png?07143514" alt="" width="1" height="1" data-diwork-pic=""/><div class="diwork__info"><div class="diwork__diname"><span class="diwork__diname-text">Mark & Spencer</span></div><div class="diwork__dititle"><span class="diwork__dititle-in"><span class="diwork__dititle-text">Lifetime</span><span class="diwork__dititle__line"></span></span></div><div class="diwork__disubtitle"><span class="diwork__disubtitle-text">Enjoy Being a Girl</span></div></div></div><div class="diwork works__diwork" data-open-modal-mobile="video" data-video="https://player.vimeo.com/video/245770112" data-diwork-dibigpic="img/diwork_pic_big_18.jpg" data-diwork-diname="Mark &amp; Spencer" data-diwork-dititle="Jack Daniels" data-diwork-disubtitle="Tennessee Rye" data-rolldown-trigger=""><img class="img-block vi vi_img lazyload diwork__pic" data-src="img/diwork_pic_18.jpg?07143514" src="img/istub.png?07143514" alt="" width="1" height="1" data-diwork-pic=""/><div class="diwork__info"><div class="diwork__diname"><span class="diwork__diname-text">Mark & Spencer</span></div><div class="diwork__dititle"><span class="diwork__dititle-in"><span class="diwork__dititle-text">Jack Daniels</span><span class="diwork__dititle__line"></span></span></div><div class="diwork__disubtitle"><span class="diwork__disubtitle-text">Tennessee Rye</span></div></div></div></div><div class="col works__col cols__col"><div class="diwork works__diwork" data-open-modal-mobile="video" data-video="https://player.vimeo.com/video/237473408" data-diwork-dibigpic="img/diwork_pic_big_15.jpg" data-diwork-diname="Mark &amp; Spencer" data-diwork-dititle="Adidas" data-diwork-disubtitle="EQT" data-rolldown-trigger=""><img class="img-block vi vi_img lazyload diwork__pic" data-src="img/diwork_pic_15.jpg?07143514" src="img/istub.png?07143514" alt="" width="1" height="1" data-diwork-pic=""/><div class="diwork__info"><div class="diwork__diname"><span class="diwork__diname-text">Mark & Spencer</span></div><div class="diwork__dititle"><span class="diwork__dititle-in"><span class="diwork__dititle-text">Adidas</span><span class="diwork__dititle__line"></span></span></div><div class="diwork__disubtitle"><span class="diwork__disubtitle-text">EQT</span></div></div></div><div class="diwork works__diwork" data-open-modal-mobile="video" data-video="https://player.vimeo.com/video/293973266" data-diwork-dibigpic="img/diwork_pic_big_16.jpg" data-diwork-diname="Mark &amp; Spencer" data-diwork-dititle="Doctors Without Borders" data-diwork-disubtitle="Across the Sea" data-rolldown-trigger=""><img class="img-block vi vi_img lazyload diwork__pic" data-src="img/diwork_pic_16.jpg?07143514" src="img/istub.png?07143514" alt="" width="1" height="1" data-diwork-pic=""/><div class="diwork__info"><div class="diwork__diname"><span class="diwork__diname-text">Mark & Spencer</span></div><div class="diwork__dititle"><span class="diwork__dititle-in"><span class="diwork__dititle-text">Doctors Without Borders</span><span class="diwork__dititle__line"></span></span></div><div class="diwork__disubtitle"><span class="diwork__disubtitle-text">Across the Sea</span></div></div></div></div></div></div></div><div class="dibio wksp__dibio" id="bio"><div class="wksp__center"><div class="cols dibio__cols"><div class="col col_half_desktop cols__col dibio__col dibio__col_content"><div class="dibio__mask"><h3 class="dibio__title"><span class="dibio__title-text">Biography</span></h3><div class="dibio__content"><div class="dibio__content-words"><p>Mark Smith and Spencer Dennis met in 2005 at a bus station in Sarajevo (long story). After collaborating on a number of music videos and commercial projects, they began directing as a duo in 2014. Recent clients include Adidas, Gap Inc., AT&T, Lincoln, eBay, Jack Daniel's, Cole Haan, MTV, and many others. When they’re not doing film stuff, Mark plays ice hockey and Spencer hugs his sheepdog.</p></div></div></div><div class="dibio__contact dibio__contact_mobile"><a class="dibio__link" href="contact.html"><span class="dibio__link-text">Contact us</span></a></div></div><div class="col col_half_desktop cols__col dibio__col dibio__col_pic"><img class="img-block vi vi_img lazyload dibio__pic" data-src="img/dibio_pic_2.jpg?07143514" src="img/istub.png?07143514" alt="" width="1" height="1"/></div></div><div class="dibio__contact dibio__contact_desktop"><a class="dibio__link" href="contact.html"><span class="dibio__link-text">Contact us</span></a></div></div></div></div></div></div></div><div class="modal modal_video" id="modal-video"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="diname modal__diname"><div class="wksp__center"><div class="diname__in"><div class="diname__name"><span class="diname__name-text" data-diname=""></span></div></div></div></div><div class="video-container"><button class="close modal__close" data-dismiss="modal"><svg class="vi vi_icon vi_icon_close close__icon"><use xlink:href="img/sprite.svg?07143514#vi_icon_close"></use></svg></button><div class="iframe video-iframe"></div></div><div class="diwork-rolldown__foo"><div class="diwork-rolldown__title"><span class="diwork-rolldown__title-text" data-title=""></span></div><div class="diwork-rolldown__subtitle"><span class="diwork-rolldown__subtitle-text" data-subtitle=""></span></div></div></div></div></div><div class="modal modal_video modal_video-home" id="modal-video-home"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="diname modal__diname"><div class="wksp__center"><div class="diname__in"><div class="diname__name"><span class="diname__name-text" data-diname=""></span></div></div></div></div><div class="video-container"><button class="close modal__close" data-dismiss="modal"><svg class="vi vi_icon vi_icon_close close__icon"><use xlink:href="img/sprite.svg?07143514#vi_icon_close"></use></svg></button><div class="iframe video-iframe"></div></div><div class="diwork-rolldown__foo"><div class="diwork-rolldown__title"><span class="diwork-rolldown__title-text" data-title=""></span></div><div class="diwork-rolldown__subtitle"><span class="diwork-rolldown__subtitle-text" data-subtitle=""></span></div></div></div></div></div><script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script id="jquery-cdn-fallback"></script><script>window.jQuery || document.getElementById('jquery-cdn-fallback').setAttribute('src', 'js/jquery-3.5.1.min.js');</script><script src="js/TweenMax.min.js"></script><script src="js/smoothscroll.min.js"></script><script src="js/main.min.js?07143514" defer=""></script><script>    var $page = $('html, body');
+    
+    $page.animate({
+      scrollTop: 100000
+    }, 1);
+    
+    setTimeout(function(){
+      $page.animate({
+        scrollTop: 0
+      }, 1);
+    }, 2)
+
+// hide and remove loader when page is fully loaded
+
+window.loaderAnimationHandler = function () {
+    var tl = new TimelineMax(),
+        preloaderShape = $('.preloader__shape'),
+        preloader = $('.preloader'),
+        scrollableContent = $('.wksp__wrapper');
+
+    tl.fromTo(preloaderShape, 1.6, {
+        y: 0
+    }, {
+        y: -preloaderShape.innerHeight(),
+        ease: Expo.easeInOut
+    }, 0)
+    .fromTo(preloader, 1.3, {
+        scaleY: 1
+    }, {
+        y: -preloader.innerHeight() / 2,
+        scaleY: 0,
+        ease: Expo.easeInOut,
+        delay: 0.4
+    }, 0)
+    .fromTo(scrollableContent, 1.6, {
+        y: 100
+    }, {
+        y: 0,
+        clearProps: "all",
+        ease: Expo.easeInOut
+    }, 0.3);
+}
+
+var pageHomeEl = document.querySelector('html.wksp_home');
+
+$(window).on("load", function () {
+    if (!pageHomeEl) {
+        loaderAnimationHandler();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    // lottie
+
+    (function () {
+
+        function AnimationController(container, config) {
+            var defaultConf = { // https://github.com/airbnb/lottie-web
+                        renderer: 'svg',
+                        loop: false,
+                        autoplay: false,
+                    },
+                    self = this;
+
+            this.container = container;
+            this.config = Object.assign({}, defaultConf, config);
+            this.animator = null;
+            this.svgContainer = document.querySelector(this.container);
+
+            this.play = function () {
+                self.animator.play();
+            };
+
+            this.stop = function () {
+                self.animator.stop();
+            };
+
+            this.init = function () {
+                if (!this.svgContainer) return;
+
+                this.animator = lottie.loadAnimation(Object.assign({
+                    container: this.svgContainer
+                }, this.config));
+
+                this.play();
+
+                this.animator.addEventListener('complete', hidePreloader);
+
+                function hidePreloader() {
+                }
+            };
+
+            this.init();
+        }
+
+        function runAnimation(animationType) {
+
+            var preladerAnimation;
+
+            $.getScript(document.location.origin + '/lottie-animation/lottie.js', function () {
+
+                preladerAnimation = new AnimationController('[data-lottie-' + animationType + ']', {
+                    path: 'lottie-animation/logo-preloader-theme-' + animationType + '.json',
+                });
+
+            });
+        }
+
+        if (window.getTheme === 'theme_dark') {
+            runAnimation('dark');
+        } else if (window.getTheme === 'theme_light') {
+            runAnimation('light');
+        } else {
+            runAnimation('light');
+        }
+
+    })();
+
+});</script></body></html>
