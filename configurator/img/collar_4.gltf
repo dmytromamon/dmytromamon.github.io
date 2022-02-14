@@ -1,0 +1,127 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.7.33",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "collar_4",
+            "rotation" : [
+                0,
+                0.7071067094802856,
+                0.7071068286895752,
+                5.338507236274381e-08
+            ],
+            "scale" : [
+                0.09999999403953552,
+                0.09999999403953552,
+                0.09999999403953552
+            ],
+            "translation" : [
+                -0.005714179947972298,
+                0.005235595628619194,
+                -0.11626441776752472
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material #0.001",
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5527864098548889
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1819,
+            "max" : [
+                13.279057502746582,
+                4.615253448486328,
+                169.94619750976562
+            ],
+            "min" : [
+                -13.39333438873291,
+                -13.764269828796387,
+                157.7420654296875
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1819,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1819,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 10176,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 21828,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21828,
+            "byteOffset" : 21828
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 14552,
+            "byteOffset" : 43656
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20352,
+            "byteOffset" : 58208
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 78560,
+            "uri" : "collar_4.bin"
+        }
+    ]
+}
