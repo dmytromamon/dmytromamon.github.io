@@ -108517,14 +108517,14 @@ function Vestment(props) {
 
 function Collar(props) {
   var mesh = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
-  var collar = '/img/collar_3.gltf';
+  var collar = './img/collar_3.gltf';
 
   if (props.collar == 1) {
-    collar = '/img/collar_3.gltf';
+    collar = './img/collar_3.gltf';
   } else if (props.collar == 2) {
-    collar = '/img/collar_4.gltf';
+    collar = './img/collar_4.gltf';
   } else if (props.collar == 3) {
-    collar = '/img/collar_6.gltf';
+    collar = './img/collar_6.gltf';
   }
 
   var _useLoader2 = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_4__.useLoader)(three_examples_jsm_loaders_GLTFLoader__WEBPACK_IMPORTED_MODULE_3__.GLTFLoader, collar),
