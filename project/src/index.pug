@@ -1,0 +1,56 @@
+block vars
+
+    - var SiteName = '0xBlock'
+    - var PageId = 'index'
+    - var PageTitle = SiteName
+    - var PageDescription = PageTitle + ' — Revolutionizing the DeFi space, one solution at a time.'
+
+    - var LANG = 'en'
+    - var TITLE  = PageTitle
+    - var DESCRIPTION  = PageDescription
+
+    - var documentMods = ''
+
+    - var ogUrl = 'http://localhost/'
+    - var ogTitle = PageTitle
+    - var ogDescription = PageDescription
+    - var ogType = 'localhost'
+
+doctype html
+html(lang=LANG class=documentMods)
+  
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible' content='ie=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no')
+
+        title=TITLE
+        meta(name='description' content=DESCRIPTION)
+
+        meta(property='og:title' content=ogTitle)
+        meta(property='og:description' content=ogDescription)
+        meta(property='og:type' content=ogType)
+        meta(property='og:url' content=ogUrl)
+        meta(property="og:image:width" content="1200")
+        meta(property="og:image:height" content="630")
+        meta(property='og:image' content=ogUrl + 'img/og__image1200x630.jpg?' + releaseDateVer)
+        meta(property='vk:image' content=ogUrl + 'img/og__image1200x630.jpg?' + releaseDateVer)
+
+        meta(name='msapplication-tap-highlight' content='no')
+        meta(name='cleartype' content='on')
+        meta(name='HandheldFriendly' content='True')
+        //- Edge and some mobile browsers are very smart. Let's turn that off.
+        meta(name='format-detection', content='telephone=no')
+        meta(name='format-detection', content='date=no')
+        meta(name='format-detection', content='address=no')
+        meta(name='format-detection', content='email=no')
+        meta(content='notranslate', name='google')
+
+        link(rel='shortcut icon' href='img/favicon.ico')
+        link(href="css/index.min.css" rel="stylesheet")
+  
+    body
+        noscript You need to enable JavaScript to run this app.
+        #root
+                
+        script(src="bundle.js", defer)
