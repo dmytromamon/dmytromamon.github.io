@@ -2114,19 +2114,144 @@ function Model(_ref) {
   var group = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
 
   var _useGLTF = (0,_react_three_drei__WEBPACK_IMPORTED_MODULE_1__.useGLTF)('./models/Dalmatic/dalmatic.glb'),
-      nodes = _useGLTF.nodes,
-      materials = _useGLTF.materials;
+      nodes = _useGLTF.nodes;
 
   function textureModel() {
     switch (props.texture) {
+      case 1:
+        return './models/fabric/adornes_red.png';
+
       case 2:
-        return './models/Monastic/Monastic-fabric-test.png';
+        return './models/fabric/adornes_green.png';
+
+      case 3:
+        return './models/fabric/adornes_black.png';
+
+      case 4:
+        return './models/fabric/duomo_red.png';
+
+      case 5:
+        return './models/fabric/duomo_white.png';
+
+      case 6:
+        return './models/fabric/duomo_green.png';
 
       default:
         return './models/Dalmatic/dalmatic back.png';
     }
   }
 
+  function orpheyModel() {
+    switch (props.orphey) {
+      case 0:
+        return './models/orpheys/30-3002_6020_86mm-wide.png';
+
+      case 1:
+        return './models/orpheys/30-3002_6020_86mm-wide.png';
+
+      case 2:
+        return './models/orpheys/30-3002_8060_86mm-wide.png';
+
+      case 3:
+        return './models/orpheys/31-3122_3060_75mm-wide.png';
+
+      case 4:
+        return './models/orpheys/31-3122_2060_75mm-wide.png';
+
+      case 5:
+        return './models/orpheys/30-3002_3060_86mm_wide.png';
+
+      case 6:
+        return './models/orpheys/31-3122_4060_75mm-wide.png';
+
+      case 7:
+        return './models/orpheys/30-3002_2060_86mm_wide.png';
+
+      case 8:
+        return './models/orpheys/30-3002_4060_86mm_wide.png';
+    }
+  }
+
+  var orphey = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, orpheyModel());
+  var orpheyFront = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.dalmatic_1.geometry,
+    position: [0.04, -30.46, 1.5]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: orphey,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+  var orpheyBack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.dalmatic_2.geometry,
+    position: [0.04, -30.46, 1.5]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: orphey,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+
+  function medalionFrontModel() {
+    switch (props.medalionFront) {
+      case 0:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 1:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 2:
+        return './models/medalion/22-6002_16cm.png';
+
+      case 3:
+        return './models/medalion/22-6013_21cm_high.png';
+
+      case 4:
+        return './models/medalion/22-6003_16cm.png';
+    }
+  }
+
+  function medalionBackModel() {
+    switch (props.medalionBack) {
+      case 0:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 1:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 2:
+        return './models/medalion/22-6002_16cm.png';
+
+      case 3:
+        return './models/medalion/22-6013_21cm_high.png';
+
+      case 4:
+        return './models/medalion/22-6003_16cm.png';
+    }
+  }
+
+  var medalionFrontType = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, medalionFrontModel());
+  var medalionBackType = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, medalionBackModel());
+  medalionFrontType.flipY = false;
+  medalionBackType.flipY = false;
+  var medalionFront = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.dalmatic_1.geometry,
+    position: [0.04, -30.46, 1.5]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: medalionFrontType,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+  var medalionBack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.dalmatic_2.geometry,
+    position: [0.04, -30.46, 1.5]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: medalionBackType,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
   var texture = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, textureModel());
   texture.center.set(.5, .5);
   texture.rotation = Math.PI;
@@ -2135,6 +2260,14 @@ function Model(_ref) {
   }, props, {
     dispose: null
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.dalmatic_1.geometry,
+    position: [0.04, -30.46, 1.5]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: texture,
+    transparent: false,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  })), props.orpheyPlacement !== 1 && props.texture > 0 && props.orphey > 0 ? orpheyFront : null, props.medalionFront > 0 && props.texture > 0 ? medalionFront : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
     geometry: nodes.dalmatic_2.geometry,
     position: [0.04, -30.46, 1.5]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
@@ -2142,7 +2275,7 @@ function Model(_ref) {
     map: texture,
     transparent: false,
     side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+  })), props.orpheyPlacement !== 0 && props.texture > 0 && props.orphey > 0 ? orpheyBack : null, props.medalionBack > 0 && props.texture > 0 ? medalionBack : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
     geometry: nodes.collar_3.geometry,
     position: [0.04, -30.46, 1.5],
     scale: props.collar == 1 ? .99 : 0
@@ -2162,16 +2295,8 @@ function Model(_ref) {
     side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
     geometry: nodes.collar_6.geometry,
-    position: [0.04, -30.46, 1.5],
+    position: [0.04, -30.5, 1.5],
     scale: props.collar == 3 ? .99 : 0
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
-    attach: "material",
-    map: texture,
-    transparent: false,
-    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.dalmatic_1.geometry,
-    position: [0.04, -30.46, 1.5]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
     attach: "material",
     map: texture,
@@ -2236,8 +2361,23 @@ function Model(_ref) {
 
   function textureModelFront() {
     switch (props.texture) {
+      case 1:
+        return './models/fabric/adornes_red.png';
+
       case 2:
-        return './models/Monastic/Monastic-fabric-test.png';
+        return './models/fabric/adornes_green.png';
+
+      case 3:
+        return './models/fabric/adornes_black.png';
+
+      case 4:
+        return './models/fabric/duomo_red.png';
+
+      case 5:
+        return './models/fabric/duomo_white.png';
+
+      case 6:
+        return './models/fabric/duomo_green.png';
 
       default:
         return './models/Ghotic/ghotic front.png';
@@ -2246,8 +2386,23 @@ function Model(_ref) {
 
   function textureModelBack() {
     switch (props.texture) {
+      case 1:
+        return './models/fabric/adornes_red.png';
+
       case 2:
-        return './models/Monastic/Monastic-fabric-test.png';
+        return './models/fabric/adornes_green.png';
+
+      case 3:
+        return './models/fabric/adornes_black.png';
+
+      case 4:
+        return './models/fabric/duomo_red.png';
+
+      case 5:
+        return './models/fabric/duomo_white.png';
+
+      case 6:
+        return './models/fabric/duomo_green.png';
 
       default:
         return './models/Ghotic/ghotic back.png';
@@ -2256,14 +2411,144 @@ function Model(_ref) {
 
   function textureModelCollar() {
     switch (props.texture) {
+      case 1:
+        return './models/fabric/adornes_red.png';
+
       case 2:
-        return './models/Monastic/Monastic-fabric-test.png';
+        return './models/fabric/adornes_green.png';
+
+      case 3:
+        return './models/fabric/adornes_black.png';
+
+      case 4:
+        return './models/fabric/duomo_red.png';
+
+      case 5:
+        return './models/fabric/duomo_white.png';
+
+      case 6:
+        return './models/fabric/duomo_green.png';
 
       default:
         return './models/Ghotic/collar.png';
     }
   }
 
+  function orpheyModel() {
+    switch (props.orphey) {
+      case 0:
+        return './models/orpheys/30-3002_6020_86mm-wide.png';
+
+      case 1:
+        return './models/orpheys/30-3002_6020_86mm-wide.png';
+
+      case 2:
+        return './models/orpheys/30-3002_8060_86mm-wide.png';
+
+      case 3:
+        return './models/orpheys/31-3122_3060_75mm-wide.png';
+
+      case 4:
+        return './models/orpheys/31-3122_2060_75mm-wide.png';
+
+      case 5:
+        return './models/orpheys/30-3002_3060_86mm_wide.png';
+
+      case 6:
+        return './models/orpheys/31-3122_4060_75mm-wide.png';
+
+      case 7:
+        return './models/orpheys/30-3002_2060_86mm_wide.png';
+
+      case 8:
+        return './models/orpheys/30-3002_4060_86mm_wide.png';
+    }
+  }
+
+  var orphey = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, orpheyModel());
+  var orpheyFront = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.ghotic_1.geometry,
+    material: materials.ghotic_front,
+    position: [0.11, -30.29, 1.48]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: orphey,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+  var orpheyBack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.ghotic_2.geometry,
+    material: materials.ghotic_back,
+    position: [0.11, -30.29, 1.48]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: orphey,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+
+  function medalionFrontModel() {
+    switch (props.medalionFront) {
+      case 0:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 1:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 2:
+        return './models/medalion/22-6002_16cm.png';
+
+      case 3:
+        return './models/medalion/22-6013_21cm_high.png';
+
+      case 4:
+        return './models/medalion/22-6003_16cm.png';
+    }
+  }
+
+  function medalionBackModel() {
+    switch (props.medalionBack) {
+      case 0:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 1:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 2:
+        return './models/medalion/22-6002_16cm.png';
+
+      case 3:
+        return './models/medalion/22-6013_21cm_high.png';
+
+      case 4:
+        return './models/medalion/22-6003_16cm.png';
+    }
+  }
+
+  var medalionFrontType = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, medalionFrontModel());
+  var medalionBackType = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, medalionBackModel());
+  medalionFrontType.flipY = false;
+  medalionBackType.flipY = false;
+  var medalionFront = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.ghotic_1.geometry,
+    material: materials.ghotic_front,
+    position: [0.11, -30.29, 1.48]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: medalionFrontType,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+  var medalionBack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.ghotic_2.geometry,
+    material: materials.ghotic_back,
+    position: [0.11, -30.29, 1.48]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: medalionBackType,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
   var textureFront = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, textureModelFront());
   var textureBack = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, textureModelBack());
   var textureCollar = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, textureModelCollar());
@@ -2278,6 +2563,24 @@ function Model(_ref) {
   }, props, {
     dispose: null
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.ghotic_1.geometry,
+    material: materials.ghotic_front,
+    position: [0.11, -30.29, 1.48]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: textureFront,
+    transparent: false,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  })), props.orpheyPlacement !== 1 && props.texture > 0 && props.orphey > 0 ? orpheyFront : null, props.medalionFront > 0 && props.texture > 0 ? medalionFront : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.ghotic_2.geometry,
+    material: materials.ghotic_back,
+    position: [0.11, -30.29, 1.48]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: textureBack,
+    transparent: false,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  })), props.orpheyPlacement !== 0 && props.texture > 0 && props.orphey > 0 ? orpheyBack : null, props.medalionBack > 0 && props.texture > 0 ? medalionBack : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
     geometry: nodes.collar_4.geometry,
     position: [0.11, -30.29, 1.48],
     scale: props.collar == 2 ? .99 : 0
@@ -2302,24 +2605,6 @@ function Model(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
     attach: "material",
     map: textureCollar,
-    transparent: false,
-    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.ghotic_2.geometry,
-    material: materials.ghotic_back,
-    position: [0.11, -30.29, 1.48]
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
-    attach: "material",
-    map: textureBack,
-    transparent: false,
-    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.ghotic_1.geometry,
-    material: materials.ghotic_front,
-    position: [0.11, -30.29, 1.48]
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
-    attach: "material",
-    map: textureFront,
     transparent: false,
     side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_react_three_drei__WEBPACK_IMPORTED_MODULE_4__.OrbitControls, null));
@@ -2381,14 +2666,140 @@ function Model(_ref) {
 
   function textureModel() {
     switch (props.texture) {
+      case 1:
+        return './models/fabric/adornes_red.png';
+
       case 2:
-        return './models/Monastic/Monastic-fabric-test.png';
+        return './models/fabric/adornes_green.png';
+
+      case 3:
+        return './models/fabric/adornes_black.png';
+
+      case 4:
+        return './models/fabric/duomo_red.png';
+
+      case 5:
+        return './models/fabric/duomo_white.png';
+
+      case 6:
+        return './models/fabric/duomo_green.png';
 
       default:
         return './models/Monastic/monastic back.png';
     }
   }
 
+  function orpheyModel() {
+    switch (props.orphey) {
+      case 0:
+        return './models/orpheys/30-3002_6020_86mm-wide.png';
+
+      case 1:
+        return './models/orpheys/30-3002_6020_86mm-wide.png';
+
+      case 2:
+        return './models/orpheys/30-3002_8060_86mm-wide.png';
+
+      case 3:
+        return './models/orpheys/31-3122_3060_75mm-wide.png';
+
+      case 4:
+        return './models/orpheys/31-3122_2060_75mm-wide.png';
+
+      case 5:
+        return './models/orpheys/30-3002_3060_86mm_wide.png';
+
+      case 6:
+        return './models/orpheys/31-3122_4060_75mm-wide.png';
+
+      case 7:
+        return './models/orpheys/30-3002_2060_86mm_wide.png';
+
+      case 8:
+        return './models/orpheys/30-3002_4060_86mm_wide.png';
+    }
+  }
+
+  var orphey = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, orpheyModel());
+  var orpheyFront = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.monastic_1.geometry,
+    position: [-0.07, -30.42, 1.16]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: orphey,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+  var orpheyBack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.monastic_2.geometry,
+    position: [-0.07, -30.42, 1.16]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: orphey,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+
+  function medalionFrontModel() {
+    switch (props.medalionFront) {
+      case 0:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 1:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 2:
+        return './models/medalion/22-6002_16cm.png';
+
+      case 3:
+        return './models/medalion/22-6013_21cm_high.png';
+
+      case 4:
+        return './models/medalion/22-6003_16cm.png';
+    }
+  }
+
+  function medalionBackModel() {
+    switch (props.medalionBack) {
+      case 0:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 1:
+        return './models/medalion/22-6062_25cm_high.png';
+
+      case 2:
+        return './models/medalion/22-6002_16cm.png';
+
+      case 3:
+        return './models/medalion/22-6013_21cm_high.png';
+
+      case 4:
+        return './models/medalion/22-6003_16cm.png';
+    }
+  }
+
+  var medalionFrontType = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, medalionFrontModel());
+  var medalionBackType = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, medalionBackModel());
+  medalionFrontType.flipY = false;
+  medalionBackType.flipY = false;
+  var medalionFront = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.monastic_1.geometry,
+    position: [-0.07, -30.42, 1.16]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: medalionFrontType,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
+  var medalionBack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.monastic_2.geometry,
+    position: [-0.07, -30.42, 1.16]
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
+    attach: "material",
+    map: medalionBackType,
+    transparent: true,
+    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
+  }));
   var texture = (0,_react_three_fiber__WEBPACK_IMPORTED_MODULE_2__.useLoader)(three__WEBPACK_IMPORTED_MODULE_3__.TextureLoader, textureModel());
   texture.center.set(.5, .5);
   texture.rotation = Math.PI;
@@ -2397,26 +2808,23 @@ function Model(_ref) {
   }, props, {
     dispose: null
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.monastic_4.geometry,
-    material: nodes.monastic_4.material,
+    geometry: nodes.monastic_1.geometry,
     position: [-0.07, -30.42, 1.16]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
     attach: "material",
     map: texture,
     transparent: false,
     side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.monastic_3.geometry,
-    material: nodes.monastic_3.material,
+  })), props.orpheyPlacement !== 1 && props.texture > 0 && props.orphey > 0 ? orpheyFront : null, props.medalionFront > 0 && props.texture > 0 ? medalionFront : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+    geometry: nodes.monastic_2.geometry,
     position: [-0.07, -30.42, 1.16]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
     attach: "material",
     map: texture,
     transparent: false,
     side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
+  })), props.orpheyPlacement !== 0 && props.texture > 0 && props.orphey > 0 ? orpheyBack : null, props.medalionBack > 0 && props.texture > 0 ? medalionBack : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
     geometry: nodes.collar_4.geometry,
-    material: nodes.collar_4.material,
     position: [-0.07, -30.59, 1.16],
     scale: props.collar == 2 ? .99 : 0
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
@@ -2426,7 +2834,6 @@ function Model(_ref) {
     side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
     geometry: nodes.collar_3.geometry,
-    material: nodes.collar_3.material,
     position: [-0.07, -30.42, 1.16],
     scale: props.collar == 1 ? .99 : 0
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
@@ -2436,43 +2843,8 @@ function Model(_ref) {
     side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
     geometry: nodes.collar_6.geometry,
-    material: nodes.collar_6.material,
     position: [-0.07, -30.52, 1.16],
     scale: props.collar == 3 ? .99 : 0
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
-    attach: "material",
-    map: texture,
-    transparent: false,
-    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.monastic_2.geometry,
-    material: nodes.monastic_2.material,
-    position: [-0.07, -30.42, 1.16]
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
-    attach: "material",
-    map: texture,
-    transparent: false,
-    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.monastic_6.geometry,
-    material: nodes.monastic_6.material,
-    position: [-0.07, -30.42, 1.16]
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
-    attach: "material",
-    map: texture,
-    transparent: false,
-    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.monastic_5.geometry,
-    position: [-0.07, -30.42, 1.16]
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
-    attach: "material",
-    map: texture,
-    transparent: false,
-    side: three__WEBPACK_IMPORTED_MODULE_3__.DoubleSide
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("mesh", {
-    geometry: nodes.monastic_1.geometry,
-    position: [-0.07, -30.42, 1.16]
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meshStandardMaterial", {
     attach: "material",
     map: texture,
@@ -107153,6 +107525,17 @@ if ( typeof window !== 'undefined' ) {
 
 
 
+/***/ }),
+
+/***/ "./src/js/lang.json":
+/*!**************************!*\
+  !*** ./src/js/lang.json ***!
+  \**************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"en":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medalion":"Medalion","optional":"Optional"},"button":"Next step","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement","disclaimer":"You can only choose orphey when you selected non original fabric."},"medalion":{"title1":"Choose medalion on front","title2":"Choose medalion on back","optionFront":"Front","optionBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medalion":"Medalion (optional)","total":"Total"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Flat":"Flat Capuche","Deaconstole":"Deaconstole"}},"ro":{"navigation":{"article":"Article1","fabric":"Fabric1","orphey":"Orphey1","medalion":"Medalion1","optional":"Optional1"},"button":"Next step1","article":{"title1":"Choose a vestment1","title2":"Choose a model1"},"fabric":{"title1":"Choose fabric1","title2":"Adornes1","title3":"Duomo1"},"orphey":{"title1":"Choose orphey1","title2":"Choose placement1","disclaimer":"You can only choose orphey when you selected non original fabric.1"},"medalion":{"title1":"Choose medalion on front1","title2":"Choose medalion on back1","optionFront":"Front1","optionBack":"Back1"},"optional":{"title1":"Optional: neck and lining1"},"overview":{"order":"Order Overview1","fabric":"Fabric1","orphey":"Orphey1","placement":"Placement1","medalion":"Medalion (optional)1","total":"Total1"},"smallScreen":"Please use device with bigger screen or rotate your device.1","chasuble":{"Monastic":"Monastic Chasuble1","Dalmatic":"Dalmatic1","Ghotic":"Ghotic Chasuble1","Flat":"Flat Capuche1","Deaconstole":"Deaconstole1"}}}');
+
 /***/ })
 
 /******/ 	});
@@ -107374,6 +107757,11 @@ function _getPrototypeOf(o) {
 
 
 
+var container = document.getElementById('app');
+
+var lang = __webpack_require__(/*! ./lang.json */ "./src/js/lang.json");
+
+var language;
 
 var App = /*#__PURE__*/function (_React$Component) {
   _inherits(App, _React$Component);
@@ -107386,6 +107774,16 @@ var App = /*#__PURE__*/function (_React$Component) {
     _classCallCheck(this, App);
 
     _this = _super.call(this, props);
+
+    _this.handleResize = function () {
+      var width = container.getBoundingClientRect().width;
+      var height = container.getBoundingClientRect().height;
+
+      _this.setState({
+        width: width,
+        height: height
+      });
+    };
 
     _this.handleMenuChange = function (newMenu) {
       _this.setState({
@@ -107405,28 +107803,34 @@ var App = /*#__PURE__*/function (_React$Component) {
       _this.setState({
         articleVestment: id
       });
-
-      if (id == 0) {
-        _this.setState({
-          title: "Monastic Chasuble"
-        });
-      } else if (id == 1) {
-        _this.setState({
-          title: "Dalmatic Chasuble"
-        });
-      } else if (id == 2) {
-        _this.setState({
-          title: "Ghotic Chasuble"
-        });
-      }
     };
 
     _this.articleModel = function (id) {
-      _this.state.articleModel == id ? _this.setState({
-        articleModel: 0
-      }) : _this.setState({
+      _this.setState({
         articleModel: id
       });
+
+      if (id == 0) {
+        _this.setState({
+          title: lang[language].chasuble.Ghotic
+        });
+      } else if (id == 1) {
+        _this.setState({
+          title: lang[language].chasuble.Monastic
+        });
+      } else if (id == 2) {
+        _this.setState({
+          title: lang[language].chasuble.Dalmatic
+        });
+      } else if (id == 3) {
+        _this.setState({
+          title: lang[language].chasuble.Flat
+        });
+      } else if (id == 4) {
+        _this.setState({
+          title: lang[language].chasuble.Deaconstole
+        });
+      }
     };
 
     _this.adornesMenu = function (id) {
@@ -107447,7 +107851,15 @@ var App = /*#__PURE__*/function (_React$Component) {
 
     _this.orphey = function (id) {
       _this.setState({
-        orpheyColor: id
+        orpheyId: id
+      });
+    };
+
+    _this.orpheyMenu = function (id) {
+      _this.state.orpheyMenu == id ? _this.setState({
+        orpheyMenu: 0
+      }) : _this.setState({
+        orpheyMenu: id
       });
     };
 
@@ -107457,15 +107869,27 @@ var App = /*#__PURE__*/function (_React$Component) {
       });
     };
 
-    _this.medallionFront = function (id) {
-      _this.setState({
-        medallionFrontType: id
+    _this.medalionMenu = function (id) {
+      _this.state.medalionMenu == id ? _this.setState({
+        medalionMenu: 0
+      }) : _this.setState({
+        medalionMenu: id
       });
     };
 
-    _this.medallionBack = function (id) {
-      _this.setState({
-        medallionBackType: id
+    _this.medalionFront = function (id) {
+      _this.state.medalionFront == id ? _this.setState({
+        medalionFront: 0
+      }) : _this.setState({
+        medalionFront: id
+      });
+    };
+
+    _this.medalionBack = function (id) {
+      _this.state.medalionBack == id ? _this.setState({
+        medalionBack: 0
+      }) : _this.setState({
+        medalionBack: id
       });
     };
 
@@ -107481,31 +107905,46 @@ var App = /*#__PURE__*/function (_React$Component) {
 
     _this.state = {
       menu: 'article',
-      title: 'Monastic Chasuble',
+      language: container.className,
+      title: "",
+      width: 2000,
+      height: 2000,
       articleMenu: 0,
       articleVestment: 0,
-      articleModel: 0,
+      articleModel: 1,
       fabricId: 0,
       adornesMenu: 0,
-      orpheyColor: 0,
-      orpheyPlacement: 0,
-      medallionFrontType: "0",
-      medallionBackType: "0",
+      orpheyMenu: 0,
+      orpheyId: 0,
+      orpheyPlacement: 2,
+      medalionMenu: 0,
+      medalionFront: 0,
+      medalionBack: 0,
       chasubleLined: true,
       userName: '',
       userEmail: '',
       userPhone: '',
       userAddress: '',
       userMessage: '',
-      userCount: 1,
-      toggle3d: false
+      userCount: 1
     };
     return _this;
   }
 
   _createClass(App, [{
     key: "componentDidMount",
-    value: function componentDidMount() {}
+    value: function componentDidMount() {
+      language = this.state.language;
+      this.setState({
+        title: lang[language].chasuble.Monastic
+      });
+      window.addEventListener("resize", this.handleResize);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      window.removeEventListener("resize", this.handleResize);
+    }
   }, {
     key: "render",
     value: function render() {
@@ -107514,23 +107953,27 @@ var App = /*#__PURE__*/function (_React$Component) {
       var _this$state = this.state,
           menu = _this$state.menu,
           title = _this$state.title,
+          language = _this$state.language,
+          width = _this$state.width,
+          height = _this$state.height,
           articleMenu = _this$state.articleMenu,
           articleVestment = _this$state.articleVestment,
           articleModel = _this$state.articleModel,
           fabricId = _this$state.fabricId,
           adornesMenu = _this$state.adornesMenu,
-          orpheyColor = _this$state.orpheyColor,
+          orpheyMenu = _this$state.orpheyMenu,
+          orpheyId = _this$state.orpheyId,
           orpheyPlacement = _this$state.orpheyPlacement,
-          medallionFrontType = _this$state.medallionFrontType,
-          medallionBackType = _this$state.medallionBackType,
+          medalionMenu = _this$state.medalionMenu,
+          medalionFront = _this$state.medalionFront,
+          medalionBack = _this$state.medalionBack,
           chasubleLined = _this$state.chasubleLined,
           userName = _this$state.userName,
           userEmail = _this$state.userEmail,
           userPhone = _this$state.userPhone,
           userAddress = _this$state.userAddress,
           userMessage = _this$state.userMessage,
-          userCount = _this$state.userCount,
-          toggle3d = _this$state.toggle3d;
+          userCount = _this$state.userCount;
       var navigation = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "navbar"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -107542,327 +107985,342 @@ var App = /*#__PURE__*/function (_React$Component) {
           return _this2.handleMenuChange("article");
         },
         className: menu == "article" ? 'navbar-link navbar-link-active' : 'navbar-link'
-      }, "Article"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, lang[language].navigation.article), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
           return _this2.handleMenuChange("fabric");
         },
         className: menu == "fabric" ? 'navbar-link navbar-link-active' : 'navbar-link'
-      }, "Fabric"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, lang[language].navigation.fabric), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
           return _this2.handleMenuChange("orphey");
         },
         className: menu == "orphey" ? 'navbar-link navbar-link-active' : 'navbar-link'
-      }, "Orphey"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, lang[language].navigation.orphey), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
-          return _this2.handleMenuChange("medallion");
+          return _this2.handleMenuChange("medalion");
         },
-        className: menu == "medallion" ? 'navbar-link navbar-link-active' : 'navbar-link'
-      }, "Medallion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        onClick: function onClick() {
-          return _this2.handleMenuChange("optional");
-        },
-        className: menu == "optional" ? 'navbar-link navbar-link-active' : 'navbar-link'
-      }, "Optional")));
+        className: menu == "medalion" ? 'navbar-link navbar-link-active' : 'navbar-link'
+      }, lang[language].navigation.medalion)));
       var article = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
         className: articleMenu == 0 ? 'title title-active' : 'title',
         onClick: function onClick() {
           return _this2.articleMenu(0);
         }
-      }, "Choose a vestment"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, lang[language].article.title1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "options"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: articleVestment == 0 ? 'active' : '',
         onClick: function onClick() {
           return _this2.articleVestment(0);
         }
-      }, "Monastic")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./img/1-gothic-chas.jpg",
+        alt: "Chasuble"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: articleVestment == 1 ? 'active' : '',
         onClick: function onClick() {
           return _this2.articleVestment(1);
         }
-      }, "Dalmatic")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./img/7-dalm.jpg",
+        alt: "Dalmatic"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: articleVestment == 2 ? 'active' : '',
         onClick: function onClick() {
           return _this2.articleVestment(2);
         }
-      }, "Gothic"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./img/50-stola-25.png",
+        alt: "Stole"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
         className: articleMenu == 1 ? 'title title-active' : 'title',
         onClick: function onClick() {
           return _this2.articleMenu(1);
         }
-      }, "Choose a model"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, lang[language].article.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "options"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: articleVestment !== 0 ? "hidden" : ""
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: articleModel == 0 ? 'active' : '',
+        onClick: function onClick() {
+          return _this2.articleModel(0);
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./img/1-gothic-chas.jpg",
+        alt: "Chasuble"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: articleVestment !== 0 ? "hidden" : ""
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: articleModel == 1 ? 'active' : '',
         onClick: function onClick() {
           return _this2.articleModel(1);
         }
-      }, "vestment option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./img/2-monastic-chas.jpg",
+        alt: "Monastic"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: articleVestment !== 1 ? "hidden" : ""
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: articleModel == 2 ? 'active' : '',
         onClick: function onClick() {
           return _this2.articleModel(2);
         }
-      }, "vestment option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./img/7-dalm.jpg",
+        alt: "Dalmatic"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: articleVestment !== 2 ? "hidden" : ""
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: articleModel == 3 ? 'active' : '',
         onClick: function onClick() {
           return _this2.articleModel(3);
         }
-      }, "vestment option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+      }, "Flat Capuche")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: articleVestment !== 2 ? "hidden" : ""
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: articleModel == 4 ? 'active' : '',
+        onClick: function onClick() {
+          return _this2.articleModel(4);
+        }
+      }, "Deaconstole"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
         onClick: function onClick() {
           return _this2.handleMenuChange("fabric");
         },
         className: "button"
-      }, "Next step"));
+      }, lang[language].button));
       var fabric = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
         className: "title title-simple"
-      }, "Choose fabric"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, lang[language].fabric.title1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: adornesMenu == 0 ? 'title-inner title-inner-active' : 'title-inner',
         onClick: function onClick() {
           return _this2.adornesMenu(0);
         }
-      }, "Adornes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options"
+      }, lang[language].fabric.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "options fabric"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(0);
-        }
-      }, "color white")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: fabricId == 1 ? 'active' : '',
         onClick: function onClick() {
           return _this2.fabric(1);
         }
-      }, "color gold")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/fabric/adornes_red-mini.png",
+        alt: "red"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: fabricId == 2 ? 'active' : '',
         onClick: function onClick() {
           return _this2.fabric(2);
         }
-      }, "color red")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/fabric/adornes_green-mini.png",
+        alt: "green"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: fabricId == 3 ? 'active' : '',
         onClick: function onClick() {
           return _this2.fabric(3);
         }
-      }, "color reose")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(4);
-        }
-      }, "color green")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(5);
-        }
-      }, "color violet")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(6);
-        }
-      }, "color black"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        className: adornesMenu == 1 ? 'title-inner title-inner-active' : 'title-inner',
-        onClick: function onClick() {
-          return _this2.adornesMenu(1);
-        }
-      }, "Brugia"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(7);
-        }
-      }, "brugia option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(8);
-        }
-      }, "brugia option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        className: adornesMenu == 2 ? 'title-inner title-inner-active' : 'title-inner',
-        onClick: function onClick() {
-          return _this2.adornesMenu(2);
-        }
-      }, "Cantate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(9);
-        }
-      }, "cancate option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(10);
-        }
-      }, "cancate option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/fabric/adornes_black-mini.png",
+        alt: "black"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: adornesMenu == 3 ? 'title-inner title-inner-active' : 'title-inner',
         onClick: function onClick() {
           return _this2.adornesMenu(3);
         }
-      }, "Duomo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options"
+      }, lang[language].fabric.title3), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "options fabric"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: fabricId == 4 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.fabric(11);
+          return _this2.fabric(4);
         }
-      }, "duomo option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/fabric/duomo_red-mini.png",
+        alt: "red"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: fabricId == 5 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.fabric(12);
+          return _this2.fabric(5);
         }
-      }, "duomo option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        className: adornesMenu == 4 ? 'title-inner title-inner-active' : 'title-inner',
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/fabric/duomo_white-mini.png",
+        alt: "white"
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: fabricId == 6 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.adornesMenu(4);
+          return _this2.fabric(6);
         }
-      }, "Dupion"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(13);
-        }
-      }, "dupion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(14);
-        }
-      }, "dupion option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        className: adornesMenu == 5 ? 'title-inner title-inner-active' : 'title-inner',
-        onClick: function onClick() {
-          return _this2.adornesMenu(5);
-        }
-      }, "Pius"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(15);
-        }
-      }, "pius option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.fabric(16);
-        }
-      }, "pius option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/fabric/duomo_green-mini.png",
+        alt: "green"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
           return _this2.handleMenuChange("orphey");
         },
         className: "button"
-      }, "Next step"));
+      }, lang[language].button));
       var orphey = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
-        className: "title"
-      }, "Choose orphey"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyMenu == 0 ? 'title title-active' : 'title',
         onClick: function onClick() {
-          return _this2.orphey(0);
+          return _this2.orpheyMenu(0);
         }
-      }, "orphey option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, lang[language].orphey.title1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "options orphey"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyId == 1 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orphey(1);
         }
-      }, "orphey option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/orpheys/30-3002_6020_86mm-wide-mini.png",
+        alt: ""
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyId == 2 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orphey(2);
         }
-      }, "orphey option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/orpheys/30-3002_8060_86mm-wide-mini.png",
+        alt: ""
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyId == 3 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orphey(3);
         }
-      }, "orphey option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/orpheys/31-3122_3060_75mm-wide-mini.png",
+        alt: ""
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyId == 4 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orphey(4);
         }
-      }, "orphey option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/orpheys/31-3122_2060_75mm-wide-mini.png",
+        alt: ""
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyId == 5 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orphey(5);
         }
-      }, "orphey option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/orpheys/30-3002_3060_86mm_wide-mini.png",
+        alt: ""
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyId == 6 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orphey(6);
         }
-      }, "orphey option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/orpheys/31-3122_4060_75mm-wide-mini.png",
+        alt: ""
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyId == 7 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orphey(7);
         }
-      }, "orphey option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/orpheys/30-3002_2060_86mm_wide-mini.png",
+        alt: ""
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyId == 8 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orphey(8);
         }
-      }, "orphey option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
-        className: "title"
-      }, "Choose placement"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./models/orpheys/30-3002_4060_86mm_wide-mini.png",
+        alt: ""
+      }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("small", null, lang[language].orphey.disclaimer)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
+        className: orpheyMenu == 1 ? 'title title-active' : 'title',
+        onClick: function onClick() {
+          return _this2.orpheyMenu(1);
+        }
+      }, lang[language].orphey.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "options"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyPlacement == 0 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orpheyPlacement(0);
         }
-      }, "placement option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, "front")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyPlacement == 1 ? 'active' : '',
         onClick: function onClick() {
           return _this2.orpheyPlacement(1);
         }
-      }, "placement option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "back")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: orpheyPlacement == 2 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.handleMenuChange("medallion");
+          return _this2.orpheyPlacement(2);
+        }
+      }, "front and back"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: function onClick() {
+          return _this2.handleMenuChange("medalion");
         },
         className: "button"
-      }, "Next step"));
-      var medallion = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
-        className: "title"
-      }, "Choose medallion on front"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, lang[language].button));
+      var medalion = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
+        className: medalionMenu == 0 ? 'title title-active' : 'title',
+        onClick: function onClick() {
+          return _this2.medalionMenu(0);
+        }
+      }, lang[language].medalion.title1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "options options-small"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: medalionFront == 1 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.medallionFront(0);
+          return _this2.medalionFront(1);
         }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: medalionFront == 2 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.medallionFront(1);
+          return _this2.medalionFront(2);
         }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: medalionFront == 3 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.medallionFront(2);
+          return _this2.medalionFront(3);
         }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: medalionFront == 4 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.medallionFront(3);
+          return _this2.medalionFront(4);
         }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("small", null, lang[language].orphey.disclaimer)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
+        className: medalionMenu == 1 ? 'title title-active' : 'title',
         onClick: function onClick() {
-          return _this2.medallionFront(4);
+          return _this2.medalionMenu(1);
         }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.medallionFront(5);
-        }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.medallionFront(6);
-        }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.medallionFront(7);
-        }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.medallionFront(8);
-        }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.medallionFront(9);
-        }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.medallionFront(10);
-        }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        onClick: function onClick() {
-          return _this2.medallionFront(11);
-        }
-      }, "medallion option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
-        className: "title"
-      }, "Choose medallion on back"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, lang[language].medalion.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "options options-small"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: medalionBack == 1 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.medallionBack(0);
+          return _this2.medalionBack(1);
         }
-      }, "medallion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: medalionBack == 2 ? 'active' : '',
         onClick: function onClick() {
-          return _this2.medallionBack(1);
+          return _this2.medalionBack(2);
         }
-      }, "medallion option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: medalionBack == 3 ? 'active' : '',
+        onClick: function onClick() {
+          return _this2.medalionBack(3);
+        }
+      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: medalionBack == 4 ? 'active' : '',
+        onClick: function onClick() {
+          return _this2.medalionBack(4);
+        }
+      }, "medalion option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
           return _this2.handleMenuChange("optional");
         },
         className: "button"
-      }, "Next step"));
+      }, lang[language].button));
       var optional = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
         className: "title"
-      }, "Optional: neck and lining"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, lang[language].optional.title1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "option-example"
       }, "picture goes here"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
         className: "title"
@@ -107896,73 +108354,106 @@ var App = /*#__PURE__*/function (_React$Component) {
           case "orphey":
             return orphey;
 
-          case "medallion":
-            return medallion;
-
-          case "optional":
-            return optional;
+          case "medalion":
+            return medalion;
+          // case "optional": return optional;
 
           default:
             return 'not-found';
         }
       }();
 
-      var medallionSetFront = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Front: ", medallionFrontType);
-      var medallionSetBack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Back: ", medallionBackType);
-      var toggleButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-        onClick: function onClick() {
-          return _this2.setState({
-            toggle3d: !toggle3d
-          });
-        }
-      }, "Toggle 3d");
+      var medalionSetFront = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].medalion.optionalFront, ": ", medalionFront);
+      var medalionSetBack = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].medalion.optionalBack, ": ", medalionBack);
 
       var chasuble = function () {
-        switch (articleVestment) {
+        switch (articleModel) {
           case 0:
-            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Monastic_Monastic__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Ghotic_Ghotic__WEBPACK_IMPORTED_MODULE_3__["default"], {
               texture: fabricId,
-              collar: articleModel,
+              collar: 0,
+              orphey: orpheyId,
+              orpheyPlacement: orpheyPlacement,
+              medalionFront: medalionFront,
+              medalionBack: medalionBack,
               scale: 0.0003,
               position: [0, -3.5, 0]
             });
 
           case 1:
-            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Dalmatic_Dalmatic__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Monastic_Monastic__WEBPACK_IMPORTED_MODULE_2__["default"], {
               texture: fabricId,
-              collar: articleModel,
+              collar: 0,
+              orphey: orpheyId,
+              orpheyPlacement: orpheyPlacement,
+              medalionFront: medalionFront,
+              medalionBack: medalionBack,
               scale: 0.0003,
               position: [0, -3.5, 0]
             });
 
           case 2:
-            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Ghotic_Ghotic__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Dalmatic_Dalmatic__WEBPACK_IMPORTED_MODULE_4__["default"], {
               texture: fabricId,
-              collar: articleModel,
+              collar: 0,
+              orphey: orpheyId,
+              orpheyPlacement: orpheyPlacement,
+              medalionFront: medalionFront,
+              medalionBack: medalionBack,
+              scale: 0.0003,
+              position: [0, -3.5, 0]
+            });
+
+          case 3:
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Dalmatic_Dalmatic__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              texture: fabricId,
+              collar: 0,
+              orphey: orpheyId,
+              orpheyPlacement: orpheyPlacement,
+              medalionFront: medalionFront,
+              medalionBack: medalionBack,
+              scale: 0.0003,
+              position: [0, -3.5, 0]
+            });
+
+          case 4:
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Dalmatic_Dalmatic__WEBPACK_IMPORTED_MODULE_4__["default"], {
+              texture: fabricId,
+              collar: 0,
+              orphey: orpheyId,
+              orpheyPlacement: orpheyPlacement,
+              medalionFront: medalionFront,
+              medalionBack: medalionBack,
               scale: 0.0003,
               position: [0, -3.5, 0]
             });
         }
       }();
 
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, navigation, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options-container"
-      }, options), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "chasuble"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, {
-        fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null)
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_react_three_fiber__WEBPACK_IMPORTED_MODULE_5__.Canvas, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ambientLight", {
-        intensity: .7
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("pointLight", {
-        intensity: .8,
-        position: [10, 10, 10]
-      }), chasuble)), toggleButton), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "overview"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "heading"
-      }, "Order Overview:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Article Vestment: ", articleVestment), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Article Model: ", articleModel), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Fabric: ", fabricId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Orphey: ", orpheyColor), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Placement: ", orpheyPlacement), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, "Medallion (optional)", this.state.medallionFrontType !== "0" ? medallionSetFront : '', this.state.medallionBackType !== "0" ? medallionSetBack : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, "Total: $485,00"))));
+      if (width > 992 && height > 640) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, navigation, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "container"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "options-container"
+        }, options), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "chasuble"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, {
+          fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null)
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_react_three_fiber__WEBPACK_IMPORTED_MODULE_5__.Canvas, {
+          dpr: window.devicePixelRatio
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ambientLight", {
+          intensity: .7
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("pointLight", {
+          intensity: .8,
+          position: [10, 10, 10]
+        }), chasuble))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "overview"
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "heading"
+        }, lang[language].overview.order), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.fabric, ": ", fabricId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.orphey, ": ", orpheyId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.placement, ": ", orpheyPlacement), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.medalion, this.state.medalionFront !== 0 ? medalionSetFront : '', this.state.medalionBack !== 0 ? medalionSetBack : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, lang[language].overview.total, ": $485,00"))));
+      } else {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, lang[language].smallScreen);
+      }
     }
   }]);
 

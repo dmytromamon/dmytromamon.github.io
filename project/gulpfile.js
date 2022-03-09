@@ -174,6 +174,7 @@ gulp.task('reload', function (done) {
 gulp.task('live', function () {
   browserSync.init({
     server: 'build',
+    open: false,
     watchOptions: {
       notify: false,
       awaitWriteFinish: true
@@ -187,6 +188,6 @@ gulp.task('live', function () {
 
 gulp.task('watch', gulp.series('autoprefixer', 'minify-css', 'pug', 'js', 'live'), function () {});
 
-gulp.task('build', gulp.series('autoprefixer', 'minify-css', 'pug', 'js', 'live'), function () {});
+gulp.task('build', gulp.series('autoprefixer', 'minify-css', 'pug', 'js'), function () {});
 
 //*** WATCH ***//
