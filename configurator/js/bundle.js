@@ -107534,7 +107534,7 @@ if ( typeof window !== 'undefined' ) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"en":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medalion":"Medalion","optional":"Optional"},"button":"Next step","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement","disclaimer":"You can only choose orphey when you selected non original fabric."},"medalion":{"title1":"Choose medalion on front","title2":"Choose medalion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medalion":"Medalion (optional)","total":"Total"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Flat":"Flat Capuche","Deaconstole":"Deaconstole"}},"ro":{"navigation":{"article":"Article1","fabric":"Fabric1","orphey":"Orphey1","medalion":"Medalion1","optional":"Optional1"},"button":"Next step1","article":{"title1":"Choose a vestment1","title2":"Choose a model1"},"fabric":{"title1":"Choose fabric1","title2":"Adornes1","title3":"Duomo1"},"orphey":{"title1":"Choose orphey1","title2":"Choose placement1","disclaimer":"You can only choose orphey when you selected non original fabric.1"},"medalion":{"title1":"Choose medalion on front1","title2":"Choose medalion on back1","optionalFront":"Front1","optionalBack":"Back1"},"optional":{"title1":"Optional: neck and lining1"},"overview":{"order":"Order Overview1","fabric":"Fabric1","orphey":"Orphey1","placement":"Placement1","medalion":"Medalion (optional)1","total":"Total1"},"smallScreen":"Please use device with bigger screen or rotate your device.1","chasuble":{"Monastic":"Monastic Chasuble1","Dalmatic":"Dalmatic1","Ghotic":"Ghotic Chasuble1","Flat":"Flat Capuche1","Deaconstole":"Deaconstole1"}}}');
+module.exports = JSON.parse('{"en":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medalion":"Medalion","optional":"Optional"},"button":"Next step","buttonBack":"Back","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement","disclaimer":"Change original fabric to apply this element."},"medalion":{"title1":"Choose medalion on front","title2":"Choose medalion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medalion":"Medalion (optional)","total":"Total"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Deaconstole":"Deaconstole"}},"ro":{"navigation":{"article":"Articol","fabric":"Țesătură","orphey":"Orphey","medalion":"Medalion","optional":"Opțional"},"button":"Urmatorul pas","buttonBack":"Înapoi","article":{"title1":"Alege o haină","title2":"Alege un model"},"fabric":{"title1":"Alege materialul","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Alege orphey","title2":"Alegeți plasarea","disclaimer":"Schimbați materialul original pentru a aplica acest element."},"medalion":{"title1":"Alegeți medalion în față","title2":"Alege medalion pe spate","optionalFront":"Față","optionalBack":"Înapoi"},"optional":{"title1":"Opțional: gât și căptușeală"},"overview":{"order":"Prezentare generală a comenzii","fabric":"Țesătură","orphey":"Orphey","placement":"Plasarea","medalion":"Medalion (opțional)","total":"Total"},"smallScreen":"Vă rugăm să utilizați dispozitivul cu ecran mai mare sau rotiți dispozitivul.","chasuble":{"Monastic":"Casulă monahală","Dalmatic":"Dalmatic","Ghotic":"Casula gotică","Deaconstole":"Diaconstole"}}}');
 
 /***/ })
 
@@ -107824,10 +107824,6 @@ var App = /*#__PURE__*/function (_React$Component) {
         });
       } else if (id == 3) {
         _this.setState({
-          title: lang[language].chasuble.Flat
-        });
-      } else if (id == 4) {
-        _this.setState({
           title: lang[language].chasuble.Deaconstole
         });
       }
@@ -107938,6 +107934,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       this.setState({
         title: lang[language].chasuble.Monastic
       });
+      this.handleResize();
       window.addEventListener("resize", this.handleResize);
     }
   }, {
@@ -107978,7 +107975,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         className: "navbar"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "navbar-logo"
-      }, "Slabbinck"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "navbar-links"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
@@ -108076,14 +108073,10 @@ var App = /*#__PURE__*/function (_React$Component) {
         onClick: function onClick() {
           return _this2.articleModel(3);
         }
-      }, "Flat Capuche")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: articleVestment !== 2 ? "hidden" : ""
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
-        className: articleModel == 4 ? 'active' : '',
-        onClick: function onClick() {
-          return _this2.articleModel(4);
-        }
-      }, "Deaconstole"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: "./img/50-stola-25.png",
+        alt: "Stole"
+      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
         onClick: function onClick() {
           return _this2.handleMenuChange("fabric");
         },
@@ -108154,6 +108147,11 @@ var App = /*#__PURE__*/function (_React$Component) {
         src: "./models/fabric/duomo_green-mini.png",
         alt: "green"
       })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: function onClick() {
+          return _this2.handleMenuChange("article");
+        },
+        className: "button"
+      }, lang[language].buttonBack), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
           return _this2.handleMenuChange("orphey");
         },
@@ -108254,6 +108252,11 @@ var App = /*#__PURE__*/function (_React$Component) {
         }
       }, "front and back"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
+          return _this2.handleMenuChange("fabric");
+        },
+        className: "button"
+      }, lang[language].buttonBack), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: function onClick() {
           return _this2.handleMenuChange("medalion");
         },
         className: "button"
@@ -108264,7 +108267,7 @@ var App = /*#__PURE__*/function (_React$Component) {
           return _this2.medalionMenu(0);
         }
       }, lang[language].medalion.title1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options options-small"
+        className: "options"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: medalionFront == 1 ? 'active' : '',
         onClick: function onClick() {
@@ -108285,13 +108288,13 @@ var App = /*#__PURE__*/function (_React$Component) {
         onClick: function onClick() {
           return _this2.medalionFront(4);
         }
-      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("small", null, lang[language].orphey.disclaimer)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
+      }, "medalion option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
         className: medalionMenu == 1 ? 'title title-active' : 'title',
         onClick: function onClick() {
           return _this2.medalionMenu(1);
         }
       }, lang[language].medalion.title2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        className: "options options-small"
+        className: "options"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
         className: medalionBack == 1 ? 'active' : '',
         onClick: function onClick() {
@@ -108312,7 +108315,12 @@ var App = /*#__PURE__*/function (_React$Component) {
         onClick: function onClick() {
           return _this2.medalionBack(4);
         }
-      }, "medalion option"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      }, "medalion option")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("small", null, lang[language].orphey.disclaimer)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: function onClick() {
+          return _this2.handleMenuChange("orphey");
+        },
+        className: "button"
+      }, lang[language].buttonBack), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
           return _this2.handleMenuChange("optional");
         },
@@ -108438,7 +108446,9 @@ var App = /*#__PURE__*/function (_React$Component) {
         }, options), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "chasuble"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, {
-          fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null)
+          fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+            src: "./img/3d-view-icon.png"
+          }))
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_react_three_fiber__WEBPACK_IMPORTED_MODULE_5__.Canvas, {
           dpr: window.devicePixelRatio
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ambientLight", {
@@ -108450,7 +108460,7 @@ var App = /*#__PURE__*/function (_React$Component) {
           className: "overview"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "heading"
-        }, lang[language].overview.order), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.fabric, ": ", fabricId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.orphey, ": ", orpheyId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.placement, ": ", orpheyPlacement), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.medalion, this.state.medalionFront !== 0 ? medalionSetFront : '', this.state.medalionBack !== 0 ? medalionSetBack : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, lang[language].overview.total, ": $485,00"))));
+        }, lang[language].overview.order, ":"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.fabric, ": ", fabricId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.orphey, ": ", orpheyId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.placement, ": ", orpheyPlacement), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.medalion, this.state.medalionFront !== 0 ? medalionSetFront : '', this.state.medalionBack !== 0 ? medalionSetBack : ''), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", null, lang[language].overview.total, ": $485,00"))));
       } else {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, lang[language].smallScreen);
       }
