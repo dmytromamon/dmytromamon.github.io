@@ -114182,6 +114182,12 @@ var App = /*#__PURE__*/function (_React$Component) {
         },
         className: "button"
       }, lang[language].button));
+      var fabricButton = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: function onClick() {
+          return _this2.handleMenuChange("orphey");
+        },
+        className: "button"
+      }, lang[language].button);
       var fabric = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("b", {
         className: "title title-simple"
       }, lang[language].fabric.title1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
@@ -114246,12 +114252,7 @@ var App = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
         src: "./models/fabric/duomo_green-mini.png",
         alt: "green"
-      })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        onClick: function onClick() {
-          return _this2.handleMenuChange("orphey");
-        },
-        className: "button"
-      }, lang[language].button), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      })))), articleModel < 3 && fabricButton, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
           return _this2.handleMenuChange("article");
         },
@@ -114496,11 +114497,6 @@ var App = /*#__PURE__*/function (_React$Component) {
         onChange: this.handleOptionChange,
         checked: !chasubleLined
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-        onClick: function onClick() {
-          return _this2.handleMenuChange("order");
-        },
-        className: "button"
-      }, "O"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         onClick: function onClick() {
           return _this2.handleMenuChange("medallion");
         },
