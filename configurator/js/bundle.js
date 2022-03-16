@@ -113591,7 +113591,7 @@ if ( typeof window !== 'undefined' ) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"en":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medallion":"medallion","optional":"Optional"},"button":"Next step","buttonBack":"Back","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement"},"medallion":{"title1":"Choose medallion on front","title2":"Choose medallion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medallion":"Medallion (optional)","total":"Total","collar":"Collar"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Deaconstole":"Deaconstole","Flat":"Flat"}},"ro":{"navigation":{"article":"Articol","fabric":"Țesătură","orphey":"Orphey","medallion":"medallion","optional":"Opțional"},"button":"Urmatorul pas","buttonBack":"Înapoi","article":{"title1":"Alege o haină","title2":"Alege un model"},"fabric":{"title1":"Alege materialul","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Alege orphey","title2":"Alegeți plasarea"},"medallion":{"title1":"Alegeți medallion în față","title2":"Alege medallion pe spate","optionalFront":"Față","optionalBack":"Înapoi"},"optional":{"title1":"Opțional: gât și căptușeală"},"overview":{"order":"Prezentare generală a comenzii","fabric":"Țesătură","orphey":"Orphey","placement":"Plasarea","medallion":"Medallion (opțional)","total":"Total","collar":"Collar"},"smallScreen":"Vă rugăm să utilizați dispozitivul cu ecran mai mare sau rotiți dispozitivul.","chasuble":{"Monastic":"Casulă monahală","Dalmatic":"Dalmatic","Ghotic":"Casula gotică","Deaconstole":"Diaconstole","Flat":"Flat"}}}');
+module.exports = JSON.parse('{"en":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medallion":"medallion","optional":"Optional"},"button":"Next step","buttonBack":"Back","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement"},"medallion":{"title1":"Choose medallion on front","title2":"Choose medallion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medallion":"Medallion (optional)","total":"Total","collar":"Collar"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Deaconstole":"Deaconstole","Flat":"Flat"},"orderOverview":{"name":"Name","email":"Email","phone":"Telephone","address":"Address","message":"Would you like to add something?","required":"Required field","back":"Go back","contact":"Contact Us","order":"Order","print":"Print"},"messageSent":"Your order was sent"},"be":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medallion":"medallion","optional":"Optional"},"button":"Next step","buttonBack":"Back","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement"},"medallion":{"title1":"Choose medallion on front","title2":"Choose medallion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medallion":"Medallion (optional)","total":"Total","collar":"Collar"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Deaconstole":"Deaconstole","Flat":"Flat"},"orderOverview":{"name":"Name","email":"Email","phone":"Telephone","address":"Address","message":"Would you like to add something?","required":"Required field","back":"Go back","contact":"Contact Us","order":"Order","print":"Print"},"messageSent":"Your order was sent"},"ne":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medallion":"medallion","optional":"Optional"},"button":"Next step","buttonBack":"Back","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement"},"medallion":{"title1":"Choose medallion on front","title2":"Choose medallion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medallion":"Medallion (optional)","total":"Total","collar":"Collar"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Deaconstole":"Deaconstole","Flat":"Flat"},"orderOverview":{"name":"Name","email":"Email","phone":"Telephone","address":"Address","message":"Would you like to add something?","required":"Required field","back":"Go back","contact":"Contact Us","order":"Order","print":"Print"},"messageSent":"Your order was sent"},"fr":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medallion":"medallion","optional":"Optional"},"button":"Next step","buttonBack":"Back","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement"},"medallion":{"title1":"Choose medallion on front","title2":"Choose medallion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medallion":"Medallion (optional)","total":"Total","collar":"Collar"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Deaconstole":"Deaconstole","Flat":"Flat"},"orderOverview":{"name":"Name","email":"Email","phone":"Telephone","address":"Address","message":"Would you like to add something?","required":"Required field","back":"Go back","contact":"Contact Us","order":"Order","print":"Print"},"messageSent":"Your order was sent"},"de":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medallion":"medallion","optional":"Optional"},"button":"Next step","buttonBack":"Back","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement"},"medallion":{"title1":"Choose medallion on front","title2":"Choose medallion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medallion":"Medallion (optional)","total":"Total","collar":"Collar"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Deaconstole":"Deaconstole","Flat":"Flat"},"orderOverview":{"name":"Name","email":"Email","phone":"Telephone","address":"Address","message":"Would you like to add something?","required":"Required field","back":"Go back","contact":"Contact Us","order":"Order","print":"Print"},"messageSent":"Your order was sent"},"pl":{"navigation":{"article":"Article","fabric":"Fabric","orphey":"Orphey","medallion":"medallion","optional":"Optional"},"button":"Next step","buttonBack":"Back","article":{"title1":"Choose a vestment","title2":"Choose a model"},"fabric":{"title1":"Choose fabric","title2":"Adornes","title3":"Duomo"},"orphey":{"title1":"Choose orphey","title2":"Choose placement"},"medallion":{"title1":"Choose medallion on front","title2":"Choose medallion on back","optionalFront":"Front","optionalBack":"Back"},"optional":{"title1":"Optional: neck and lining"},"overview":{"order":"Order Overview","fabric":"Fabric","orphey":"Orphey","placement":"Placement","medallion":"Medallion (optional)","total":"Total","collar":"Collar"},"smallScreen":"Please use device with bigger screen or rotate your device.","chasuble":{"Monastic":"Monastic Chasuble","Dalmatic":"Dalmatic","Ghotic":"Ghotic Chasuble","Deaconstole":"Deaconstole","Flat":"Flat"},"orderOverview":{"name":"Name","email":"Email","phone":"Telephone","address":"Address","message":"Would you like to add something?","required":"Required field","back":"Go back","contact":"Contact Us","order":"Order","print":"Print"},"messageSent":"Your order was sent"}}');
 
 /***/ })
 
@@ -113854,7 +113854,9 @@ var App = /*#__PURE__*/function (_React$Component) {
 
     _this.handleMenuChange = function (newMenu) {
       _this.setState({
-        menu: newMenu
+        orderOpen: false,
+        menu: newMenu,
+        orderMade: false
       });
     };
 
@@ -113974,6 +113976,91 @@ var App = /*#__PURE__*/function (_React$Component) {
       var price;
     };
 
+    _this.toggleSnapshot = function () {
+      return new Promise(function ($return, $error) {
+        _this.resetCamera();
+
+        _this.setState({
+          orderOpen: true,
+          menu: "order"
+        });
+
+        setTimeout(function () {
+          _this.createSnapshot();
+        }, 1000);
+        return $return();
+      });
+    };
+
+    _this.createSnapshot = function () {
+      _this.setState({
+        snapshot: document.querySelector('.chasuble canvas').toDataURL('image/png', 1.0)
+      });
+    };
+
+    _this.makeOrder = function () {
+      if (_this.state.userName == '') {
+        _this.setState({
+          nameError: true
+        });
+      } else {
+        _this.setState({
+          nameError: false
+        });
+      }
+
+      if (_this.state.userEmail == '') {
+        _this.setState({
+          emailError: true
+        });
+      } else {
+        _this.setState({
+          emailError: false
+        });
+      }
+
+      if (_this.state.userPhone == '') {
+        _this.setState({
+          phoneError: true
+        });
+      } else {
+        _this.setState({
+          phoneError: false
+        });
+      }
+
+      if (_this.state.userName !== '' && _this.state.userEmail !== '' && _this.state.userPhone !== '') {
+        _this.setState({
+          orderMade: true
+        }); // const sgMail = require('@sendgrid/mail')
+        // sgMail.setApiKey(process.env.SENDGRID_API_KEY)
+        // const msg = {
+        //   to: [this.state.userEmail, 'viktor@slabbinck.be', 'dan@digitalartflow.com'],
+        //   from: 'slabbinck.be', // Use the email address or domain you verified above
+        //   subject: 'Your order',
+        //   text: 'Your order succesfully sent',
+        //   html: `<div><img src=${this.state.snapshot} alt="your order"/></div>
+        //   <div><h1>${this.state.title}</h1></div>
+        //   <div><p>Your name: ${this.state.userName}</p></div>
+        //   <div><p>Your email: ${this.state.userEmail}</p></div>
+        //   <div><p>Your phone: ${this.state.userPhone}</p></div>
+        //   <div><p>Your address: ${this.state.userAddress}</p></div>
+        //   <div><p>Your message: ${this.state.userMessage}</p></div>
+        //   <div><p>Number of items: ${this.state.userCount}</p></div>`,
+        // };
+        // //ES6
+        // sgMail
+        //   .send(msg)
+        //   .then(() => {}, error => {
+        //     console.error(error)
+        //     if (error.response) {
+        //       console.error(error.response.body)
+        //     }
+        //   })
+
+      }
+    };
+
     _this.state = {
       menu: 'article',
       language: "en",
@@ -113994,12 +114081,18 @@ var App = /*#__PURE__*/function (_React$Component) {
       medallionBack: 0,
       chasubleLined: true,
       userName: '',
+      nameError: false,
       userEmail: '',
+      emailError: false,
       userPhone: '',
+      phoneError: false,
       userAddress: '',
       userMessage: '',
       userCount: 1,
-      reset: 0
+      orderOpen: false,
+      reset: 0,
+      snapshot: '',
+      orderMade: false
     };
     _this.resetCamera = _this.resetCamera.bind(_assertThisInitialized(_this));
     return _this;
@@ -114044,12 +114137,18 @@ var App = /*#__PURE__*/function (_React$Component) {
           medallionBack = _this$state.medallionBack,
           chasubleLined = _this$state.chasubleLined,
           userName = _this$state.userName,
+          nameError = _this$state.nameError,
           userEmail = _this$state.userEmail,
+          emailError = _this$state.emailError,
           userPhone = _this$state.userPhone,
+          phoneError = _this$state.phoneError,
           userAddress = _this$state.userAddress,
           userMessage = _this$state.userMessage,
           userCount = _this$state.userCount,
-          reset = _this$state.reset;
+          orderOpen = _this$state.orderOpen,
+          reset = _this$state.reset,
+          snapshot = _this$state.snapshot,
+          orderMade = _this$state.orderMade;
       var navigation = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
         className: "navbar"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -114520,6 +114619,9 @@ var App = /*#__PURE__*/function (_React$Component) {
           case "optional":
             return optional;
 
+          case "order":
+            return optional;
+
           default:
             return 'not-found';
         }
@@ -114597,21 +114699,105 @@ var App = /*#__PURE__*/function (_React$Component) {
         }
       }();
 
+      var snapshotData = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+        src: snapshot,
+        alt: ""
+      }));
+      var messageSent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, lang[language].messageSent), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: function onClick() {
+          return _this2.handleMenuChange("article");
+        },
+        className: "button button-secondary"
+      }, lang[language].orderOverview.back));
+      var orderOverview = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, title, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: "price"
+      }, "$485,00")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
+        className: "".concat(nameError ? "error" : "")
+      }, lang[language].orderOverview.name, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: userName,
+        onChange: function onChange(event) {
+          _this2.setState({
+            userName: event.target.value
+          });
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: "required"
+      }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
+        className: "".concat(emailError ? "error" : "")
+      }, lang[language].orderOverview.email, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: userEmail,
+        onChange: function onChange(event) {
+          _this2.setState({
+            userEmail: event.target.value
+          });
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: "required"
+      }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", {
+        className: "".concat(phoneError ? "error" : "")
+      }, lang[language].orderOverview.phone, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: userPhone,
+        onChange: function onChange(event) {
+          _this2.setState({
+            userPhone: event.target.value
+          });
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: "required"
+      }, "*")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, lang[language].orderOverview.address, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "text",
+        value: userAddress,
+        onChange: function onChange(event) {
+          _this2.setState({
+            userAddress: event.target.value
+          });
+        }
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, lang[language].orderOverview.message, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("textarea", {
+        cols: "3",
+        value: userMessage,
+        onChange: function onChange(event) {
+          _this2.setState({
+            userMessage: event.target.value
+          });
+        }
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("small", null, "(*) ", lang[language].orderOverview.required), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "buttons"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: function onClick() {
+          return _this2.handleMenuChange("article");
+        },
+        className: "button button-secondary"
+      }, lang[language].orderOverview.back), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+        href: "https://www.slabbinck.be/nl-BE/contact",
+        className: "button button-secondary"
+      }, lang[language].orderOverview.contact), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "order"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+        type: "number",
+        value: this.state.userCount,
+        onChange: function onChange(event) {
+          _this2.setState({
+            userCount: event.target.value
+          });
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        onClick: this.makeOrder,
+        className: "button"
+      }, lang[language].orderOverview.order))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "button button-secondary"
+      }, lang[language].orderOverview.print)));
+
       if (width > 992 && height > 640) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, navigation, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-          className: "contact-us container"
+          className: "contact-us container".concat(orderOpen ? " active" : "")
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-          className: "chasuble"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, {
-          fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_LoadingIcon__WEBPACK_IMPORTED_MODULE_2__["default"], null)
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_react_three_fiber__WEBPACK_IMPORTED_MODULE_8__.Canvas, {
-          dpr: window.devicePixelRatio
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ambientLight", {
-          intensity: .7
-        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("pointLight", {
-          intensity: .8,
-          position: [10, 10, 10]
-        }), chasuble)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "chasuble-image"
+        }, snapshotData), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          className: "order-overview"
+        }, orderMade ? messageSent : orderOverview)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "container"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "options-container"
@@ -114620,6 +114806,9 @@ var App = /*#__PURE__*/function (_React$Component) {
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, {
           fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_LoadingIcon__WEBPACK_IMPORTED_MODULE_2__["default"], null)
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_react_three_fiber__WEBPACK_IMPORTED_MODULE_8__.Canvas, {
+          gl: {
+            preserveDrawingBuffer: true
+          },
           dpr: window.devicePixelRatio
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ambientLight", {
           intensity: .7
@@ -114631,7 +114820,26 @@ var App = /*#__PURE__*/function (_React$Component) {
           onClick: this.resetCamera
         }, "Reset")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "overview"
-        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Choose a language:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("select", {
+          value: this.state.language,
+          onChange: function onChange(event) {
+            return _this2.setState({
+              language: event.target.value
+            });
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+          value: "en"
+        }, "English"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+          value: "be"
+        }, "Belgian"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+          value: "ne"
+        }, " Nederlanden"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+          value: "fr"
+        }, "France"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+          value: "de"
+        }, "Deutchland"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", {
+          value: "pl"
+        }, "Polska"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
           className: "heading"
         }, lang[language].overview.order, ":"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", null, lang[language].overview.fabric, ": ", fabricId), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
           className: articleModel > 2 ? "disabled" : ""
@@ -114645,13 +114853,14 @@ var App = /*#__PURE__*/function (_React$Component) {
           className: "order"
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
           type: "number",
-          defaultValue: "1",
+          value: this.state.userCount,
           onChange: function onChange(event) {
             _this2.setState({
               userCount: event.target.value
             });
           }
         }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+          onClick: this.toggleSnapshot,
           className: "button"
         }, "Order now")))));
       } else {
